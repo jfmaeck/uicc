@@ -3,7 +3,7 @@
 You have to adjust two attributes: `data-slides-count` should contain the total number of slides and `data-active-slide` should contain the index of the currently active slide.
 You need to provide your own navigation controls to alter the `data-active-slide` attribute value.
 
-## Slider (unstyled)
+### Slider (unstyled)
 
 This slider works with a minimum of styling in order to be very versatile.
 
@@ -57,7 +57,7 @@ This slider works with a minimum of styling in order to be very versatile.
     </div>
 
     
-## Slider (cards)
+### Slider (cards)
 
     @example
     <div class="uicc-slider uicc-row" id="uicc-slider-demo-cards" data-slides-count="4" data-active-slide="1">      

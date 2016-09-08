@@ -1,3 +1,8 @@
+$uicc-input-error-color: $uicc-color-error;
+$uicc-input-valid-color: $uicc-color-success;
+$uicc-input-border-color: #d2d2d2;
+
+
 .uicc-input {
   flex: 1 1 auto;
   width: 100%;
@@ -5,8 +10,8 @@
   outline: 0;
   padding: 7px 3px;
 
-  background-color: $uicc-white-base;
-  color: $uicc-gray-dark;
+  background-color: $uicc-color-white;
+  color: $uicc-color-gray-dark;
 
   border-bottom: 1px solid $uicc-input-border-color;
   border-left: none;
@@ -23,8 +28,8 @@
   // scss-lint:enable VendorPrefix, PseudoElement
 
   &.is-disabled {
-    border-color: $uicc-gray-light;
-    color: $uicc-gray-medium;
+    border-color: $uicc-color-gray-medium;
+    color: $uicc-color-gray-medium;
     cursor: not-allowed;
   }
 
@@ -77,7 +82,7 @@
         font-weight: 300;
         margin: 0;
         position: absolute;
-        color: $uicc-gray;
+        color: $uicc-color-gray;
         top: 12px;
         left: 2px;
         transition: top 0.2s ease, font-size 0.2s ease, left 0.2s ease;

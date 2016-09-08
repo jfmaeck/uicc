@@ -30,10 +30,9 @@ Specify arbitrary unicode icon character in the `data-uicc-icon-char` attribute.
 ### Icon (predefined font icons)
   
     @example
-    <i class="uicc-icon uicc-icon--info"></i>
-    <i class="uicc-icon uicc-icon--checkMark"></i>
-    <i class="uicc-icon uicc-icon--starEmpty"></i>
-    <i class="uicc-icon uicc-icon--starFilled"></i>
+    <i class="uicc-icon uicc-icon--menuBurger"></i>
+    <i class="uicc-icon uicc-icon--emptyStar"></i>
+    <i class="uicc-icon uicc-icon--filledStar"></i>
 
 ### Icon (SVG icons)
 

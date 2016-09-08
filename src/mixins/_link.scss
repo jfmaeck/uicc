@@ -2,8 +2,9 @@
   @include uicc-hover($uicc-link-hover-color);
 
   transition: color .2s ease-in-out;
+  display: inline-block;
+  margin-right: 0.3em;
   color: $uicc-link-color;
-
   text-decoration: underline;
 
   &:visited {
@@ -19,7 +20,7 @@
 
   @if ($is-unobtrusive == 'modifier') {
     &--unobtrusive {
-      @include uicc-hover($uicc-brand-primary);
+      @include uicc-hover($uicc-color-brand-primary);
 
       &,
       &:visited {
@@ -27,7 +28,7 @@
       }
     }
   } @else if($is-unobtrusive == true) {
-    @include uicc-hover($uicc-brand-primary);
+    @include uicc-hover($uicc-color-brand-primary);
 
     &,
     &:visited {

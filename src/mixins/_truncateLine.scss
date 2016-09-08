@@ -1,4 +1,4 @@
-@mixin uicc-truncateLine() {
+@mixin uicc-truncateLine {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

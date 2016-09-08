@@ -1,3 +1,13 @@
+$uicc-icon-font-size: 1.2em !default;
+$uicc-icon-font-size-tiny: 0.8em !default;
+$uicc-icon-font-size-small: 1.0em !default;
+$uicc-icon-font-size-big: 1.75em !default;
+$uicc-icon-font-size-extraBig: 2.75em !default;
+$uicc-icon-font-size-screen-tiny: $uicc-icon-font-size-small !default;
+$uicc-icon-font-size-small-screen-tiny: $uicc-icon-font-size-small !default;
+$uicc-icon-font-size-big-screen-tiny: $uicc-icon-font-size-big !default;
+$uicc-icon-font-size-extraBig-screen-tiny: $uicc-icon-font-size-extraBig !default;
+
 .uicc-icon {
   display: inline-flex;
   align-items: center;
@@ -33,27 +43,23 @@
   }
 
   &--primary {
-    color: $uicc-brand-primary;
+    color: $uicc-color-brand-primary;
   }
 
   &--light {
-    color: $uicc-gray;
+    color: $uicc-color-gray;
   }
 
   &--hoverPrimary {
-    @include uicc-hover($uicc-brand-primary);
+    @include uicc-hover($uicc-color-brand-primary);
   }
 
   &--char::before {
     content: attr(data-uicc-icon-char);
   }
 
-  &--info::before {
-    content: 'i';
-  }
-
-  &--checkMark::before {
-    content: '✓';
+  &--menuBurger:before {
+    content: '☰';
   }
 
   &--emptyStar::before {

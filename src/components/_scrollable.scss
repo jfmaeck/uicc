@@ -24,11 +24,11 @@
     }
 
     &::-webkit-scrollbar-track-piece {
-      background-color: $uicc-gray-light;
+      background-color: $uicc-color-gray-medium;
     }
 
     &::-webkit-scrollbar-thumb:vertical {
-      background-color: $uicc-brand-secondary;
+      background-color: $uicc-color-brand-secondary;
     }
   }
 

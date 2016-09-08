@@ -4,9 +4,9 @@ var config = require('../gulp.config')();
 
 gulp.task('sass-lint', function () {
     return gulp
-        .src([config.src+'/**/*.scss', '!'+config.src+'/styleguide.scss'])
+        .src([config.src+'/**/*.scss', '!'+config.src+'/styledown.scss'])
         .pipe(sassLint({
-            configFile: '../.sass-lint.yml'
+            configFile: '.sass-lint.yml'
         }))
         .pipe(sassLint.format());
 });

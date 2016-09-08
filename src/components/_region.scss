@@ -1,3 +1,12 @@
+$uicc-region-padding: $uicc-default-margin;
+$uicc-region-padding-screen-large: $uicc-default-margin-screen-large;
+
+$uicc-region-small-padding: $uicc-default-margin-small;
+$uicc-region-small-padding-screen-large: $uicc-default-margin-small-screen-large;
+
+$uicc-region-big-padding: $uicc-default-margin-big;
+$uicc-region-big-padding-screen-large: $uicc-default-margin-big-screen-large;
+
 .uicc-region {
   padding: $uicc-region-padding;
 
@@ -22,20 +31,21 @@
   }
 
   &--primary {
-    background: $uicc-brand-primary;
-    color:  $uicc-brand-primary-inverted;
+    background: $uicc-color-brand-primary;
+    color: $uicc-color-brand-primary-inverted;
   }
 
   &--secondary {
-    background: $uicc-brand-secondary;
-    color:  $uicc-brand-secondary-inverted;
+    background: $uicc-color-brand-secondary;
+    color: $uicc-color-brand-secondary-inverted;
   }
 
   &--default {
     background: $uicc-body-bg;
+    color: $uicc-text-color;
   }
 
   &--rounded {
-    @include uicc-roundedEdges();
+    @include uicc-roundedEdges;
   }
 }

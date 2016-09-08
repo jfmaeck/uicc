@@ -1,3 +1,7 @@
+$uicc-col-margin: 7px;
+$uicc-col-margin-small: 4px;
+$uicc-col-margin-big: 14px;
+
 .uicc-col {
   display: inline-flex;
 
@@ -12,7 +16,7 @@
   }
 
   &--withSeparator {
-    border-right: 1px solid $uicc-gray-light;
+    border-right: 1px solid $uicc-color-gray-medium;
     padding-right: $uicc-col-margin;
 
     &.uicc-col--smallMargin {
@@ -32,7 +36,7 @@
     &.uicc-col--withSeparator {
       padding-right: 0;
       border-right: none;
-      border-left: 1px solid $uicc-gray-light;
+      border-left: 1px solid $uicc-color-gray-medium;
       padding-left: $uicc-col-margin;
 
       // scss-lint:disable NestingDepth

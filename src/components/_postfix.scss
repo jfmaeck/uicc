@@ -6,20 +6,45 @@
     align-items: center;
   }
 
+  &--gutters {
+    > * + * {
+      margin-left: $uicc-col-margin;
+
+    }
+  }
+
   &--tiny-stacked,
   &--small-stacked {
     @media #{$uicc-tiny-only} {
       flex-direction: column;
+
+      &.uicc-postfix--gutters {
+        > * + * {
+          margin-left: 0;
+          margin-top: $uicc-row-margin;
+        }
+      }
     }
   }
 
   &--small-stacked {
     @media #{$uicc-small-only} {
       flex-direction: column;
+
+      > * + * {
+        margin-left: 0;
+        margin-top: $uicc-row-margin;
+      }
     }
+  }
+
+  &__fixed {
+    flex-shrink: 0;
   }
 
   &__fluid {
     flex: 1 1 auto;
   }
+
+
 }

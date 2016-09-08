@@ -49,12 +49,12 @@ Regions have nice paddings and different background colors depending on their ty
 
     @example
     <div class="uicc-pageWrapper">
-        <div class="uicc-region">
+        <div class="uicc-region uicc-region--secondary">
             <div class="uicc-region uicc-centered uicc-centered--horizontally uicc-row uicc-row--bigMargin">
                 [LOGO]
             </div>
-            <div class="uicc-region uicc-region--big uicc-region--primary">               
                 <h2 class="uicc-headline uicc-headline--h3 uicc-headline--text uicc-headline--firstInText ">Sie haben Ihr Passwort vergessen?</h2>
+            <div class="uicc-region uicc-region--big uicc-region--primary">               
                 <p class="uicc-row uicc-row--extraBigMargin">Geben Sie Ihre E-Mail-Adresse an, um Ihr Passwort zurückzusetzen:</p>
                 <div class="uicc-inputGroup">
                   <input id="region-sample-layout-email" type="email" class="uicc-input uicc-input--big uicc-input--unobtrusive uicc-input--floatingLabel" name="email" required onchange="if (this.value === '') { this.classList.remove('is-dirty'); } else { this.classList.add('is-dirty'); }">

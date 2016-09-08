@@ -4,19 +4,22 @@ UI Toolkit to **C**lone & **C**ustomize.
 
 In the end, it should become some kind of Twitter Bootstrap tailored specifically to the requirements of your own project/company.
 
-Each pattern is presented with a visual example together with its demo markup.
+Complete with an automatically generated HTML demo page showing all of your UI Patterns alongside the corresponding markup.
 
-The development experience is seamless. Our workflow includes a local webserver supporting live reload to update the preview whenever you change one of the source files.
+The development experience is seamless. Our workflow includes a local webserver with live reload to UI Patterns Demo page whenever you change one of the source files.
+
+The UI Patterns Demo page is generated automatically using [Styledown](https://github.com/styledown/styledown).
+
 
 ## Motivation
 
-When building websites and apps for public audiences, one should take extra care about aesthetics and performance. This is why building custom UI components is a better choice over using one of the generic CSS frameworks (e.g. Twitter Bootstrap, ZURB Foundation etc).
+When building websites and apps for public audiences, one should take extra care about aesthetics and performance. This is why building custom UI components is usually a better choice than using one of the generic CSS frameworks (e.g. Twitter Bootstrap, ZURB Foundation etc).
  
 * smaller file size and less css rules means faster loading and rendering performance
 * truly custom designs instead of sites looking almost like every other Bootstrap site
 * you don't have to *fight* a framework - it can be quite hard to undo/override some 3rd party framework styles
 * the resulting markup and naming conventions better fit to the rest of your frontend code. Check out our [CSS guidelines](css_guidelines.md) if you like BEM. 
-* The demo and documentation represent YOUR own custom components, not those of a 3rd party framework
+* The demo and documentation represent your own custom components, not those of a 3rd party framework
 
 ## Restrictions
 
@@ -27,7 +30,9 @@ This Styleguide compiles to CSS only, **no Javascript**. This is a deliberate de
 Having the visual preview as well as the example markup at hand, it should be quite easy to implement the dynamic parts in the framework of your choosing. Let it be **Angular, React, Ember, Backbone, jQuery or vanilla JS**. Mostly it will be a matter of adding or removing a css class.
 
 In order to make the examples work, we rely on inline javascript event handlers (onclick). Please **replace the inline javascript event handlers** from the examples with something more sophisticated and suitable for your own project.
- 
+
+Or you could add support Javascript, if you want to provide a standalone collection of UI Patterns. Feel free to add a gulp task or npm script to transpile and bundle your Javascript, if you want to. 
+
 ### Browser Support
 
 The demo components are built for modern browsers only. If you need to support older browsers, please take care to either not use the demo components at all or rewrite them where necessary. 
@@ -63,8 +68,8 @@ The transpiled styleguide code (css, html and images) is stored in the dist dire
 You can also import the styleguide scss files directly into your project scss files:
 
 ```sass
-$uiccasset-path: './vendor/@ewe/emobility-styleguide/dist/assets'; // adjust according to your environment
-@import 'node_modules/@ewe/emobility-styleguide/src/styleguide'; // adjust according to your environment
+$uiccasset-path: './vendor/uicc/dist/assets'; // adjust according to your environment
+@import 'node_modules/uicc/src/styleguide'; // adjust according to your environment
 ```
 
 ## CSS Guidelines

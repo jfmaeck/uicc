@@ -9,13 +9,13 @@
   }
 
   &__tabHeader {
-    @include uicc-hover($uicc-brand-primary);
+    @include uicc-hover($uicc-color-brand-primary);
 
     position: relative;
     flex: 1 1 0;
     transition: color 200ms, border 200ms;
     padding: 11px 8px 8px 8px;
-    border-bottom: 2px solid $uicc-gray-lighter;
+    border-bottom: 2px solid $uicc-color-gray-light;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
@@ -28,15 +28,15 @@
       top: 6px;
       bottom: 6px;
       width: 2px;
-      background-color: $uicc-gray-lighter;
+      background-color: $uicc-color-gray-light;
     }
 
     &.is-active,
     &:focus {
       font-weight: bold;
       font-size: $uicc-font-size-base;
-      color: $uicc-brand-primary;
-      border-color: $uicc-brand-primary;
+      color: $uicc-color-brand-primary;
+      border-color: $uicc-color-brand-primary;
     }
 
     &:first-child,

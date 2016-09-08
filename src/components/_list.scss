@@ -1,15 +1,36 @@
+$uicc-list-default-bullet-icon: '■';
+
 .uicc-list {
 
   &--bulleted {
-    @include uicc-list--bulleted;
+    > li,
+    .uicc-list__item {
+      position: relative;
+      padding-left: 1.2em;
+      line-height: 1em;
+      margin-bottom: 1em;
+
+      &::before {
+        content: $uicc-list-default-bullet-icon;
+        position: absolute;
+        left: 0;
+        top: 0;
+        line-height: 0.7em;
+        color: $uicc-color-brand-primary;
+      }
+    }
+
   }
 
   &--numbered {
-    @include uicc-list--numbered;
-  }
+    list-style-type: decimal;
+    list-style-position: inside;
 
-  &--arrowBullets {
-    @include uicc-list--arrowBullets;
+    > li,
+    .uicc-list__item {
+      line-height: 1em;
+      margin-bottom: 0.8em;
+    }
   }
 
 }

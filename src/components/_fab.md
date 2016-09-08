@@ -6,6 +6,6 @@
            <div class="uicc-headline uicc-headline--h3">Placeholder content</div>
        </div>
        <a class="uicc-fab uicc-button uicc-button--icon uicc-button--primary uicc-button--big">
-           <svg class="uicc-icon"><use xlink:href="#arrow-right"></use></svg>
+           <svg class="uicc-button__icon uicc-icon"><use xlink:href="#checkmark"></use></svg>
        </a>
     </div>

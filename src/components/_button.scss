@@ -1,5 +1,14 @@
+$uicc-button-padding: 0.45rem 0.45rem 0.40rem 0.45rem !default;
+$uicc-button-padding-big: 0.65rem 0.65rem 0.55rem 0.65rem !default;
+$uicc-button-padding-screen-large: 0.6rem 0.6rem 0.5rem 0.6rem !default;
+$uicc-button-padding-big-screen-large: 0.9rem 0.9rem 0.8rem 0.9rem !default;
+
+$uicc-button-primary-active-background-color: rgb(34, 156, 178);
+$uicc-button-primary-disabled-background-color: #b4d1e3;
+$uicc-button-secondary-active-background-color: #000;
+
 .uicc-button {
-  @include uicc-roundedEdges();
+  @include uicc-roundedEdges;
 
   display: inline-block;
   text-align: center;
@@ -48,15 +57,15 @@
 
   &--icon {
     border-radius: 50%;
-    box-shadow: 0 1px 0 0 $uicc-gray-dark;
+    box-shadow: 0 1px 0 0 $uicc-color-gray-dark;
   }
 
   &--primary {
-    background-color: $uicc-brand-primary;
-    color: $uicc-brand-primary-inverted;
+    background-color: $uicc-color-brand-primary;
+    color: $uicc-color-brand-primary-inverted;
 
     &:visited {
-      color: $uicc-brand-primary-inverted;
+      color: $uicc-color-brand-primary-inverted;
     }
 
     &[disabled],
@@ -66,52 +75,52 @@
     }
 
     &:not([disabled]) {
-      @include uicc-hover($uicc-brand-primary-inverted, $uicc-button-primary-active-background-color);
+      @include uicc-hover($uicc-color-brand-primary-inverted, $uicc-button-primary-active-background-color);
     }
 
     &:not([disabled]):active,
     &:not([disabled]):focus {
-      color: $uicc-brand-primary-inverted;
+      color: $uicc-color-brand-primary-inverted;
     }
 
     &.uicc-button--icon {
-      background: $uicc-brand-primary;
+      background: $uicc-color-brand-primary;
     }
   }
 
   &--secondary {
-    background-color: $uicc-brand-secondary;
-    color: $uicc-brand-secondary-inverted;
+    background-color: $uicc-color-brand-secondary;
+    color: $uicc-color-brand-secondary-inverted;
 
     &:visited {
-      color: $uicc-brand-secondary-inverted;
+      color: $uicc-color-brand-secondary-inverted;
     }
 
     &:not([disabled]):hover {
-      @include uicc-hover($uicc-brand-secondary-inverted, $uicc-button-secondary-active-background-color);
+      @include uicc-hover($uicc-color-brand-secondary-inverted, $uicc-button-secondary-active-background-color);
     }
 
     &:not([disabled]):active,
     &:not([disabled]):focus {
-      color: $uicc-brand-secondary-inverted;
+      color: $uicc-color-brand-secondary-inverted;
     }
   }
 
   &--danger {
-    background: $uicc-error-color-background;
-    color: $uicc-error-color;
+    background: $uicc-color-error-background;
+    color: $uicc-color-error;
 
     &:visited {
-      color: $uicc-error-color;
+      color: $uicc-color-error;
     }
 
     &:not([disabled]):hover {
-      @include uicc-hover($uicc-error-color-background, $uicc-error-color);
+      @include uicc-hover($uicc-color-error-background, $uicc-color-error);
     }
 
     &:not([disabled]):active,
     &:not([disabled]):focus {
-      color: $uicc-error-color;
+      color: $uicc-color-error;
     }
   }
 

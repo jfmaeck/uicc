@@ -1,4 +1,6 @@
-## Responsive Visibility:
+## Responsive Utilities
+
+### Responsive Visibility Classes:
 
     @example
     <div class="uicc-hidden-tiny">uicc-hidden-tiny</div>
@@ -16,3 +18,16 @@
     <div class="uicc-hidden-xlarge">uicc-hidden-xlarge</div>
     <div class="uicc-hidden-xlarge-up">uicc-hidden-xlarge-up</div>
     <div class="uicc-hidden-xlarge-down">uicc-hidden-xlarge-down</div>
+
+
+### Scss Media Query Breakpoint variables
+
+Commonly used media query conditions exposed as scss variables:
+`$uicc-tiny-only`
+`$uicc-tiny-up`
+`$uicc-small-only`
+`$uicc-small-up`
+`$uicc-medium-only
+`$uicc-medium-up`
+`$uicc-large-only`
+`$uicc-large-up`

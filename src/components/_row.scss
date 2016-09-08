@@ -1,3 +1,10 @@
+$uicc-row-margin: $uicc-default-margin;
+$uicc-row-margin-small: $uicc-default-margin-small;
+$uicc-row-margin-extra-small: 2.6px;
+$uicc-row-margin-big: $uicc-default-margin-big;
+$uicc-row-margin-extra-big: $uicc-default-margin-big * 1.4;
+$uicc-row-separator-color: $uicc-color-gray-medium;
+
 .uicc-row {
   margin-bottom: $uicc-row-margin;
 
@@ -58,7 +65,7 @@
     &.uicc-row--withSeparator {
       padding-bottom: 0;
       border-bottom: none;
-      border-top: 1px solid $uicc-gray-light;
+      border-top: 1px solid $uicc-color-gray-medium;
       padding-top: $uicc-row-margin;
 
       // scss-lint:disable NestingDepth

@@ -35,20 +35,20 @@
   @keyframes color {
     100%,
     0% {
-      stroke: $uicc-brand-primary;
+      stroke: $uicc-color-brand-primary;
     }
 
     40% {
-      stroke: $uicc-brand-primary;
+      stroke: $uicc-color-brand-primary;
     }
 
     66% {
-      stroke: $uicc-brand-tertiary;
+      stroke: $uicc-color-white;
     }
 
     80%,
     90% {
-      stroke: $uicc-brand-tertiary;
+      stroke: $uicc-color-white;
     }
   }
 }

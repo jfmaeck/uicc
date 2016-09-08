@@ -13,7 +13,7 @@
   opacity: 0;
 
   // scss-lint:disable QualifyingElement
-  body.is-uicc-initialized & {
+  .is-uicc-initialized & {
     animation: fadeIn 0.5s;
     opacity: 1;
   }

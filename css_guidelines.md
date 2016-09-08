@@ -1,14 +1,12 @@
-Style Patterns CSS Guidelines
-=============================
+UICC CSS Guidelines
+===================
 
-A pragmatic CSS/HTML methodology proposal.
-
-Based on [BEM](https://en.bem.info/method/definitions/), enriched with elements of [OOCSS]([https://github.com/stubbornella/oocss/wiki) and [SMACSS](https://smacss.com/).
+A pragmatic CSS methodology proposal based on [BEM](https://en.bem.info/method/definitions/), enriched with elements of [OOCSS]([https://github.com/stubbornella/oocss/wiki) and [SMACSS](https://smacss.com/).
 
 tl;dr
 -----
 
-Use BEM as a guiding methodology to make your developer life easier, not harder.
+Use BEM as a guiding methodology to make your developer life easier – not harder.
 When the BEM rules don't fit your needs, be pragmatic and choose a sensible solution for your problem. Preferably one of the solutions listed below.
 
 
@@ -17,30 +15,31 @@ A very short introduction to BEM
 
 The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS. Developed by the team at Yandex, its goal is to help developers better understand the relationship between the HTML and CSS in a given project.
 
-Here's an example (from https://css-tricks.com/bem-101/) of what a CSS developer writing in the BEM style might write:
+Here's an example:
 
 *CSS:*
 ```
-/* Block component */
+/* BLOCK (aka component) */
 .btn {}
 
-/* Element that depends upon the block */
-.btn__price {}
+/* ELEMENT belonging to that block */
+.btn__icon {}
 
-/* Modifier that changes the style of the block */
-.btn--orange {}
+/* MODIFIER that changes the style of the block */
+.btn--primary {}
 .btn--big {}
 ```
 
-In this CSS methodology a block is a top-level abstraction of a new component, for example a button: .btn { }. This block should be thought of as a parent. Child items, or elements, can be placed inside and these are denoted by two underscores following the name of the block like .btn__price { }. Finally, modifiers can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like btn--orange.
+In BEM a block is the top-level abstraction of a component, for example a button: .btn { }. This block should be thought of as a parent. Child items, or elements, can be placed inside and these are denoted by two underscores following the name of the block like .btn__price { }.
+Finally, modifiers can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like btn--primary.
 
-The markup might then look like this:
+The corresponding markup might then look like this:
 
 *HTML:*
 ```
-<a class="btn btn--big btn--orange" href="http://css-tricks.com">
-  <span class="btn__price">$9.99</span>
-  <span class="btn__text">Subscribe</span>
+<a class="btn btn--big btn--primary" href="https://www.jonasfischer.net">
+  <span class="btn__icon">★</span>
+  <span class="btn__text">Like</span>
 </a>
 ```
 
@@ -49,20 +48,19 @@ The essence of BEM is this:
 * do not use tag selectors
 * do not use id selectors
 * do not use child, descendant, sibling etc. selectors
-
+* blocks and elements are always styled the same, no matter where in the markup they appear. Context is only provided through modifiers. 
 
 
 There are lots of resources on the web to dig in further, e.g.:
 * https://en.bem.info/method/definitions/
 * http://getbem.com/
 * http://www.smashingmagazine.com/2012/04/16/a-new-front-end-methodology-bem/
-* https://css-tricks.com/bem-101/ (the example above is taken from there)
+* https://css-tricks.com/bem-101/
 
 
 
-
-Proposed BEM enrichments
-------------------------
+Custom guidlines extending BEM
+------------------------------
 
 ### Terminology
 
@@ -71,11 +69,11 @@ In BEM the outer element of a component is called a "block". We prefer to call i
 
 ### Custom Naming Scheme
 
-BEM does not force you to use a certain naming scheme. As long as the three parts (Block, Element and Modifier) are  easily distinguishable, everything is fine.
+BEM does not force you to use a certain naming scheme. As long as the three parts (Block, Element and Modifier) are easily distinguishable, everything is fine.
 
 To make BEM-style class names readable you should try to use single words to describe your Blocks, Elements and Modifiers.
 
-If you need more than one word, then use camelCaseSyntax:
+For multi-word identifiers, many BEM examples use "train-case" naming ("loading-indicator"). However, we prefer "camelCase" ("loadingIndicator"). 
 
 ```
 /* Best: single words: */
@@ -84,7 +82,7 @@ If you need more than one word, then use camelCaseSyntax:
 /* Good: Multiple words in camelCaseSyntax still works: */
 .blockName__elementName--modifierName {}
 
-/* Bad: haypehn-separated-syntax is confusing: */
+/* Bad: train-case-syntax is confusing: */
 .block-name__element-name--modifier-name {}
 
 /* Bad: underscore_separated_syntax is confusing: */
@@ -98,11 +96,9 @@ BEM recommends not to use reset.css, normalize.css or any other sort of default 
 
 We explicitly allow global resetting (e.g. remove default margins and padding from headlines and lists) to avoid css style repetition in your components.
 
-Please do not apply any default styles to generic tag selectors. So reset.css is ok, but noramlize.css should not be used.  
+Please do not apply any custom styles to generic tag selectors except those undoing the browser default styles. So reset.css (removes browser default styling) is ok, but normalize.css (applies custom default styles to certain tag names) should not be used.  
 
-#### But ...
-
-Less is more. Keep your base styles as basic as possible. If you find yourself constantly overriding or undoing base styles, then your base styles are probably doing too much. See also the section "Mind the Single Responsibility Principle (SRP)".
+**Less is more.** Keep your base styles as simple as possible. If you find yourself constantly overriding or undoing base styles, then your base styles are probably doing too much. See also the section "Mind the Single Responsibility Principle (SRP)".
 
 
 ### Constrained First (aka "Mobile First")
@@ -125,8 +121,7 @@ Then, enhance your design for less constrained targets where appropriate:
 
 #### The Sass-Way
 
-You should put your media query enhancements as close to the altered styles as possible.
-In Sass, this is quite easy:
+You should put your media query enhancements as close to the altered styles as possible. In Sass, this is quite easy:
 
 ```
 .button {
@@ -185,84 +180,75 @@ Your page should be composed of as many composable, reusable elements as possibl
 Think of LEGO bricks. Mix and match them to create your individual components (BEM blocks).
 The LEGOs are called Skins in [Object Oriented CSS (OOCSS)]([https://github.com/stubbornella/oocss/wiki) and are one of the main OOCSS principles.
 
-Ideally, LEGOs and utility classes adhere to the BEM naming scheme. However, if you use frameworks like Twitter Bootstrap, then it is perfectly fine to mix your own BEM classes with the framework classes.
+Ideally, LEGOs and utility classes adhere to the BEM naming scheme. However, if you mix-in frameworks like Twitter Bootstrap, then it is perfectly fine to add your own BEM classes alongside the framework classes.
 
-_Important:_ Do NOT use presentational class names.
+_Important:_ Avoid using concrete presentational class names.
 
 ```
 /* Bad: */
-.with-padding { padding: 2rem }
+.withPadding { padding: 2rem }
 
 /* Even Worse: */
-.padding-20 { padding: 2rem }
+.padding20px { padding: 2rem }
 
 /* Good: */
-.panel { padding: 2rem }
+.region { padding: 2rem }
 ```
 
-#### When to use it?
+#### When to use LEGOs?
 
-LEGO classes do not require nested DOM structure but are applied directly to single DOM elements.
+LEGO classes do not require nested DOM structures but are applied directly to single DOM elements.
 
 It is often possible to mix multiple LEGO classes on the same DOM element.
 
-The following are some good LEGO candiates:
+The following are some good LEGO candidates:
 
-* Boxes/Panels (padding/margin)
+* Boxes/Panels/Regions (padding/margin)
 * Headings (Typography)
 * Anchors
 * Buttons
 * Lists (ol, ul, .inline-list, .no-bullets etc.)
 * Utility Classes (e.g. contextual colors, contextual backgrounds, close icon, carets, quick floats etc. Take [Twitter Bootstrap Helper Classes](http://getbootstrap.com/css/#helper-classes) as an example.
 
-#### Use @extend or @mixin to avoid chained classes
+#### When to avoid LEGOs?
 
 It may be tempting to compose everything out of LEGOs. However, sometimes it is better to "bundle" multiple LEGOs into a single css rule to clean up your html.
 
 Take the following example:
 
 ```
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.rounded { border-radius: 10px; }
+
+.hoverOpacity {
+    opacity: 0.8;
+    
+    &::hover { opacity: 1 }
 }
 
-.img-rounded {
-  border-radius: 10px;
-}
+.col { margin-right: 10px; }
+.row { margin-bottom: 10px; }
 
 ...
 
 <div class="productList">
-  <img src="product1.jpg" class="productList__image img-responsive img-rounded">
-  <img src="product2.jpg" class="productList__image img-responsive img-rounded">
+  <img src="product1.jpg" class="rounded hoverOpacity col row">
+  <img src="product2.jpg" class="rounded hoverOpacity col row">
   ...
 </div>
 ```
 
-You can move the LEGO classes img-responsive and img-rounded (as used e.g. in Twitter Bootstrap) from your html to your sass code:
+You might want to bundle the LEGO classes into a block__element rule:
 
 ```
-/* in _base.scss */
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.img-rounded {
-  border-radius: 10px;
-}
-
-
-/* in _productList.scss */
 .productList {
   &__image {
-    @extend .img-rounded;
-    @extend .img-responsive;
+    @extend .rounded;
+    @extend .hoverOpacity;
+    @extend .col;
+    @extend .row;
   }
 }
+
 ...
 
 <div class="productList">
@@ -272,23 +258,7 @@ You can move the LEGO classes img-responsive and img-rounded (as used e.g. in Tw
 </div>
 ```
 
-The Sass above gets transpiled into the following css:
-
-```
-/* in _base.scss */
-.img-responsive, .productList__image {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
-.img-rounded, .productList__image {
-  border-radius: 10px; }
-
-/* in _productList.scss */
-/* [no code here because @extends is smart enough to only add class names to the extended selectors] */
-```
-
-Apply this technique when you find it helpful e.g. for repeated elements used in long lists.
+Apply this technique only if it makes your life as a developer easier. Don't worry about file sizes at all as gzip is pretty good at compressing repeated class names in your html markup. Of yourse, you should leverage your webserver's gzip compression capabilities. 
 
 If you are transpiling your scss into multiple css files, using [Sass mixins (@mixin)](http://sass-lang.com/guide) instead of @extend might be a better option.
 
@@ -298,48 +268,38 @@ If you are transpiling your scss into multiple css files, using [Sass mixins (@m
 When working with LEGOs you inevitably run into situations where you need to combine two or more LEGO classes to style a single UI element. Example:
 
 ```
-<footer class="footer region region--tertiary">...</footer>
+<footer class="footer region region--secondary">...</footer>
 ```
 
-In the example above, the ```<footer>``` element is the opening element of the ```footer``` component AND the opening element of a ```region``` component.
+In the example above, the `<footer>` element acts as a `footer` component and as a `region` component at the same time.
 
 This is OK as long as those two components do not conflict with each other (i.e. try to define the same style property). If you run into conflicts, you have several options:
 
 1. Nest those DOM elements:
 
 ```
-<footer class="region region--tertiary">
-  <div class="footer>...</div>
+<footer class="footer">
+  <div class="region region--secondary">...</div>
 </footer>
 ```
 
-2. Use @extend or @mixin
+2. Define a modifier
 
-```
-.footer {
-  @extend .region;
-  @extend .region--tertiary;
-
-  // custom footer styles go here
-}
-```
-
-3. Define a modifier
-
-This solution should only be applied if it might potentially be reused somewhere else in your application.
+You can for example define a special region type doing exactly what you need in the given situation.
 
 ```
 <footer class="footer region region--reusableCaseName">...</footer>
 ```
 
+This solution should only be applied if it might potentially be reused somewhere else in your application.
 
-Anyway, if you mind the single responsibility principle (see next secion), then you hopefully won't run into LEGO conflicts that often.
+Anyway, if you mind the single responsibility principle (see next secion), then you hopefully won't run into LEGO conflicts all that often.
 
 ### Mind the Single Responsibility Principle (SRP)
 
 > Do one job well and one job only.
 
-Example:
+Example (Bad):
 ```
 <a href="/product" class="promo">Buy now!</a>
 
@@ -354,7 +314,7 @@ Example:
 }
 ```
 
-Here we have a class for a promotional box of content. Here we are doing two things — we are defining box model and structure and we are defining cosmetics (coloring etc).
+Here we have a class for a promotional box of content. It applies a box model with padding as well as cosmetics (colors etc).
 
 We can refactor this code to adhere to the SRP by splitting those two chunks of functionality into two classes:
 
@@ -365,13 +325,13 @@ We can refactor this code to adhere to the SRP by splitting those two chunks of 
 .region {
     display: block;
     padding: 20px;
+    border-radius: 4px;
 }
 
 .promo {
     background-color: #09f;
     color: #fff;
     text-shadow: 0 0 1px rgba(0,0,0,0.25);
-    border-radius: 4px;
 }
 ```
 
@@ -381,20 +341,20 @@ We now have two classes which each carry a single responsibility; .region boxes 
 <h2>Buy now with promo code: <span class="promo">0MG4WE50ME</span></h2>
 ```
 
-Previously we couldn’t have managed this as the .promo class also carried a lot of box model; by abstracting our code into single responsibilities we can pick and choose what we want to use and where a lot more easily.
+Previously it would not have been possible to reuse the .promo class inline because it also included those box model styles; by abstracting our code into single responsibilities we can pick and choose what we want to use like LEGOs.
 
-The full example and a lot more on the SRP topic can be found here:
+More examples and information on the SRP topic can be found here:
 http://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/
 
-#### When to use it?
+#### When to use SRP?
 
-There is no definite answer to questions like these but as a general rule of thumb try and stick to the SRP any time you think that subsets of a style rule could be split out into more manageable and reusable abstractions.
+As a general rule of thumb try and stick to the SRP any time you think that subsets of a css rule could be split out into reusable abstractions.
 
 Also, whenever you find yourself reusing an existing LEGO brick and then undoing some of its associated styles, ask yourself if you could refactor this into two or more reusable LEGO bricks and avoid the need to undo existing styles.
 
 #### But ...
 
-It’s important not to take this too far; classes should be abstracted but ideally not presentational. Classes like .round-corners or .margin-top-321 for the sake of SRP are really not all that advisable.
+It’s important not to take this too far; classes should be abstracted but ideally not presentational. Classes like .marginTop-32 for the sake of SRP are really not all that advisable.
 
 
 ### Nested Elements

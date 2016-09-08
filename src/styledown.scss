@@ -41,20 +41,20 @@ h3.sg + .sg {
 
 /* Colors */
 p.sg, ul.sg {
-  color: $uicc-gray-dark;
+  color: $uicc-color-gray-dark;
 }
 
 h2.sg {
-  color: $uicc-brand-primary;
+  color: $uicc-color-brand-primary;
 }
 
 h3.sg {
-  color: $uicc-gray-base;
+  color: $uicc-color-black;
 }
 
 code.sg {
-  background: $uicc-gray-lighter;
-  color: $uicc-gray-base;
+  background: $uicc-color-gray-light;
+  color: $uicc-color-black;
 
   padding: 2px 5px;
   margin: 0 1px;
@@ -68,14 +68,14 @@ code.sg {
 }
 
 .sg-block {
-  border-top: solid 1px $uicc-gray-light;
+  border-top: solid 1px $uicc-color-gray-medium;
   padding-top: 20px;
   margin: 20px 0;
 }
 
 .sg-block:last-of-type {
   padding-bottom: 20px;
-  border-bottom: solid 3px $uicc-gray-light;
+  border-bottom: solid 3px $uicc-color-gray-medium;
 }
 
 h2 + .sg-block {
@@ -111,8 +111,8 @@ h2 + .sg-block {
   font-size: 0.85em;
   font-family: menlo, monospace;
   line-height: 1.5;
-  background: $uicc-gray-lighter;
-  color: $uicc-gray-base;
+  background: $uicc-color-gray-light;
+  color: $uicc-color-black;
 }
 
 // scss-lint:disable ColorVariable
@@ -170,21 +170,21 @@ h2 + .sg-block {
   text-align: center;
 
   font-size: 10px;
-  background: $uicc-gray-lighter;
+  background: $uicc-color-gray-light;
   border-radius: 3px;
-  color: $uicc-gray;
+  color: $uicc-color-gray;
 
 }
 
 .sg-expando:hover::before,
 .sg-expando:focus::before {
-  color: $uicc-gray-base;
-  background: $uicc-gray-lighter;
+  color: $uicc-color-black;
+  background: $uicc-color-gray-light;
 }
 
 .sg-expando:active::before {
-  color: $uicc-white-base;
-  background: $uicc-gray-base;
+  color: $uicc-color-white;
+  background: $uicc-color-black;
 }
 
 .sg-expando-contract::before {

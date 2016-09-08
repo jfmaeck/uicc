@@ -2,47 +2,47 @@
 .uicc-color {
 
   &--primary {
-    color: $uicc-brand-primary;
+    color: $uicc-color-brand-primary;
 
     &.uicc-color--force,
     &.uicc-color--force * {
-      color: $uicc-brand-primary !important;
+      color: $uicc-color-brand-primary !important;
     }
   }
 
   &--secondary {
-    color: $uicc-brand-secondary;
+    color: $uicc-color-brand-secondary;
 
     &.uicc-color--force,
     &.uicc-color--force * {
-      color: $uicc-brand-secondary !important;
+      color: $uicc-color-brand-secondary !important;
     }
   }
 
   &--gray {
-    color: $uicc-gray;
+    color: $uicc-color-gray;
 
     &.uicc-color--force,
     &.uicc-color--force * {
-      color: $uicc-gray !important;
+      color: $uicc-color-gray !important;
     }
   }
 
   &--mediumGray {
-    color: $uicc-gray-medium;
+    color: $uicc-color-gray-medium;
 
     &.uicc-color--force,
     &.uicc-color--force * {
-      color: $uicc-gray-medium !important;
+      color: $uicc-color-gray-medium !important;
     }
   }
 
   &--white {
-    color: $uicc-white-base;
+    color: $uicc-color-white;
 
     &.uicc-color--force,
     &.uicc-color--force * {
-      color: $uicc-white-base !important;
+      color: $uicc-color-white !important;
     }
   }
 }

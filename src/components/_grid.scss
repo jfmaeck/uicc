@@ -1,10 +1,12 @@
+$uicc-grid-gutter-width: 0.7rem !default;
+$uicc-grid-gutter-height: 0.5rem !default;
 $uicc-grid-gutter-width-halve: $uicc-grid-gutter-width / 2;
 $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
 
 
 .uicc-grid__example {
-  color: $uicc-brand-primary-inverted;
-  background-color: $uicc-brand-primary;
+  color: $uicc-color-brand-primary-inverted;
+  background-color: $uicc-color-brand-primary;
 }
 
 .uicc-grid {

@@ -35,12 +35,12 @@ html:not(.csspointerevents) .uicc-modal {
     flex-direction: column;
     width: 42rem;
     max-width: 100%;
-    background-color: $uicc-white-base;
+    background-color: $uicc-color-white;
 
     @media #{$uicc-xlarge-up} {
       $marginXlargeUp: 16px;
       margin: $marginXlargeUp $marginXlargeUp $marginXlargeUp $marginXlargeUp;
-      box-shadow: $uicc-gray 0 0 3px;
+      box-shadow: $uicc-color-gray 0 0 3px;
     }
   }
 
@@ -49,7 +49,7 @@ html:not(.csspointerevents) .uicc-modal {
     display: flex;
     justify-content: center;
     padding: 4px 12px 6px 15px;
-    box-shadow: 0 3px 3px -2px $uicc-gray;
+    box-shadow: 0 3px 3px -2px $uicc-color-gray;
     margin: 0 -2px 0px -2px;
     z-index: 1;
 
@@ -65,7 +65,7 @@ html:not(.csspointerevents) .uicc-modal {
       align-items: center;
       flex: 0 0 auto;
       cursor: pointer;
-      color: $uicc-gray;
+      color: $uicc-color-gray;
       margin: -6px -12px -8px -15px;
       padding: 6px 12px 8px 15px;
     }
@@ -76,7 +76,7 @@ html:not(.csspointerevents) .uicc-modal {
   }
 
   &__footerButtons {
-    border-top: 1px solid $uicc-gray-light;
+    border-top: 1px solid $uicc-color-gray-medium;
     margin-top: 1rem;
     padding-top: 1.6rem;
     padding-bottom: 0.9rem;

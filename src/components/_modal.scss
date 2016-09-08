@@ -1,0 +1,96 @@
+html:not(.csspointerevents) .uicc-modal {
+  /*
+  needed for browsers that do not support pointer-events: none (IE <= 10)
+  until pointer-events polyfill has been initialized
+  */
+  z-index: -999;
+
+  &.is-open {
+    z-index: $modal-z-index;
+  }
+}
+
+.uicc-modal {
+  transition: opacity 300ms;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  background-color: $uicc-color-darken-heavy;
+  font-size: $uicc-font-size-text;
+
+  &__dialog {
+    transition: transform 300ms;
+    transform: scale(0);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 42rem;
+    max-width: 100%;
+    background-color: $uicc-white-base;
+
+    @media #{$uicc-xlarge-up} {
+      $marginXlargeUp: 16px;
+      margin: $marginXlargeUp $marginXlargeUp $marginXlargeUp $marginXlargeUp;
+      box-shadow: $uicc-gray 0 0 3px;
+    }
+  }
+
+  &__header {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 4px 12px 6px 15px;
+    box-shadow: 0 3px 3px -2px $uicc-gray;
+    margin: 0 -2px 0px -2px;
+    z-index: 1;
+
+    &Content {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+
+    &Close {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      flex: 0 0 auto;
+      cursor: pointer;
+      color: $uicc-gray;
+      margin: -6px -12px -8px -15px;
+      padding: 6px 12px 8px 15px;
+    }
+  }
+
+  &__content {
+    flex: 1 1 auto;
+  }
+
+  &__footerButtons {
+    border-top: 1px solid $uicc-gray-light;
+    margin-top: 1rem;
+    padding-top: 1.6rem;
+    padding-bottom: 0.9rem;
+    text-align: center;
+  }
+
+  &.is-open {
+    z-index: $modal-z-index;
+    opacity: 1;
+    pointer-events: all;
+
+    .uicc-modal__dialog {
+      transform: scale(1);
+    }
+  }
+}
+

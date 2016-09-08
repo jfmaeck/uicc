@@ -1,0 +1,66 @@
+.uicc-loadingContainer {
+  position: relative;
+
+  &__loader {
+    transition: background-color 500ms;
+    transition-delay: 300ms;
+    transform: translate3d(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-color: $uicc-color-transparent;
+  }
+
+  &__dialog {
+    transition: transform 300ms;
+    transform: scale(0);
+    padding: $uicc-default-margin $uicc-default-margin $uicc-default-margin * 0.8 $uicc-default-margin;
+    border-radius: 5px;
+    pointer-events: none;
+    background-color: $uicc-color-darken-heavy;
+  }
+
+  &__loadingIndicator {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+
+  &__loadingMessage {
+    float: left;
+    color: $uicc-white-base;
+    line-height: 1.5rem;
+    margin-right: $uicc-default-margin;
+  }
+
+  &.is-loading {
+
+    .uicc-loadingContainer__loader {
+      z-index: 999999;
+      opacity: 1;
+    }
+
+    .uicc-loadingContainer__dialog {
+      transform: scale(1);
+    }
+
+    .uicc-loadingContainer__loadingIndicator {
+      pointer-events: all;
+    }
+  }
+
+  &.is-blocking {
+    .uicc-loadingContainer__loader {
+      pointer-events: all;
+      background-color: $uicc-color-darken-medium;
+    }
+  }
+}

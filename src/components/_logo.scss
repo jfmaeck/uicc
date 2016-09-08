@@ -1,0 +1,10 @@
+.uicc-logo {
+  color: $uicc-brand-primary;
+  fill: $uicc-brand-tertiary;
+
+  &--light {
+    color: $uicc-white-base;
+    fill: $uicc-white-base;
+  }
+
+}

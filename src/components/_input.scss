@@ -1,0 +1,120 @@
+.uicc-input {
+  flex: 1 1 auto;
+  width: 100%;
+
+  outline: 0;
+  padding: 7px 3px;
+
+  background-color: $uicc-white-base;
+  color: $uicc-gray-dark;
+
+  border-bottom: 1px solid $uicc-input-border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+
+  // scss-lint:disable VendorPrefix, PseudoElement
+  &::-webkit-input-placeholder,
+  &:-moz-placeholder,
+  &-moz-placeholder,
+  &-ms-input-placeholder {
+    font-size: 0.8em;
+  }
+  // scss-lint:enable VendorPrefix, PseudoElement
+
+  &.is-disabled {
+    border-color: $uicc-gray-light;
+    color: $uicc-gray-medium;
+    cursor: not-allowed;
+  }
+
+  &--stateful {
+
+    &.is-invalid,
+    &.ng-touched.ng-invalid {
+      padding-right: 1.4rem;
+      background-image: url('#{$uicc-image-path}/invalid.svg');
+      background-size: 0.65rem;
+      background-repeat: no-repeat;
+      background-position: -webkit-calc(100% - 6px) center; /* Sf 6 */
+      background-position: right 7px center; /* Cr 25+, FF 13+, IE 9+, Op 10.5+ */
+    }
+
+    &.is-valid,
+    &.ng-touched.ng-valid {
+      padding-right: 1.4rem;
+      background-image: url('#{$uicc-image-path}/check.svg');
+      background-size: 0.65rem;
+      background-repeat: no-repeat;
+      background-position: -webkit-calc(100% - 6px) center; /* Sf 6 */
+      background-position: right 7px center; /* Cr 25+, FF 13+, IE 9+, Op 10.5+ */
+    }
+
+  }
+
+
+  &--unobtrusive {
+    border-bottom: none;
+  }
+
+  // scss-lint:disable NestingDepth
+  &--floatingLabel {
+
+    margin-top: 5px;
+
+    + label {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      padding: 0;
+      margin: 0;
+      transition: width 0.4s ease;
+      height: 0px;
+
+      > span {
+        font-weight: 300;
+        margin: 0;
+        position: absolute;
+        color: $uicc-gray;
+        top: 12px;
+        left: 2px;
+        transition: top 0.2s ease, font-size 0.2s ease, left 0.2s ease;
+      }
+    }
+
+    &.ng-dirty + label > span,
+    &.is-dirty + label > span,
+    &:focus + label > span {
+      top: -11px;
+      font-size: 12px;
+    }
+  }
+
+  &--big {
+    padding: 12px 5px;
+    margin-top: 15px;
+
+    &,
+    + label {
+      font-size: 1.1em;
+    }
+
+    &.uicc-input--floatingLabel {
+      + label > span {
+        top: 28px;
+        left: 5px;
+      }
+
+      &.ng-dirty + label > span,
+      &.is-dirty + label > span,
+      &:focus + label > span {
+        top: -4px;
+        left: 1px;
+      }
+    }
+  }
+  // scss-lint:enable NestingDepth
+
+}

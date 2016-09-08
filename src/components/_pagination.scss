@@ -1,0 +1,25 @@
+.uicc-pagination {
+  display: flex;
+
+  &__item {
+    @include uicc-hover($uicc-brand-primary-inverted, $uicc-brand-primary);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    font-size: $uicc-font-size-base * 0.8;
+    color: $uicc-brand-primary;
+    
+    //Because center is apparently not centered enough..
+    padding-top: 3px;
+
+    &.is-active {
+      color: $uicc-brand-primary-inverted;
+      background-color: $uicc-brand-primary;
+    }
+  }
+
+}

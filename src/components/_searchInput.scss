@@ -1,0 +1,27 @@
+.uicc-searchInput {
+  position: relative;
+
+  &__input {
+    padding-left: 1.8rem;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    background-image: url('#{$uicc-image-path}/magnifier.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &.is-filled &__icon {
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url('#{$uicc-image-path}/close_circle.svg');
+  }
+}

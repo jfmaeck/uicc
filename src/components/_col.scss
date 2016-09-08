@@ -1,0 +1,53 @@
+.uicc-col {
+  display: inline-flex;
+
+  margin-right: $uicc-col-margin;
+
+  &--smallMargin {
+    margin-right: $uicc-col-margin-small;
+  }
+
+  &--bigMargin {
+    margin-right: $uicc-col-margin-big;
+  }
+
+  &--withSeparator {
+    border-right: 1px solid $uicc-gray-light;
+    padding-right: $uicc-col-margin;
+
+    &.uicc-col--smallMargin {
+      padding-right: $uicc-col-margin-small;
+    }
+
+    &.uicc-col--bigMargin {
+      padding-right: $uicc-col-margin-big;
+    }
+  }
+
+  &--inverse {
+
+    margin-right: 0;
+    margin-left: $uicc-col-margin;
+
+    &.uicc-col--withSeparator {
+      padding-right: 0;
+      border-right: none;
+      border-left: 1px solid $uicc-gray-light;
+      padding-left: $uicc-col-margin;
+
+      // scss-lint:disable NestingDepth
+      &.uicc-col--smallMargin {
+        padding-left: $uicc-col-margin-small;
+      }
+
+      &.uicc-col--bigMargin {
+        padding-left: $uicc-col-margin-big;
+      }
+      // scss-lint:enable NestingDepth
+
+    }
+  }
+
+
+
+}

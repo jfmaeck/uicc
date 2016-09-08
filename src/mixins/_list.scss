@@ -1,0 +1,64 @@
+// scss-lint:disable SelectorFormat
+
+@mixin uicc-list--bulleted {
+  @include uicc-list-with-icon($uicc-list-default-bullet-icon);
+}
+
+@mixin uicc-list--arrowBullets {
+  @include uicc-list-with-icon(null, '#{$uicc-image-path}/arrow-right.svg');
+}
+
+@mixin uicc-list--numbered {
+
+  list-style-type: decimal;
+  list-style-position: inside;
+
+  > li,
+  &__item {
+    line-height: 1em;
+    margin-bottom: 0.8em;
+  }
+
+}
+
+@mixin uicc-list-with-icon($iconChar: null, $iconFile: null) {
+  > li,
+  .uicc-list__item {
+    position: relative;
+    @if ($iconChar) {
+      padding-left: 1.2em;
+    } @else if ($iconFile) {
+      padding-left: 1.0em;
+    }
+    line-height: 1em;
+    margin-bottom: 1em;
+
+    &::before {
+      @if ($iconChar) {
+        content: $iconChar;
+      } @else if ($iconFile) {
+        content: '';
+        background-image: url($iconFile);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 1.2em;
+        height: 1em;
+      }
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      line-height: 0.7em;
+      color: $uicc-brand-primary;
+    }
+  }
+
+  &.uicc-list--centered {
+    > li,
+    .uicc-list__item {
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

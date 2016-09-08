@@ -1,0 +1,48 @@
+// scss-lint:disable ImportantRule
+.uicc-color {
+
+  &--primary {
+    color: $uicc-brand-primary;
+
+    &.uicc-color--force,
+    &.uicc-color--force * {
+      color: $uicc-brand-primary !important;
+    }
+  }
+
+  &--secondary {
+    color: $uicc-brand-secondary;
+
+    &.uicc-color--force,
+    &.uicc-color--force * {
+      color: $uicc-brand-secondary !important;
+    }
+  }
+
+  &--gray {
+    color: $uicc-gray;
+
+    &.uicc-color--force,
+    &.uicc-color--force * {
+      color: $uicc-gray !important;
+    }
+  }
+
+  &--mediumGray {
+    color: $uicc-gray-medium;
+
+    &.uicc-color--force,
+    &.uicc-color--force * {
+      color: $uicc-gray-medium !important;
+    }
+  }
+
+  &--white {
+    color: $uicc-white-base;
+
+    &.uicc-color--force,
+    &.uicc-color--force * {
+      color: $uicc-white-base !important;
+    }
+  }
+}

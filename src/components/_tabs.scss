@@ -1,0 +1,68 @@
+.uicc-tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__tabHeaders {
+    display: flex;
+    flex: 0 0 auto;
+  }
+
+  &__tabHeader {
+    @include uicc-hover($uicc-brand-primary);
+
+    position: relative;
+    flex: 1 1 0;
+    transition: color 200ms, border 200ms;
+    padding: 11px 8px 8px 8px;
+    border-bottom: 2px solid $uicc-gray-lighter;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 0.87 * $uicc-font-size-base;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -1px;
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background-color: $uicc-gray-lighter;
+    }
+
+    &.is-active,
+    &:focus {
+      font-weight: bold;
+      font-size: $uicc-font-size-base;
+      color: $uicc-brand-primary;
+      border-color: $uicc-brand-primary;
+    }
+
+    &:first-child,
+    &--first {
+      margin-left: 0;
+    }
+
+    &:last-child,
+    &--last {
+      margin-right: 0;
+
+      // scss-lint:disable NestingDepth
+      &::after {
+        display: none;
+      }
+      // scss-lint:enable NestingDepth
+
+    }
+  }
+
+  &__tabContent {
+    flex: 1 1 auto;
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+}

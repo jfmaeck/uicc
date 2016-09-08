@@ -1,0 +1,25 @@
+.uicc-postfix {
+
+  display: flex;
+
+  &--center {
+    align-items: center;
+  }
+
+  &--tiny-stacked,
+  &--small-stacked {
+    @media #{$uicc-tiny-only} {
+      flex-direction: column;
+    }
+  }
+
+  &--small-stacked {
+    @media #{$uicc-small-only} {
+      flex-direction: column;
+    }
+  }
+
+  &__fluid {
+    flex: 1 1 auto;
+  }
+}

@@ -1,0 +1,15 @@
+.uicc-list {
+
+  &--bulleted {
+    @include uicc-list--bulleted;
+  }
+
+  &--numbered {
+    @include uicc-list--numbered;
+  }
+
+  &--arrowBullets {
+    @include uicc-list--arrowBullets;
+  }
+
+}

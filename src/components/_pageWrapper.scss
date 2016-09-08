@@ -1,0 +1,11 @@
+.uicc-pageWrapper {
+  max-width: $uicc-page-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  font-size: $uicc-font-size-text;
+
+  &--fullWidth {
+    max-width: 100%;
+  }
+}

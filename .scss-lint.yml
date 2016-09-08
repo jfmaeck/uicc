@@ -1,0 +1,34 @@
+exclude: "src/styledown.scss"
+
+linters:
+
+  NameFormat:
+    enabled: true
+    allow_leading_underscore: false
+    convention: '[uicc|_].\w+' # or 'hyphenated_lowercase', or 'camel_case', or 'snake_case', or a regex pattern
+
+  SelectorFormat:
+    enabled: true
+    convention: '[uicc|is-].\w+' # or 'hyphenated_lowercase', or 'strict_BEM', or 'hyphenated_BEM', or 'snake_case', or 'camel_case', or a regex pattern
+
+
+  Comment:
+    enabled: false
+
+  LeadingZero:
+    enabled: false
+
+  PropertySortOrder:
+    enabled: false
+
+  Shorthand:
+    enabled: false
+
+  UnnecessaryMantissa:
+    enabled: false
+
+  ZeroUnit:
+    enabled: false
+
+  BorderZero:
+    enabled: false

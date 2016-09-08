@@ -1,0 +1,3 @@
+@mixin uicc-border($border-color: $uicc-gray-light) {
+  border: 1px solid $border-color;
+}

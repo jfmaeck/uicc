@@ -1,0 +1,14 @@
+.uicc-fab {
+
+  position: absolute;
+  bottom: -1em;
+  right: 1em;
+
+  &Container {
+    position: relative;
+
+    &--withMargin {
+      margin-bottom: 1.2em;
+    }
+  }
+}

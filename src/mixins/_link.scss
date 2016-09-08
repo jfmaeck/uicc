@@ -1,0 +1,37 @@
+@mixin uicc-link($is-unobtrusive: false) {
+  @include uicc-hover($uicc-link-hover-color);
+
+  transition: color .2s ease-in-out;
+  color: $uicc-link-color;
+
+  text-decoration: underline;
+
+  &:visited {
+    color: $uicc-link-color;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    color: $uicc-link-hover-color;
+    text-decoration: underline;
+  }
+
+
+  @if ($is-unobtrusive == 'modifier') {
+    &--unobtrusive {
+      @include uicc-hover($uicc-brand-primary);
+
+      &,
+      &:visited {
+        color: $uicc-text-color;
+      }
+    }
+  } @else if($is-unobtrusive == true) {
+    @include uicc-hover($uicc-brand-primary);
+
+    &,
+    &:visited {
+      color: $uicc-text-color;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.uicc-fontSize {
+  &--large,
+  &--big {
+    font-size: 1.19em;
+  }
+
+  &--extraLarge,
+  &--extraBig {
+    font-size: 1.5em;
+  }
+
+  &--small {
+    font-size: 0.9em;
+  }
+
+  &--extraSmall {
+    font-size: 0.8em;
+  }
+}

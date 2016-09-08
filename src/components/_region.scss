@@ -1,0 +1,41 @@
+.uicc-region {
+  padding: $uicc-region-padding;
+
+  @media #{$uicc-large-up} {
+    padding: $uicc-region-padding-screen-large;
+  }
+
+  &--small {
+    padding: $uicc-region-small-padding;
+
+    @media #{$uicc-large-up} {
+      padding: $uicc-region-small-padding-screen-large;
+    }
+  }
+
+  &--big {
+    padding: $uicc-region-big-padding;
+
+    @media #{$uicc-large-up} {
+      padding: $uicc-region-big-padding-screen-large;
+    }
+  }
+
+  &--primary {
+    background: $uicc-brand-primary;
+    color:  $uicc-brand-primary-inverted;
+  }
+
+  &--secondary {
+    background: $uicc-brand-secondary;
+    color:  $uicc-brand-secondary-inverted;
+  }
+
+  &--default {
+    background: $uicc-body-bg;
+  }
+
+  &--rounded {
+    @include uicc-roundedEdges();
+  }
+}

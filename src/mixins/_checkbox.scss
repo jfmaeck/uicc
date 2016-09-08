@@ -1,0 +1,65 @@
+@mixin uicc-checkbox($_borderRadius: 0) {
+
+  &--inline {
+    margin-bottom: $uicc-default-margin-small;
+    margin-right: $uicc-default-margin-small;
+  }
+
+  &__label {
+    @include uicc-hover($uicc-brand-primary);
+
+    display: inline-block;
+    position: relative;
+
+    padding-left: 2em;
+
+    vertical-align: middle;
+    cursor: pointer;
+    margin-bottom: .5em;
+
+    &::before {
+      content: '';
+      position: absolute;
+      margin-top: -0.175em;
+      left: 0;
+      width: 1.5em;
+      height: 1.5em;
+      border: 2px solid $uicc-gray-light;
+      padding: .2em;
+      color: $uicc-white-base;
+      line-height: .4em;
+      text-indent: -.1em;
+    }
+
+  }
+
+  &__control {
+    display: none;
+  }
+
+  &.is-checked &__label::before,
+  &__control:checked + &__label::before {
+    background-image: url('#{$uicc-image-path}/check.svg');
+    background-size: 0.75em;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--big &__label {
+
+    padding-left: 2.5em;
+
+    &::before {
+      margin-top: 0em;
+      border-width: 3px;
+      line-height: 0.4em;
+      text-indent: -0.2em;
+      font-size: 1.4em;
+    }
+  }
+
+  &--small &__label {
+    font-size: 0.8em;
+  }
+
+}

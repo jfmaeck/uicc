@@ -1,0 +1,131 @@
+.uicc-button {
+  @include uicc-roundedEdges();
+
+  display: inline-block;
+  text-align: center;
+  padding: $uicc-button-padding;
+  border: none;
+
+  line-height: 1em;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media #{$uicc-small-up} {
+    padding: $uicc-button-padding-screen-large;
+  }
+
+  &[disabled],
+  &.is-disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  &--big {
+    padding: $uicc-button-padding-big;
+    font-size: 1.19em;
+
+    @media #{$uicc-medium-up} {
+      padding: $uicc-button-padding-big-screen-large;
+    }
+  }
+
+  &--wide {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+
+    @media #{$uicc-small-up} {
+      padding-left: 1.6rem;
+      padding-right: 1.6rem;
+    }
+  }
+
+  &--block {
+    width: 100%;
+  }
+
+  &--icon {
+    border-radius: 50%;
+    box-shadow: 0 1px 0 0 $uicc-gray-dark;
+  }
+
+  &--primary {
+    background-color: $uicc-brand-primary;
+    color: $uicc-brand-primary-inverted;
+
+    &:visited {
+      color: $uicc-brand-primary-inverted;
+    }
+
+    &[disabled],
+    &.is-disabled {
+      background-color: $uicc-button-primary-disabled-background-color;
+      opacity: 1;
+    }
+
+    &:not([disabled]) {
+      @include uicc-hover($uicc-brand-primary-inverted, $uicc-button-primary-active-background-color);
+    }
+
+    &:not([disabled]):active,
+    &:not([disabled]):focus {
+      color: $uicc-brand-primary-inverted;
+    }
+
+    &.uicc-button--icon {
+      background: $uicc-brand-primary;
+    }
+  }
+
+  &--secondary {
+    background-color: $uicc-brand-secondary;
+    color: $uicc-brand-secondary-inverted;
+
+    &:visited {
+      color: $uicc-brand-secondary-inverted;
+    }
+
+    &:not([disabled]):hover {
+      @include uicc-hover($uicc-brand-secondary-inverted, $uicc-button-secondary-active-background-color);
+    }
+
+    &:not([disabled]):active,
+    &:not([disabled]):focus {
+      color: $uicc-brand-secondary-inverted;
+    }
+  }
+
+  &--danger {
+    background: $uicc-error-color-background;
+    color: $uicc-error-color;
+
+    &:visited {
+      color: $uicc-error-color;
+    }
+
+    &:not([disabled]):hover {
+      @include uicc-hover($uicc-error-color-background, $uicc-error-color);
+    }
+
+    &:not([disabled]):active,
+    &:not([disabled]):focus {
+      color: $uicc-error-color;
+    }
+  }
+
+  &__icon {
+
+    margin-bottom: -0.25em;
+
+    &--left {
+      margin-right: 0.4em;
+    }
+
+    &--right {
+      margin-left: 0.4em;
+    }
+  }
+
+}

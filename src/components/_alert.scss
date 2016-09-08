@@ -1,0 +1,29 @@
+.uicc-alert {
+  padding: $uicc-alert-padding;
+  box-shadow: 0 1px 3px 0 $uicc-box-shadow-color;
+
+  @media #{$uicc-medium-up} {
+    padding: $uicc-alert-padding-screen-large;
+  }
+
+  &--success {
+    color: $uicc-alert-success-color;
+    background-color: $uicc-alert-success-color-background;
+  }
+
+  &--info {
+    color: $uicc-alert-info-color;
+    background-color: $uicc-alert-info-color-background;
+  }
+
+  &--warning {
+    color: $uicc-alert-warning-color;
+    background-color: $uicc-alert-warning-color-background;
+  }
+
+  &--error {
+    color: $uicc-alert-error-color;
+    background-color: $uicc-alert-error-color-background;
+  }
+
+}

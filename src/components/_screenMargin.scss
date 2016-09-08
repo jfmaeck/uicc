@@ -1,0 +1,59 @@
+/**
+ * Screen Margin:
+ *
+ * Add left/right margin to block to avoid clashing with the screen border.
+ *
+ *     @example
+ *     <div class="uicc-screenMargin">
+ *        <div style="background: green">Test</div>
+ *     </div>
+ */
+
+/**
+ * Screen Margin (smallNone):
+ *
+ * No margin on small screens
+ *
+ *     @example
+ *     <div class="uicc-screenMargin uicc-screenMargin--smallNone">
+ *        <div style="background: green">Test</div>
+ *     </div>
+ */
+
+/**
+ * Screen Margins (Nested):
+ *
+ * Nested screen margins get ignored
+ *
+ *     @example
+ *     <div class="uicc-screenMargin">
+ *         <div style="background: green">
+ *             Outer
+ *             <div class="uicc-screenMargin">
+ *                <div style="background: orange">Inner</div>
+ *             </div>
+ *         </div>
+ *     </div>
+ */
+
+.uicc-screenMargin {
+  margin-left: $uicc-screenMargin;
+  margin-right: $uicc-screenMargin;
+
+  @media #{$uicc-large-up} {
+    margin-left: $uicc-screenMargin-screen-large;
+    margin-right: $uicc-screenMargin-screen-large;
+  }
+
+  .uicc-screenMargin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &--smallNone {
+    @media #{$uicc-small-down} {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

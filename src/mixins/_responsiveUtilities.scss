@@ -1,0 +1,177 @@
+// scss-lint:disable ImportantRule
+
+@mixin uicc-hidden-tiny() {
+  @media #{$uicc-tiny-only} {
+    display: none !important;
+  }
+}
+
+@mixin uicc-hidden-tiny-up() {
+  @media #{$uicc-tiny-up} {
+    display: none !important;
+  }
+}
+
+@mixin uicc-hidden-tiny-down() {
+  @include uicc-hidden-tiny();
+}
+
+
+@mixin uicc-hidden-small() {
+  @media #{$uicc-small-only} {
+    display: none !important;
+  }
+}
+
+@mixin uicc-hidden-small-up() {
+  @media #{$uicc-small-up} {
+    display: none !important;
+  }
+}
+
+@mixin uicc-hidden-small-down() {
+  @include uicc-hidden-small();
+  @include uicc-hidden-tiny-down();
+}
+
+
+@mixin uicc-hidden-medium() {
+  @media #{$uicc-medium-only} {
+    display: none !important;
+  }
+}
+
+@mixin uicc-hidden-medium-up() {
+  @media #{$uicc-medium-up} {
+    display: none !important;
+  }
+}
+
+@mixin uicc-hidden-medium-down() {
+  @include uicc-hidden-medium();
+  @include uicc-hidden-small-down();
+}
+
+
+@mixin uicc-hidden-large() {
+  @media #{$uicc-large-only} {
+    display: none !important;
+  }
+}
+
+@mixin uicc-hidden-large-up() {
+  @media #{$uicc-large-up} {
+    display: none !important;
+  }
+}
+
+@mixin uicc-hidden-large-down() {
+  @include uicc-hidden-large();
+  @include uicc-hidden-medium-down();
+}
+
+
+@mixin uicc-hidden-xlarge() {
+  @media #{$uicc-xlarge-only} {
+    display: none !important;
+  }
+}
+
+@mixin uicc-hidden-xlarge-up() {
+  @media #{$uicc-xlarge-up} {
+    display: none !important;
+  }
+}
+
+@mixin hidden-xlarge-down() {
+  @include uicc-hidden-xlarge();
+  @include uicc-hidden-large-down();
+}
+
+
+/**
+ * Responsive Sizes
+ */
+@mixin uicc-responsive-tiny($_propName) {
+  @media only screen and (min-width: #{$uicc-screen-small-phone-min}) and (max-width: #{$uicc-screen-small-phone-max}) {
+    #{$_propName}: 3px;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-medium-phone-min}) and (max-width: #{$uicc-screen-medium-phone-max}) {
+    #{$_propName}: 8px;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-large-phone-min}) {
+    #{$_propName}: 12px;
+  }
+}
+
+@mixin uicc-responsive-small($_propName) {
+  @media only screen and (min-width: #{$uicc-screen-small-phone-min}) and (max-width: #{$uicc-screen-small-phone-max}) {
+    #{$_propName}: 8px;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-medium-phone-min}) and (max-width: #{$uicc-screen-medium-phone-max}) {
+    #{$_propName}: 13px;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-large-phone-min}) {
+    #{$_propName}: 19px;
+  }
+}
+
+@mixin uicc-responsive-medium($_propName) {
+  @media only screen and (min-width: #{$uicc-screen-small-phone-min}) and (max-width: #{$uicc-screen-small-phone-max}) {
+    #{$_propName}: 16px;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-medium-phone-min}) and (max-width: #{$uicc-screen-medium-phone-max}) {
+    #{$_propName}: 22px;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-large-phone-min}) {
+    #{$_propName}: 26px;
+  }
+}
+
+@mixin uicc-responsive-large($_propName) {
+  @media only screen and (min-width: #{$uicc-screen-small-phone-min}) and (max-width: #{$uicc-screen-small-phone-max}) {
+    #{$_propName}: 32px;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-medium-phone-min}) and (max-width: #{$uicc-screen-medium-phone-max}) {
+    #{$_propName}: 48px;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-large-phone-min}) {
+    #{$_propName}: 56px;
+  }
+}
+
+@mixin uicc-responsive-prop($_propName, $_small, $_medium, $_large) {
+  @media only screen and (min-width: #{$uicc-screen-small-phone-min}) and (max-width: #{$uicc-screen-small-phone-max}) {
+    #{$_propName}: $_small;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-medium-phone-min}) and (max-width: #{$uicc-screen-medium-phone-max}) {
+    #{$_propName}: $_medium;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-large-phone-min}) {
+    #{$_propName}: $_large;
+  }
+}
+
+@mixin uicc-responsive-font-size($_small, $_medium, $_large) {
+  @media only screen and (min-width: #{$uicc-screen-small-phone-min}) and (max-width: #{$uicc-screen-small-phone-max}) {
+    font-size: $_small;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-medium-phone-min}) and (max-width: #{$uicc-screen-medium-phone-max}) {
+    font-size: $_medium;
+  }
+
+  @media only screen and (min-width: #{$uicc-screen-large-phone-min}) {
+    font-size: $_large;
+  }
+}

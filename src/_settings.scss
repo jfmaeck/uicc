@@ -1,0 +1,280 @@
+$uicc-asset-path: './assets' !default;
+$uicc-font-path: '#{$uicc-asset-path}/fonts' !default;
+$uicc-icon-path: '#{$uicc-asset-path}/icons' !default;
+$uicc-image-path: '#{$uicc-asset-path}/images' !default;
+
+//== Colors
+//
+//## Gray and brand colors inspired by Bootstrap.
+
+$uicc-white-base: #fff !default;
+$uicc-gray-base: #111 !default;
+$uicc-gray-dark: #444 !default;
+$uicc-gray-darker: #333 !default;
+$uicc-gray: #979797 !default;
+$uicc-gray-medium: #d0d2df !default;
+$uicc-gray-light: #d8d8d8 !default;
+$uicc-gray-lighter: #f2f2f2 !default;
+$uicc-gray-lighterer: #f9f9f9 !default;
+$uicc-color-darken-light: rgba(0, 0, 0, 0.15);
+$uicc-color-darken-medium: rgba(0, 0, 0, 0.65);
+$uicc-color-darken-heavy: rgba(0, 0, 0, 0.8);
+$uicc-color-transparent: rgba(0, 0, 0, 0);
+$uicc-gradient-color-1: #1a81b0;
+$uicc-gradient-color-2: #297290;
+$uicc-gradient-color-3: #010e16;
+
+$uicc-brand-primary: #198794 !default;
+$uicc-brand-primary-gradient: rgb(5, 107, 164);
+$uicc-brand-primary-inverted: #fff;
+
+$uicc-brand-secondary: #111 !default;
+$uicc-brand-secondary-inverted: #fff !default;
+
+$uicc-brand-tertiary: #fed500 !default;
+$uicc-brand-tertiary-inverted: #000 !default;
+
+$uicc-success-color: $uicc-white-base !default;
+$uicc-success-color-background: #14ad00 !default;
+$uicc-info-color: $uicc-gray-base !default;
+$uicc-info-color-background: $uicc-gray-light !default;
+$uicc-warning-color: #8a6d3b !default;
+$uicc-warning-color-background: #fcf8e3 !default;
+$uicc-error-color: #f10815 !default;
+$uicc-error-color-background: $uicc-warning-color-background !default;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$uicc-body-bg: $uicc-white-base !default;
+//** Global text color on `<body>`.
+$uicc-text-color: $uicc-gray-darker !default;
+
+//** Global textual link color.
+$uicc-link-color: $uicc-brand-primary !default;
+//** Link hover color set via `darken()` function.
+$uicc-link-hover-color: $uicc-brand-secondary !default;
+
+$uicc-page-max-width: 64.0rem;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$uicc-font-family-base: 'Lato', sans-serif !default;
+
+$uicc-font-size-base: 16px !default;
+$uicc-font-size-text: 0.95rem;
+
+$uicc-font-size-h0: 3.5 * $uicc-font-size-text !default;
+$uicc-font-size-h0-screen-small: 3.3 * $uicc-font-size-text !default;
+$uicc-font-size-h0-screen-tiny: 3.0 * $uicc-font-size-text !default;
+$uicc-font-size-h1: 2.5 * $uicc-font-size-text !default;
+$uicc-font-size-h1-screen-small: 2.3 * $uicc-font-size-text !default;
+$uicc-font-size-h1-screen-tiny: 2.0 * $uicc-font-size-text !default;
+$uicc-font-size-h2: 1.5 * $uicc-font-size-text !default;
+$uicc-font-size-h2-screen-small: 1.3 * $uicc-font-size-text !default;
+$uicc-font-size-h2-screen-tiny: 1.2 * $uicc-font-size-text !default;
+$uicc-font-size-h3: 1.22 * $uicc-font-size-text !default;
+$uicc-font-size-h3-screen-small: 1.12 * $uicc-font-size-text !default;
+$uicc-font-size-h3-screen-tiny: 1.12 * $uicc-font-size-text !default;
+$uicc-font-size-h4: 1.15 * $uicc-font-size-text !default;
+$uicc-font-size-h4-screen-small: 1.05 * $uicc-font-size-text !default;
+$uicc-font-size-h4-screen-tiny: 1.0 * $uicc-font-size-text !default;
+$uicc-font-size-h5: 1.0 * $uicc-font-size-text !default;
+$uicc-font-size-h5-screen-small: 0.9 * $uicc-font-size-text !default;
+$uicc-font-size-h5-screen-tiny: 0.8 * $uicc-font-size-text !default;
+$uicc-font-size-h6: 0.9 * $uicc-font-size-text !default;
+$uicc-font-size-h6-screen-small: 0.8 * $uicc-font-size-text !default;
+$uicc-font-size-h6-screen-tiny: 0.7 * $uicc-font-size-text !default;
+
+//** Unit-less `line-height` for use in components like buttons.
+$uicc-line-height-base: 1.35 !default;
+$uicc-line-height-computed: floor(($uicc-font-size-base * $uicc-line-height-base)) !default;
+
+//** By default, this inherits from the `<body>`.
+$uicc-headings-font-family: $uicc-font-family-base;
+$uicc-headings-font-weight: normal !default;
+$uicc-headings-line-height: 1.3 !default;
+$uicc-headings-line-height-screen-tiny: 1.2 !default;
+$uicc-headings-letter-spacing: initial !default;
+
+/**
+ * Media Query Breakpoints:
+ *
+ */
+
+$uicc-screen-small-phone-min: 320px; //Includes iPhone 4 & 5, Galaxy S3, S4
+$uicc-screen-medium-phone-min: 360px; //Includes iPhone 6, Galaxy S6, OnePlus One, Huawei Ascend P6
+$uicc-screen-large-phone-min: 410px; //Includes phablets, iPhone 6 Plus, Nexus 5X, Nexus 6P
+$uicc-screen-xlarge-min: 600px;
+
+// So media queries don't overlap when required, provide a maximum
+$uicc-screen-small-phone-max: ($uicc-screen-medium-phone-min - 1px);
+$uicc-screen-medium-phone-max: ($uicc-screen-large-phone-min - 1px);
+$uicc-screen-large-max: ($uicc-screen-xlarge-min - 1px);
+
+// helper classes for most common media query types
+$uicc-tiny-only: 'only screen and (max-width: #{$uicc-screen-small-phone-min})';
+$uicc-tiny-up: 'only screen'; /* tiny-up basically means 'every screen size' */
+$uicc-small-only: 'only screen and (min-width: #{$uicc-screen-small-phone-min}) and (max-width: #{$uicc-screen-small-phone-max})';
+$uicc-small-up: 'only screen and (min-width: #{$uicc-screen-small-phone-min})';
+$uicc-small-down: 'only screen and (max-width: #{$uicc-screen-small-phone-max})';
+$uicc-medium-only: 'only screen and (min-width: #{$uicc-screen-medium-phone-min}) and (max-width: #{$uicc-screen-medium-phone-max})';
+$uicc-medium-up: 'only screen and (min-width: #{$uicc-screen-medium-phone-min})';
+$uicc-medium-down: 'only screen and (max-width: #{$uicc-screen-medium-phone-max})';
+$uicc-large-only: 'only screen and (min-width: #{$uicc-screen-large-phone-min}) and (max-width: #{$uicc-screen-large-max})';
+$uicc-large-up: 'only screen and (min-width: #{$uicc-screen-large-phone-min})';
+$uicc-xlarge-only: 'only screen and (min-width: #{$uicc-screen-xlarge-min})';
+$uicc-xlarge-up: 'only screen and (min-width: #{$uicc-screen-xlarge-min})';
+
+
+/**
+ * Media Query Breakpoint Helpers:
+ *
+ *  Commonly used media query conditions.
+ *
+ *     $uicc-tiny-only
+ *     $uicc-tiny-up
+ *     $uicc-small-only
+ *     $uicc-small-up
+ *     $uicc-medium-only
+ *     $uicc-medium-up
+ *     $uicc-large-only
+ *     $uicc-large-up
+ *
+ *     Example:
+ *     .productImage {
+ *         max-height: 200px;
+ *
+ *         @media #{$uicc-medium-up} {
+ *             max-height: 300px;
+ *         }
+ *     }
+ */
+
+$uicc-default-margin: 12px;
+$uicc-default-margin-screen-large: 16px;
+$uicc-default-margin-small: 8px;
+$uicc-default-margin-small-screen-large: 10px;
+$uicc-default-margin-big: 20px;
+$uicc-default-margin-big-screen-large: 28px;
+
+//== Grid
+//
+$uicc-grid-gutter-width: 0.7rem !default;
+$uicc-grid-gutter-height: 0.5rem !default;
+
+//== Row and Col
+//
+$uicc-row-margin: $uicc-default-margin;
+$uicc-row-margin-small: $uicc-default-margin-small;
+$uicc-row-margin-extra-small: 2.6px;
+$uicc-row-margin-big: $uicc-default-margin-big;
+$uicc-row-margin-extra-big: $uicc-default-margin-big * 1.4;
+$uicc-col-margin: 7px;
+$uicc-col-margin-small: 4px;
+$uicc-col-margin-big: 14px;
+
+//== Button
+//
+
+$uicc-button-padding: 0.45rem 0.45rem 0.40rem 0.45rem !default;
+$uicc-button-padding-big: 0.65rem 0.65rem 0.55rem 0.65rem !default;
+$uicc-button-padding-screen-large: 0.6rem 0.6rem 0.5rem 0.6rem !default;
+$uicc-button-padding-big-screen-large: 0.9rem 0.9rem 0.8rem 0.9rem !default;
+
+$uicc-button-primary-active-background-color: rgb(34, 156, 178);
+$uicc-button-primary-disabled-background-color: #b4d1e3;
+$uicc-button-secondary-active-background-color: #000;
+
+
+//== Input
+//
+$uicc-input-error-color: $uicc-error-color;
+$uicc-input-valid-color: $uicc-success-color;
+$uicc-input-border-color: #d2d2d2;
+
+//== Alert
+//
+$uicc-alert-padding: $uicc-default-margin !default;
+$uicc-alert-padding-screen-large: $uicc-default-margin-screen-large !default;
+$uicc-alert-success-color: $uicc-success-color !default;
+$uicc-alert-success-color-background: $uicc-success-color-background !default;
+$uicc-alert-info-color: $uicc-gray-base !default;
+$uicc-alert-info-color-background: $uicc-gray-lighter !default;
+$uicc-alert-warning-color: $uicc-warning-color !default;
+$uicc-alert-warning-color-background: $uicc-warning-color-background !default;
+$uicc-alert-error-color: $uicc-error-color !default;
+$uicc-alert-error-color-background: $uicc-error-color-background !default;
+
+//== Icon
+//
+$uicc-icon-font-size: 1.2em !default;
+$uicc-icon-font-size-tiny: 0.8em !default;
+$uicc-icon-font-size-small: 1.0em !default;
+$uicc-icon-font-size-big: 1.75em !default;
+$uicc-icon-font-size-extraBig: 2.75em !default;
+$uicc-icon-font-size-screen-tiny: $uicc-icon-font-size-small !default;
+$uicc-icon-font-size-small-screen-tiny: $uicc-icon-font-size-small !default;
+$uicc-icon-font-size-big-screen-tiny: $uicc-icon-font-size-big !default;
+$uicc-icon-font-size-extraBig-screen-tiny: $uicc-icon-font-size-extraBig !default;
+
+
+
+//== Region
+//
+$uicc-region-padding: $uicc-default-margin;
+$uicc-region-padding-screen-large: $uicc-default-margin-screen-large;
+
+$uicc-region-small-padding: $uicc-default-margin-small;
+$uicc-region-small-padding-screen-large: $uicc-default-margin-small-screen-large;
+
+$uicc-region-big-padding: $uicc-default-margin-big;
+$uicc-region-big-padding-screen-large: $uicc-default-margin-big-screen-large;
+
+//== Inline Overlay
+$uicc-inline-modal-background-color: rgba(229, 236, 244, 0.94);
+
+//== Bubble List
+$uicc-bubble-list-chevron-color: rgb(151, 151, 151);
+$uicc-bubble-list-vertical-line-color: $uicc-gray-light;
+
+//== Screen Margin
+//
+$uicc-screenMargin: $uicc-default-margin;
+$uicc-screenMargin-screen-large: $uicc-default-margin-screen-large;
+
+//== Rating
+//
+$uicc-rating-color-1: #ef3631 !default;
+$uicc-rating-color-2: #f5a623 !default;
+$uicc-rating-color-3: #54990c !default;
+
+//== Loader
+//
+$uicc-loader-color-1: #0585cc;
+$uicc-loader-color-2: $uicc-brand-tertiary;
+
+//== Misc
+//
+$uicc-row-separator-color: #d2d2d2;
+$uicc-paragraph-margin: 0 0 10px 0;
+$uicc-roundedEdge-border-radius: 3px !default;
+$uicc-readingBlock-maxWidth: 30rem !default;
+$uicc-list-default-bullet-icon: '■';
+$uicc-postfix-content-padding: 0.4375rem !default;
+
+$uicc-offCanvas-width: 284px;
+$uicc-offCanvas-width-screen-medium: 325px;
+$uicc-offCanvas-width-screen-large: 345px;
+$uicc-offCanvas-height: 260px;
+$uicc-offCanvas-height-screen-medium: 320px;
+$uicc-offCanvas-height-screen-large: 350px;
+$uicc-offCanvas-header-border-color: #303e47;
+$uicc-box-shadow-color: rgba(0, 25, 52, 0.4);
+
+$modal-z-index: 1000;
+$uicc-offCanvas-z-index: $modal-z-index - 1;

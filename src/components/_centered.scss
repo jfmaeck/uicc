@@ -1,0 +1,17 @@
+.uicc-centered {
+  display: flex;
+
+
+  &--vertically {
+    align-items: center;
+  }
+
+  &--horizontally {
+    flex-direction: column;
+    align-items: center;
+
+    &.uicc-centered--vertically {
+      justify-content: center;
+    }
+  }
+}

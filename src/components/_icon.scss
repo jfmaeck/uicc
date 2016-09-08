@@ -1,0 +1,89 @@
+.uicc-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1em;
+  height: 1em;
+  font-size: $uicc-icon-font-size-screen-tiny;
+  text-align: center;
+
+  &::before {
+    flex: 1 1 auto;
+    text-align: center;
+    text-transform: none;
+    font-style: normal;
+    line-height: 1em;
+  }
+
+  &--tiny {
+    font-size: $uicc-icon-font-size-tiny;
+  }
+
+  &--small {
+    font-size: $uicc-icon-font-size-small-screen-tiny;
+  }
+
+  &--big {
+    font-size: $uicc-icon-font-size-big-screen-tiny;
+  }
+
+  &--extraBig {
+    font-size: $uicc-icon-font-size-extraBig-screen-tiny;
+  }
+
+  &--primary {
+    color: $uicc-brand-primary;
+  }
+
+  &--light {
+    color: $uicc-gray;
+  }
+
+  &--hoverPrimary {
+    @include uicc-hover($uicc-brand-primary);
+  }
+
+  &--char::before {
+    content: attr(data-uicc-icon-char);
+  }
+
+  &--info::before {
+    content: 'i';
+  }
+
+  &--checkMark::before {
+    content: '✓';
+  }
+
+  &--emptyStar::before {
+    content: '☆';
+  }
+
+  &--filledStar::before {
+    content: '★';
+  }
+
+  @media #{$uicc-small-up} {
+
+    font-size: $uicc-icon-font-size;
+
+    &--tiny {
+      font-size: $uicc-icon-font-size-tiny;
+    }
+
+    &--small {
+      font-size: $uicc-icon-font-size-small;
+    }
+
+    &--big {
+      font-size: $uicc-icon-font-size-big;
+    }
+
+    &--extraBig {
+      font-size: $uicc-icon-font-size-extraBig;
+    }
+  }
+}
+
+

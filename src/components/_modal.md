@@ -14,7 +14,7 @@
                     <h2 class="uicc-headline uicc-headline--h6 uicc-headline--primary">Subheadline</h2>
                 </div>
            </div>
-           <div class="uicc-modal__content">
+           <div class="uicc-modal__content uicc-region">
                <div class="uicc-screenMargin">Modal Content</div>
            </div>
            <div class="uicc-modal__footer">

@@ -10,7 +10,7 @@ The modifier `uicc-postfix--gutters` adds some spacing between the postfix conte
     @example
     <div class="uicc-postfix uicc-postfix--gutters uicc-row">
         <div class="uicc-postfix__fluid">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-        <button class="uicc-postfix__fixed uicc-button uicc-button--primary" type="submit"><svg class="uicc-icon"><use xlink:href="#arrow-right"></use></svg></button>
+        <button class="uicc-postfix__fixed uicc-button uicc-button--primary" type="submit"><svg class="uicc-button__icon uicc-icon"><use xlink:href="#arrow-right"></use></svg></button>
     </div>
 
 ### Postfix (as Prefix)
@@ -19,7 +19,7 @@ By changing the order of the `uicc-postfix__fixed` and `uicc-postfix__fluid` ele
 
     @example
     <div class="uicc-postfix uicc-postfix--gutters uicc-row">
-        <button class="uicc-postfix__fixed uicc-button uicc-button--primary" type="submit"><svg class="uicc-icon"><use xlink:href="#arrow-right"></use></svg></button>
+        <button class="uicc-postfix__fixed uicc-button uicc-button--primary" type="submit"><svg class="uicc-button__icon uicc-icon"><use xlink:href="#arrow-right"></use></svg></button>
         <div class="uicc-postfix__fluid">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
     </div>
 
@@ -28,7 +28,7 @@ By changing the order of the `uicc-postfix__fixed` and `uicc-postfix__fluid` ele
     @example
     <div class="uicc-postfix uicc-postfix--gutters uicc-postfix--tiny-stacked">
         <div class="uicc-postfix__fluid">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-        <button class="uicc-postfix__fixed uicc-button uicc-button--primary" type="submit"><svg class="uicc-icon"><use xlink:href="#arrow-right"></use></svg></button>
+        <button class="uicc-postfix__fixed uicc-button uicc-button--primary" type="submit"><svg class="uicc-button__icon uicc-icon"><use xlink:href="#arrow-right"></use></svg></button>
     </div>
 
 ### Postfix (Stacked on small and tiny screens)
@@ -36,7 +36,7 @@ By changing the order of the `uicc-postfix__fixed` and `uicc-postfix__fluid` ele
     @example
     <div class="uicc-postfix uicc-postfix--gutters uicc-postfix--small-stacked">
         <div class="uicc-postfix__fluid">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-        <button class="uicc-postfix__fixed uicc-button uicc-button--primary" type="submit"><svg class="uicc-icon"><use xlink:href="#arrow-right"></use></svg></button>
+        <button class="uicc-postfix__fixed uicc-button uicc-button--primary" type="submit"><svg class="uicc-button__icon uicc-icon"><use xlink:href="#arrow-right"></use></svg></button>
     </div>
 
 ### Postfix (center)

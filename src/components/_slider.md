@@ -32,7 +32,6 @@ This slider works with a minimum of styling in order to be very versatile.
             </article>
         
         </div>
-        <div class="uicc-slider__counter"></div>
     </div>
 
     <!-- this is just a dummy navigation - please at least replace the inline onclick handlers when copying -->
@@ -80,7 +79,6 @@ This slider works with a minimum of styling in order to be very versatile.
             </article>
                     
         </div>
-        <div class="uicc-slider__counter"></div>
     </div>
 
     <!-- this is just a dummy navigation - please at least replace the inline onclick handlers when copying -->

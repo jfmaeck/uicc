@@ -1,7 +1,7 @@
 UICC CSS Guidelines
 ===================
 
-A pragmatic CSS methodology proposal based on [BEM](https://en.bem.info/method/definitions/), enriched with elements of [OOCSS]([https://github.com/stubbornella/oocss/wiki) and [SMACSS](https://smacss.com/).
+A pragmatic CSS methodology proposal based on [BEM](https://en.bem.info/method/definitions/), enriched with elements from [OOCSS]([https://github.com/stubbornella/oocss/wiki) and [SMACSS](https://smacss.com/).
 
 tl;dr
 -----

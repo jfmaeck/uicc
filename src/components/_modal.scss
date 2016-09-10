@@ -1,16 +1,18 @@
-html:not(.csspointerevents) .uicc-modal {
-  /*
-  needed for browsers that do not support pointer-events: none (IE <= 10)
-  until pointer-events polyfill has been initialized
-  */
-  z-index: -999;
-
-  &.is-open {
-    z-index: $modal-z-index;
-  }
-}
-
 .uicc-modal {
+
+  html:not(.csspointerevents) & {
+    /*
+    needed for browsers that do not support pointer-events: none (IE <= 10)
+    until pointer-events polyfill has been initialized
+    */
+    z-index: -999;
+
+    &.is-open {
+      z-index: $modal-z-index;
+    }
+  }
+
+
   transition: opacity 300ms;
   transform: translate3d(0, 0, 0);
   position: fixed;

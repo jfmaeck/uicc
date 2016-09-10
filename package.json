@@ -8,7 +8,8 @@
     "start": "npm run dev",
     "dev": "gulp",
     "build": "gulp build",
-    "publish": "gulp publish"
+    "publish": "gulp publish",
+    "lint": "gulp sass-lint"
   },
   "dependencies": {},
   "devDependencies": {

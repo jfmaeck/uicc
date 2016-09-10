@@ -37,6 +37,9 @@ Or you could add support Javascript, if you want to provide a standalone collect
 
 The demo components are built for modern browsers only. If you need to support older browsers, please take care to either not use the demo components at all or rewrite them where necessary. 
 
+## Demo
+
+http://jfmaeck.github.com/uicc
 
 ## Install
 
@@ -69,7 +72,8 @@ The transpiled code (css, html and images) is stored in the dist directory.
 npm run publish
 ```
 
-Builds your UI Patterns demo page and publishes it to GitHub pages. The page will be available at http://username.github.io/repository (you need to replace username and repository)  
+Builds your UI Patterns demo page and publishes it to GitHub pages. The page will be available at http://username.github.io/repository (you need to replace username and repository)
+Example: http://jfmaeck.github.com/uicc
 
 ## SCSS Integration
 

@@ -14,7 +14,7 @@ $uicc-offCanvas-header-border-color: #303e47;
     height: 100%;
     position: relative;
     transform: translateX(0);
-    transition: 300ms ease all;
+    transition: 300ms ease transform;
   }
 
   &.is-open-left > &__inner {

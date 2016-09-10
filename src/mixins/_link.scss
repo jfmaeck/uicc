@@ -1,13 +1,12 @@
 @mixin uicc-link($is-unobtrusive: false) {
-  @include uicc-hover($uicc-link-hover-color);
-
   transition: color .2s ease-in-out;
   display: inline-block;
   margin-right: 0.3em;
   color: $uicc-link-color;
   text-decoration: underline;
 
-  &:visited {
+  &:visited,
+  &:active {
     color: $uicc-link-color;
     text-decoration: underline;
   }
@@ -17,6 +16,7 @@
     text-decoration: underline;
   }
 
+  @include uicc-hover($uicc-link-hover-color); // scss-lint:disable DeclarationOrder
 
   @if ($is-unobtrusive == 'modifier') {
     &--unobtrusive {

@@ -32,3 +32,7 @@ linters:
 
   BorderZero:
     enabled: false
+
+  NestingDepth:
+    enabled: true
+    max_depth: 3

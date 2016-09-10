@@ -58,7 +58,7 @@ $uicc-icon-font-size-extraBig-screen-tiny: $uicc-icon-font-size-extraBig !defaul
     content: attr(data-uicc-icon-char);
   }
 
-  &--menuBurger:before {
+  &--menuBurger::before {
     content: '☰';
   }
 

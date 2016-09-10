@@ -14,6 +14,7 @@ $uicc-color-gray-darker: #333 !default;
 $uicc-color-gray: #979797 !default;
 $uicc-color-gray-medium: #d8d8d8 !default;
 $uicc-color-gray-light: #f2f2f2 !default;
+$uicc-color-darken-light: rgba(0, 0, 0, 0.15);
 $uicc-color-darken: rgba(0, 0, 0, 0.65);
 $uicc-color-darken-heavy: rgba(0, 0, 0, 0.8);
 $uicc-color-transparent: rgba(0, 0, 0, 0);
@@ -45,7 +46,7 @@ $uicc-text-color: $uicc-color-gray-darker !default;
 //** Global textual link color.
 $uicc-link-color: $uicc-color-brand-primary !default;
 //** Link hover color set via `darken` function.
-$uicc-link-hover-color: $uicc-color-brand-secondary !default;
+$uicc-link-hover-color: lighten($uicc-color-brand-primary, 20) !default;
 
 $uicc-page-max-width: 64.0rem;
 

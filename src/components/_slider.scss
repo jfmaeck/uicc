@@ -20,6 +20,7 @@
       padding: 20px 30px;
 
       &::before {
+        @include uicc-roundedEdges;
         content: '';
         transform: scale3d(1, 0.9, 1);
         transition: transform 300ms;
@@ -32,9 +33,8 @@
         right: 20px;
         left: 20px;
 
-        border-radius: 3px;
         background-color: $uicc-color-white;
-        box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 2px 2px $uicc-color-darken-light;
       }
     }
   }
@@ -46,7 +46,7 @@
   }
 
   @mixin uicc-slides($slideCount) {
-    &[data-slides-count="#{$slideCount}"] {
+    &[data-slides-count='#{$slideCount}'] {
       .uicc-slider__slides {
         width: (100 * $slideCount) * 1%;
       }
@@ -55,14 +55,14 @@
         flex-basis: (100 / $slideCount) * 1%;
       }
 
-      @for $i from 1 through $slideCount {
-        @include uicc-active-slide($i, $slideCount);
+      @for $_idx from 1 through $slideCount {
+        @include uicc-active-slide($_idx, $slideCount);
       }
     }
   }
 
   @mixin uicc-active-slide($slideNumber, $slideCount) {
-    &[data-active-slide="#{$slideNumber}"] {
+    &[data-active-slide='#{$slideNumber}'] {
       .uicc-slider__slides {
         transform: translate3d(($slideNumber - 1) * (-100% / $slideCount), 0, 0);
       }
@@ -71,9 +71,11 @@
         &:nth-child(#{$slideNumber - 1})::before {
           transform: translate3d(27px, 0, 0) scale3d(1, 0.9, 1);
         }
+
         &:nth-child(#{$slideNumber})::before {
           transform: scaleY(1);
         }
+
         &:nth-child(#{$slideNumber + 1})::before {
           transform: translate3d(-27px, 0, 0) scale3d(1, 0.9, 1);
         }

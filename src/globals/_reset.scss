@@ -1,12 +1,14 @@
-// scss-lint:disable SelectorFormat, SingleLinePerSelector, ColorVariable
-*, *::before, *::after {
+// scss-lint:disable SelectorFormat
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 // Body reset
 
 html {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: $uicc-color-transparent;
 }
 
 html,
@@ -27,7 +29,12 @@ textarea,
 table,
 th,
 td,
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 b,
 strong {
   font-family: inherit;
@@ -40,13 +47,26 @@ th {
   text-align: left;
 }
 
-i, cite, em, var, address, dfn {
+i,
+cite,
+em,
+var,
+address,
+dfn {
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6,
-ul, ol,
-dl, dt, dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dt,
+dd,
 p,
 fieldset,
 figure,

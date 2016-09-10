@@ -25,7 +25,7 @@ When building websites and apps for public audiences, one should take extra care
 
 ### No Javascript
 
-This Styleguide compiles to CSS only, **no Javascript**. This is a deliberate decision to make the Styleguide as framework agnostic as possible.
+This UI Pattern Toolkit compiles to CSS only, **no Javascript**. This is a deliberate decision to make the UI Patterns as framework agnostic as possible.
 
 Having the visual preview as well as the example markup at hand, it should be quite easy to implement the dynamic parts in the framework of your choosing. Let it be **Angular, React, Ember, Backbone, jQuery or vanilla JS**. Mostly it will be a matter of adding or removing a css class.
 
@@ -53,7 +53,7 @@ npm install
 npm run dev
 ```
 
-Navigate to `http://localhost:8000/`. The Styleguide will automatically reload if you change any of the source files.
+Navigate to `http://localhost:8000/`. The UI Patterns Demo page will automatically reload if you change any of the source files.
 
 ## Build
 
@@ -61,7 +61,15 @@ Navigate to `http://localhost:8000/`. The Styleguide will automatically reload i
 npm run build
 ```
 
-The transpiled styleguide code (css, html and images) is stored in the dist directory. 
+The transpiled code (css, html and images) is stored in the dist directory. 
+
+## Publish
+
+```
+npm run publish
+```
+
+Builds your UI Patterns demo page and publishes it to GitHub pages. The page will be available at http://username.github.io/repository (you need to replace username and repository)  
 
 ## SCSS Integration
 

@@ -1,0 +1,44 @@
+.uicc-collapsible {
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  .uicc-collapsible__statefulVisibility--open {
+      display: none;
+  }
+
+  .uicc-collapsible__statefulVisibility--collapsed {
+    display: initial;
+  }
+
+  &__content {
+    display: none;
+  }
+
+  &[open],
+  &.is-open {
+
+    .uicc-collapsible__statefulVisibility--open {
+      display: initial;
+    }
+
+    .uicc-collapsible__statefulVisibility--collapsed {
+      display: none;
+    }
+
+    .uicc-collapsible__content {
+      display: block;
+
+      &--fade {
+        animation: fadeIn 0.5s;
+      }
+    }
+  }
+
+
+}

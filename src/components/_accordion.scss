@@ -1,0 +1,29 @@
+.uicc-accordion {
+
+  &__item {
+    border-bottom: 1px solid $uicc-color-gray-medium;
+
+    &Header {
+      @include uicc-hover($uicc-color-brand-primary);
+      padding-top: 1rem;
+      padding-bottom: 0.8rem;
+      cursor: pointer;
+
+      .uicc-accordion__item.is-open > & {
+        color: $uicc-color-brand-primary;
+      }
+    }
+
+    &Headline {
+      font-size: 18px;
+    }
+
+    &Content {
+      padding-top: 0.2rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+
+}
+

@@ -1,6 +1,6 @@
-$uicc-col-margin: 7px;
-$uicc-col-margin-small: 4px;
-$uicc-col-margin-big: 14px;
+$uicc-col-margin: 14px;
+$uicc-col-margin-small: 8px;
+$uicc-col-margin-big: 28px;
 
 .uicc-col {
   display: inline-flex;
@@ -17,14 +17,17 @@ $uicc-col-margin-big: 14px;
 
   &--withSeparator {
     border-right: 1px solid $uicc-color-gray-medium;
-    padding-right: $uicc-col-margin;
+    padding-right: $uicc-col-margin / 1.65;
+    margin-right: $uicc-col-margin / 2.5;
 
     &.uicc-col--smallMargin {
-      padding-right: $uicc-col-margin-small;
+      padding-right: $uicc-col-margin-small / 1.4;
+      margin-right: $uicc-col-margin-small / 2.8;
     }
 
     &.uicc-col--bigMargin {
-      padding-right: $uicc-col-margin-big;
+      padding-right: $uicc-col-margin-big / 1.75;
+      margin-right: $uicc-col-margin-big / 2.5;
     }
   }
 
@@ -36,18 +39,20 @@ $uicc-col-margin-big: 14px;
     &.uicc-col--withSeparator {
       padding-right: 0;
       border-right: none;
-      border-left: 1px solid $uicc-color-gray-medium;
-      padding-left: $uicc-col-margin;
 
-      // scss-lint:disable NestingDepth
+      border-left: 1px solid $uicc-color-gray-medium;
+      padding-left: $uicc-col-margin / 1.65;
+      margin-left: $uicc-col-margin / 2.5;
+
       &.uicc-col--smallMargin {
-        padding-left: $uicc-col-margin-small;
+        padding-left: $uicc-col-margin-small / 1.4;
+        margin-left: $uicc-col-margin-small / 2.8;
       }
 
       &.uicc-col--bigMargin {
-        padding-left: $uicc-col-margin-big;
+        padding-left: $uicc-col-margin-big / 1.75;
+        margin-left: $uicc-col-margin-big / 2.5;
       }
-      // scss-lint:enable NestingDepth
 
     }
   }

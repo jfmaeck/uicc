@@ -3,6 +3,7 @@
   overflow: hidden;
 
   &__slides {
+    will-change: transform;
     display: flex;
     transition: transform 500ms;
     //line-height: 0;
@@ -16,6 +17,7 @@
     display: block;
 
     &--card {
+      will-change: transform, transition;
       position: relative;
       padding: 20px 30px;
 

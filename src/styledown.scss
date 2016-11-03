@@ -73,9 +73,9 @@ code.sg {
   margin: 20px 0;
 }
 
-.sg-block:last-of-type {
+.sg-section {
   padding-bottom: 20px;
-  border-bottom: solid 3px $uicc-color-gray-medium;
+  border-top: solid 3px $uicc-color-gray-medium;
 }
 
 h2 + .sg-block {

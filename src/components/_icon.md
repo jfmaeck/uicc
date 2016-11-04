@@ -5,19 +5,19 @@
 By default, icons inherit their color from the parent element 
 
     @example
-    <i class="uicc-icon uicc-icon--checkMark"></i>
+    <i class="uicc-icon uicc-icon--emptyStar"></i>
 
 ### Icon (primary brand color)
   
     @example
-    <i class="uicc-icon uicc-icon--checkMark uicc-icon--primary"></i>
-    <svg class="uicc-icon uicc-icon--primary"><use xlink:href="#menu"></use></svg>
+    <i class="uicc-icon uicc-icon--emptyStar uicc-icon--primary"></i>
+    <svg class="uicc-icon uicc-icon--primary"><use xlink:href="#checkmark"></use></svg>
 
 ### Icon (light color)
   
     @example
-    <i class="uicc-icon uicc-icon--checkMark uicc-icon--light"></i>
-    <svg class="uicc-icon uicc-icon--light"><use xlink:href="#menu"></use></svg>
+    <i class="uicc-icon uicc-icon--emptyStar uicc-icon--light"></i>
+    <svg class="uicc-icon uicc-icon--light"><use xlink:href="#checkmark"></use></svg>
 
 ### Icon (generic font icons)
 

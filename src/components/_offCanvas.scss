@@ -40,7 +40,6 @@ $uicc-offCanvas-header-border-color: #303e47;
 
 
     &--left {
-      will-change: left;
       left: -$uicc-offCanvas-width;
       top: 0;
       width: $uicc-offCanvas-width;
@@ -48,7 +47,6 @@ $uicc-offCanvas-header-border-color: #303e47;
     }
 
     &--right {
-      will-change: right;
       right: -$uicc-offCanvas-width;
       top: 0;
       width: $uicc-offCanvas-width;
@@ -56,7 +54,6 @@ $uicc-offCanvas-header-border-color: #303e47;
     }
 
     &--bottom {
-      will-change: bottom;
       left: 0;
       right: 0;
       width: 100%;

@@ -1,19 +1,13 @@
 $uicc-button-padding: 0.45rem 0.45rem 0.40rem 0.45rem !default;
-$uicc-button-padding-big: 0.65rem 0.65rem 0.55rem 0.65rem !default;
+$uicc-button-padding-big: 0.65rem 0.65rem 0.40rem 0.65rem !default;
 $uicc-button-padding-screen-large: 0.6rem 0.6rem 0.5rem 0.6rem !default;
-$uicc-button-padding-big-screen-large: 0.9rem 0.9rem 0.8rem 0.9rem !default;
-
-$uicc-button-primary-active-background-color: rgb(34, 156, 178);
-$uicc-button-primary-disabled-background-color: #b4d1e3;
-$uicc-button-secondary-active-background-color: #000;
+$uicc-button-padding-big-screen-large: 0.9rem 0.9rem 0.7rem 0.9rem !default;
 
 .uicc-button {
-  @include uicc-roundedEdges;
-
   display: inline-block;
   text-align: center;
   padding: $uicc-button-padding;
-  border: none;
+  border: 1px solid transparent;
 
   line-height: 1em;
   cursor: pointer;
@@ -28,7 +22,7 @@ $uicc-button-secondary-active-background-color: #000;
 
   &[disabled],
   &.is-disabled {
-    opacity: 0.7;
+    opacity: 0.6;
     cursor: not-allowed;
   }
 
@@ -42,12 +36,12 @@ $uicc-button-secondary-active-background-color: #000;
   }
 
   &--wide {
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     @media #{$uicc-small-up} {
-      padding-left: 1.6rem;
-      padding-right: 1.6rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
@@ -63,6 +57,7 @@ $uicc-button-secondary-active-background-color: #000;
   &--primary {
     background-color: $uicc-color-brand-primary;
     color: $uicc-color-brand-primary-inverted;
+    border-color: $uicc-color-brand-primary;
 
     &:visited {
       color: $uicc-color-brand-primary-inverted;
@@ -70,12 +65,11 @@ $uicc-button-secondary-active-background-color: #000;
 
     &[disabled],
     &.is-disabled {
-      background-color: $uicc-button-primary-disabled-background-color;
       opacity: 1;
     }
 
     &:not([disabled]) {
-      @include uicc-hover($uicc-color-brand-primary-inverted, $uicc-button-primary-active-background-color);
+      @include uicc-hover($uicc-color-brand-primary, $uicc-color-brand-primary-inverted);
     }
 
     &:not([disabled]):active,
@@ -91,13 +85,14 @@ $uicc-button-secondary-active-background-color: #000;
   &--secondary {
     background-color: $uicc-color-brand-secondary;
     color: $uicc-color-brand-secondary-inverted;
+    border-color: $uicc-color-brand-secondary;
 
     &:visited {
       color: $uicc-color-brand-secondary-inverted;
     }
 
     &:not([disabled]):hover {
-      @include uicc-hover($uicc-color-brand-secondary-inverted, $uicc-button-secondary-active-background-color);
+      @include uicc-hover($uicc-color-brand-primary, $uicc-color-brand-primary-inverted); //secondary inverted style is the same as primary ivnerted style!
     }
 
     &:not([disabled]):active,

@@ -52,10 +52,8 @@
     flex: 0 0 auto;
     display: flex;
     justify-content: center;
-    padding: 4px 12px 6px 15px;
-    box-shadow: 0 3px 3px -2px $uicc-color-gray;
-    margin: 0 -2px 0px -2px;
-    z-index: 1;
+    padding: 10px 15px 8px 15px;
+    border-bottom: 1px solid $uicc-color-gray-medium;
 
     &Content {
       flex: 1 1 100%;
@@ -64,7 +62,6 @@
 
     &Close {
       position: relative;
-      z-index: 2;
       display: flex;
       align-items: center;
       flex: 0 0 auto;
@@ -82,7 +79,7 @@
   &__footerButtons {
     border-top: 1px solid $uicc-color-gray-medium;
     margin-top: 1rem;
-    padding-top: 1.6rem;
+    padding-top: 1.1rem;
     padding-bottom: 0.9rem;
     text-align: center;
   }

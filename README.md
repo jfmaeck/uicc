@@ -44,8 +44,8 @@ http://jfmaeck.github.com/uicc
 ## Install
 
 ```
-git clone https://github.com/jfmaeck/style-patterns-x
-cd style-patterns-x
+git clone https://github.com/jfmaeck/uicc
+cd uicc
 rm -Rf .git
 npm install
 ```
@@ -80,7 +80,7 @@ Example: http://jfmaeck.github.com/uicc
 You can also import the styleguide scss files directly into your project scss files:
 
 ```sass
-$uiccasset-path: './vendor/uicc/dist/assets'; // adjust according to your environment
+$uicc-asset-path: './vendor/uicc/dist/assets'; // adjust according to your environment
 @import 'node_modules/uicc/src/styleguide'; // adjust according to your environment
 ```
 

@@ -92,7 +92,7 @@ $uicc-button-padding-big-screen-large: 0.9rem 0.9rem 0.7rem 0.9rem !default;
     }
 
     &:not([disabled]):hover {
-      @include uicc-hover($uicc-color-brand-primary, $uicc-color-brand-primary-inverted); //secondary inverted style is the same as primary ivnerted style!
+      @include uicc-hover($uicc-color-brand-primary, $uicc-color-brand-primary-inverted); //secondary inverted style is the same as primary inverted style!
     }
 
     &:not([disabled]):active,

@@ -1,6 +1,8 @@
 .uicc-checkbox {
+  display: block;
 
   &--inline {
+    display: inline-block;
     margin-bottom: $uicc-default-margin-small;
     margin-right: $uicc-default-margin-small;
   }
@@ -24,7 +26,7 @@
       left: 0;
       width: 1.5em;
       height: 1.5em;
-      border: 2px solid $uicc-color-gray-medium;
+      border: 1px solid $uicc-color-gray-medium;
       padding: .2em;
       color: $uicc-color-white;
       line-height: .4em;
@@ -34,7 +36,15 @@
   }
 
   &__control {
-    display: none;
+    // do not use display: none because that would prevent the control from being tab-activatable (it would lose its tabindex so to say)
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__control:focus + &__label::before {
+    border-style: dashed;
   }
 
   &.is-checked &__label::before,
@@ -50,7 +60,7 @@
     padding-left: 2.5em;
 
     &::before {
-      margin-top: 0em;
+      margin-top: -0.28em;
       border-width: 3px;
       line-height: 0.4em;
       text-indent: -0.2em;

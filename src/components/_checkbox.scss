@@ -37,6 +37,8 @@
 
   &__control {
     // do not use display: none because that would prevent the control from being tab-activatable (it would lose its tabindex so to say)
+    position: absolute;
+    left: -999999px;
     opacity: 0;
     width: 0;
     height: 0;

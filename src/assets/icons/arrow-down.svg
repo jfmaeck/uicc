@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="18px" height="10px" viewBox="0 0 18 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
-    <title>50F28D0A-FFC2-4459-9936-77D89A30B17E</title>
-    <desc>Created with sketchtool.</desc>
-    <defs></defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="FAQ_2Rows" transform="translate(-342.000000, -36.000000)" fill="currentColor">
-            <g id="Icon_Expand" transform="translate(342.000000, 36.000000)">
-                <g id="Icon_Collapse" transform="translate(9.000000, 5.500000) rotate(180.000000) translate(-9.000000, -5.500000) ">
-                    <g id="Icon_Close" transform="translate(9.000000, 5.500000) scale(1, -1) translate(-9.000000, -5.500000) ">
-                        <rect id="Rectangle-47" transform="translate(5.103553, 5.103553) rotate(-315.000000) translate(-5.103553, -5.103553) " x="-1.11396103" y="4.10355339" width="12.4350288" height="2" rx="1"></rect>
-                        <rect id="Rectangle-47-Copy" transform="translate(12.582677, 5.094992) scale(-1, 1) rotate(-315.000000) translate(-12.582677, -5.094992) " x="6.37727014" y="4.09499225" width="12.4108143" height="2" rx="1"></rect>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
 </svg>

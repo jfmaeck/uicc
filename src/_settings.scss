@@ -20,6 +20,7 @@ $uicc-color-darken-heavy: rgba(0, 0, 0, 0.8);
 $uicc-color-transparent: rgba(0, 0, 0, 0);
 
 $uicc-color-brand-primary: #198794 !default;
+$uicc-color-brand-primary-light: lighten($uicc-color-brand-primary, 10%) !default;
 $uicc-color-brand-primary-inverted: #fff;
 
 $uicc-color-brand-secondary: #111 !default;

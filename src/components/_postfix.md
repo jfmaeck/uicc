@@ -47,6 +47,6 @@ Vertically centered contents
     <div class="uicc-postfix uicc-postfix--gutters uicc-postfix--center">
         <div class="uicc-postfix__fluid">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
         <svg class="uicc-postfix__fixed uicc-icon uicc-icon--primary uicc-icon--big">
-          <use xlink:href="#checkmark"></use>
+          <use xlink:href="#check"></use>
         </svg>
     </div>

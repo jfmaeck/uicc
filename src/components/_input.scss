@@ -27,7 +27,8 @@ $uicc-input-border-color: #d2d2d2;
   }
   // scss-lint:enable VendorPrefix, PseudoElement
 
-  &.is-disabled {
+  &.is-disabled,
+  &--stateful[disabled] {
     border-color: $uicc-color-gray-medium;
     color: $uicc-color-gray-medium;
     cursor: not-allowed;

@@ -59,8 +59,8 @@ You can either use the ```disabled``` attribute or the ```is-disabled``` class.
   
     @example
     <a class="uicc-button uicc-button--primary uicc-button--icon uicc-button--big">
-        <svg class="uicc-button__icon uicc-icon"><use xlink:href="#checkmark"></use></svg>
+        <svg class="uicc-button__icon uicc-icon"><use xlink:href="#check"></use></svg>
     </a>
     <a class="uicc-button uicc-button--secondary uicc-button--icon uicc-button--big">
-        <svg class="uicc-button__icon uicc-icon"><use xlink:href="#cross"></use></svg>
+        <svg class="uicc-button__icon uicc-icon"><use xlink:href="#clear"></use></svg>
     </a>

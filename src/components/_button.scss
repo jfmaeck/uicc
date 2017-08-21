@@ -1,7 +1,5 @@
-$uicc-button-padding: 0.45rem 0.45rem 0.40rem 0.45rem !default;
-$uicc-button-padding-big: 0.65rem 0.65rem 0.40rem 0.65rem !default;
-$uicc-button-padding-screen-large: 0.6rem 0.6rem 0.5rem 0.6rem !default;
-$uicc-button-padding-big-screen-large: 0.9rem 0.9rem 0.7rem 0.9rem !default;
+$uicc-button-padding: 0.35rem 0.35rem 0.35rem 0.35rem !default;
+$uicc-button-padding-screen-large: 0.51rem !default;
 
 .uicc-button {
   display: inline-block;
@@ -22,40 +20,16 @@ $uicc-button-padding-big-screen-large: 0.9rem 0.9rem 0.7rem 0.9rem !default;
 
   &[disabled],
   &.is-disabled {
-    opacity: 0.6;
+    opacity: 0.4;
     cursor: not-allowed;
-  }
-
-  &--big {
-    padding: $uicc-button-padding-big;
-    font-size: 1.19em;
-
-    @media #{$uicc-medium-up} {
-      padding: $uicc-button-padding-big-screen-large;
-    }
-  }
-
-  &--wide {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-
-    @media #{$uicc-small-up} {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
   }
 
   &--block {
     width: 100%;
   }
 
-  &--icon {
-    border-radius: 50%;
-    box-shadow: 0 1px 0 0 $uicc-color-gray-dark;
-  }
-
   &--primary {
-    background-color: $uicc-color-brand-primary;
+    background-color: $uicc-color-brand-primary-light;
     color: $uicc-color-brand-primary-inverted;
     border-color: $uicc-color-brand-primary;
 
@@ -63,41 +37,32 @@ $uicc-button-padding-big-screen-large: 0.9rem 0.9rem 0.7rem 0.9rem !default;
       color: $uicc-color-brand-primary-inverted;
     }
 
-    &[disabled],
-    &.is-disabled {
-      opacity: 1;
-    }
-
     &:not([disabled]) {
-      @include uicc-hover($uicc-color-brand-primary, $uicc-color-brand-primary-inverted);
+      @include uicc-hover($uicc-color-brand-primary-inverted, $uicc-color-brand-primary);
     }
 
     &:not([disabled]):active,
     &:not([disabled]):focus {
       color: $uicc-color-brand-primary-inverted;
     }
-
-    &.uicc-button--icon {
-      background: $uicc-color-brand-primary;
-    }
   }
 
   &--secondary {
-    background-color: $uicc-color-brand-secondary;
-    color: $uicc-color-brand-secondary-inverted;
-    border-color: $uicc-color-brand-secondary;
+    background-color: $uicc-color-gray-dark;
+    color: $uicc-color-white;
+    border-color: $uicc-color-gray-dark;
 
     &:visited {
-      color: $uicc-color-brand-secondary-inverted;
+      color: $uicc-color-white;
     }
 
     &:not([disabled]):hover {
-      @include uicc-hover($uicc-color-brand-primary, $uicc-color-brand-primary-inverted); //secondary inverted style is the same as primary inverted style!
+      @include uicc-hover($uicc-color-white, $uicc-color-gray-darker);
     }
 
     &:not([disabled]):active,
     &:not([disabled]):focus {
-      color: $uicc-color-brand-secondary-inverted;
+      color: $uicc-color-white;
     }
   }
 
@@ -120,15 +85,15 @@ $uicc-button-padding-big-screen-large: 0.9rem 0.9rem 0.7rem 0.9rem !default;
   }
 
   &__icon {
-
-    margin-bottom: -0.25em;
+    margin-bottom: -0.28em;
+    margin-top: -0.35em;
 
     &--left {
-      margin-right: 0.4em;
+      margin-right: 0.1em;
     }
 
     &--right {
-      margin-left: 0.4em;
+      margin-left: 0;
     }
   }
 

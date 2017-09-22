@@ -21,11 +21,6 @@ You can either use the ```disabled``` attribute or the ```is-disabled``` class.
     @example
     <a class="uicc-button uicc-button--block uicc-button--primary">Button</a>
 
-### Button (big)
-  
-    @example
-    <a class="uicc-button uicc-button--big uicc-button--primary">Button</a>
-
 ### Button (wide)
   
     @example
@@ -43,14 +38,6 @@ You can either use the ```disabled``` attribute or the ```is-disabled``` class.
   
     @example
     <a class="uicc-button uicc-button--primary">
-        Button
-        <svg class="uicc-button__icon uicc-button__icon--right uicc-icon"><use xlink:href="#arrow-right"></use></svg>
-    </a>
-
-### Button (big, text and icon right)
-  
-    @example
-    <a class="uicc-button uicc-button--primary uicc-button--big">
         Button
         <svg class="uicc-button__icon uicc-button__icon--right uicc-icon"><use xlink:href="#arrow-right"></use></svg>
     </a>

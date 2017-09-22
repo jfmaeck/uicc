@@ -1,11 +1,18 @@
+.uicc-radio,
 .uicc-checkbox {
   display: block;
 
+  & + & {
+    margin-top: .5em;
+  }
+
   &--inline {
     display: inline-block;
-    margin-bottom: $uicc-default-margin-small;
-    margin-right: $uicc-default-margin-small;
+    margin-right: $uicc-default-margin;
+
+    margin-top: .5em;
   }
+
 
   &__label {
     @include uicc-hover($uicc-color-brand-primary);
@@ -17,28 +24,27 @@
 
     vertical-align: middle;
     cursor: pointer;
-    margin-bottom: .5em;
 
     &::before {
       content: '';
+      transition: background-color 300ms;
       position: absolute;
       margin-top: -0.175em;
       left: 0;
       width: 1.5em;
       height: 1.5em;
-      border: 1px solid $uicc-color-gray-medium;
+      border: 1px solid transparentize($uicc-color-gray-dark, 0.5);
       padding: .2em;
       color: $uicc-color-white;
       line-height: .4em;
       text-indent: -.1em;
     }
-
   }
 
   &__control {
     // do not use display: none because that would prevent the control from being tab-activatable (it would lose its tabindex so to say)
     position: absolute;
-    left: -999999px;
+    right: -999999px;
     opacity: 0;
     width: 0;
     height: 0;
@@ -46,32 +52,65 @@
   }
 
   &__control:focus + &__label::before {
-    border-style: dashed;
+    border-width: 2px;
+  }
+
+  &.is-checked &__label,
+  &__control:checked + &__label {
+    color: $uicc-color-brand-primary;
   }
 
   &.is-checked &__label::before,
   &__control:checked + &__label::before {
     background-image: url('#{$uicc-image-path}/check.svg');
-    background-size: 0.75em;
+    background-color: $uicc-color-brand-primary;
+    color: $uicc-color-brand-primary-inverted;
+    background-size: 1em;
     background-repeat: no-repeat;
     background-position: center center;
   }
 
   &--big &__label {
 
-    padding-left: 2.5em;
+    font-size: 1.1em;
+    padding-left: 2.3em;
 
     &::before {
-      margin-top: -0.28em;
-      border-width: 3px;
+      margin-top: -0.24em;
+      border-width: 2px;
       line-height: 0.4em;
       text-indent: -0.2em;
-      font-size: 1.4em;
+      font-size: 1.2em;
     }
+  }
+
+  &--big {
+
+    margin-right: $uicc-default-margin-big;
+
+    & + & {
+      margin-top: 1em;
+    }
+
+  }
+
+  &--big.uicc-checkbox--inline,
+  &--big.uicc-radio--inline {
+    & + & {
+      margin-top: 0;
+    }
+  }
+
+  &--small &--inline {
+    margin-right: $uicc-default-margin-small;
   }
 
   &--small &__label {
     font-size: 0.8em;
   }
 
+}
+
+.uicc-radio__label::before {
+  border-radius: 50%;
 }

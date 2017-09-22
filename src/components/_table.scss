@@ -29,29 +29,22 @@
 
     & .uicc-table__cell {
       /* Behave  like a "row" */
+      display: flex;
+      align-items: center;
       border: none;
       border-bottom: 1px solid $uicc-color-gray-medium;
-      position: relative;
-      padding-left: 35%;
-      min-height: 2em;
 
       &:last-child {
         border-bottom: none;
       }
 
       &:before {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
         content: attr(data-uicc-th);
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 35%;
-        padding: 0.3rem 1rem 0.3rem 0.3rem;
+        flex-basis: 35%;
+        flex-shrink: 0;
+        margin-right: 1em;
         text-align: right;
+        font-weight: bold;
       }
 
       &--headline:before {
@@ -59,7 +52,25 @@
         padding-bottom: 0.5rem;
       }
 
+      &--contentAsResponsiveHeadline {
+        display: block;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-left: 0.3rem;
+
+        &.uicc-table__cell--headline {
+          text-align: left;
+          border-bottom: none;
+          margin-bottom: 1rem;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+
       &--noResponsiveHeadline {
+        display: block;
         padding-left: 0.3rem;
 
         &.uicc-table__cell--headline {
@@ -70,6 +81,10 @@
         &:before {
           display: none;
         }
+      }
+
+      &--centered {
+        text-align: left; /* do not center in responsive mode */
       }
     }
   }
@@ -142,11 +157,11 @@
     }
 
     &--headline {
-      @include uicc-uppercase;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
       background-color: $uicc-color-gray-light;
       color: $uicc-color-gray-dark;
+      font-weight: bold;
     }
 
     &--headlineRow {
@@ -176,7 +191,7 @@
       color: $uicc-color-gray;
     }
 
-    & + & {
+    & + .uicc-table__action {
       margin-left: 0.5em;
     }
   }

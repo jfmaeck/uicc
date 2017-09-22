@@ -1,16 +1,29 @@
+$uicc-alert-border-color: $uicc-color-gray-light !default;;
+$uicc-alert-border-width: 1px !default;;
+$uicc-alert-border-style: solid !default;;
+$uicc-alert-border-radius: 0 !default;;
 $uicc-alert-padding: $uicc-default-margin !default;
 $uicc-alert-padding-screen-large: $uicc-default-margin-screen-large !default;
 $uicc-alert-success-color: $uicc-color-success !default;
 $uicc-alert-success-color-background: $uicc-color-success-background !default;
+$uicc-alert-success-color-border: darken($uicc-color-success-background, 10%) !default;;
 $uicc-alert-info-color: $uicc-color-black !default;
 $uicc-alert-info-color-background: $uicc-color-gray-light !default;
+$uicc-alert-info-color-border: darken($uicc-color-info-background, 10%) !default;;
 $uicc-alert-warning-color: $uicc-color-warning !default;
 $uicc-alert-warning-color-background: $uicc-color-warning-background !default;
+$uicc-alert-warning-color-border: darken($uicc-color-warning-background, 10%) !default;;
 $uicc-alert-error-color: $uicc-color-error !default;
 $uicc-alert-error-color-background: $uicc-color-error-background !default;
+$uicc-alert-error-color-border: darken($uicc-color-error-background, 10%) !default;
 
 .uicc-alert {
   padding: $uicc-alert-padding;
+  border-width: $uicc-alert-border-width;
+  border-style: $uicc-alert-border-style;
+  border-radius: $uicc-alert-border-radius;
+
+  border-color: $uicc-alert-border-color;
 
   @media #{$uicc-medium-up} {
     padding: $uicc-alert-padding-screen-large;
@@ -19,6 +32,7 @@ $uicc-alert-error-color-background: $uicc-color-error-background !default;
   &--success {
     color: $uicc-alert-success-color;
     background-color: $uicc-alert-success-color-background;
+    border-color: $uicc-alert-success-color-border;
 
     .uicc-link {
       color: $uicc-alert-success-color;
@@ -29,16 +43,19 @@ $uicc-alert-error-color-background: $uicc-color-error-background !default;
   &--info {
     color: $uicc-alert-info-color;
     background-color: $uicc-alert-info-color-background;
+    border-color: $uicc-alert-info-color-border;
   }
 
   &--warning {
     color: $uicc-alert-warning-color;
     background-color: $uicc-alert-warning-color-background;
+    border-color: $uicc-alert-warning-color-border;
   }
 
   &--error {
     color: $uicc-alert-error-color;
     background-color: $uicc-alert-error-color-background;
+    border-color: $uicc-alert-error-color-border;
   }
 
 }

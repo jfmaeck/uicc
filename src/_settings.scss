@@ -32,8 +32,8 @@ $uicc-color-info: $uicc-color-black !default;
 $uicc-color-info-background: $uicc-color-gray-medium !default;
 $uicc-color-warning: #8a6d3b !default;
 $uicc-color-warning-background: #fcf8e3 !default;
-$uicc-color-error: #f10815 !default;
-$uicc-color-error-background: $uicc-color-warning-background !default;
+$uicc-color-error: #fff !default;
+$uicc-color-error-background: #f10815 !default;
 
 //== Scaffolding
 //
@@ -96,10 +96,10 @@ $uicc-headings-letter-spacing: initial !default;
 /**
  * Media Query Breakpoints:
  */
-$uicc-screen-small-min: 360px; // iPhone 6, Galaxy S6
-$uicc-screen-medium-min: 576px; // Nexus 5, Iphone 5
-$uicc-screen-large-min: 768px; // iPad portrait
-$uicc-screen-large-min: 1024px; // iPad landscape
+$uicc-screen-small-min: 360px !default; // iPhone 6, Galaxy S6
+$uicc-screen-medium-min: 576px !default; // Nexus 5, Iphone 5
+$uicc-screen-large-min: 768px !default; // iPad portrait
+$uicc-screen-large-min: 1024px !default; // iPad landscape
 
 // So media queries don't overlap when required, provide a maximum
 $uicc-screen-small-max: ($uicc-screen-medium-min - 1px);
@@ -124,16 +124,18 @@ $uicc-xlarge-up: 'only screen and (min-width: #{$uicc-screen-large-min})';
 /**
  * Margins:
  */
-$uicc-default-margin: 12px;
-$uicc-default-margin-screen-large: 16px;
-$uicc-default-margin-small: 8px;
-$uicc-default-margin-small-screen-large: 10px;
-$uicc-default-margin-big: 20px;
-$uicc-default-margin-big-screen-large: 28px;
+$uicc-default-margin: 12px !default;
+$uicc-default-margin-screen-large: 16px !default;
+$uicc-default-margin-small: 8px !default;
+$uicc-default-margin-small-screen-large: 10px !default;
+$uicc-default-margin-big: 20px !default;
+$uicc-default-margin-big-screen-large: 28px !default;
 
+
+$uicc-input-padding: 0.5rem 0.35rem 0.25rem 0.35rem !default;
 
 /**
  * z-index
  */
-$modal-z-index: 1000;
-$uicc-offCanvas-z-index: $modal-z-index - 1;
+$uicc-modal-z-index: 1000 !default;
+$uicc-offCanvas-z-index: $uicc-modal-z-index - 1 !default;

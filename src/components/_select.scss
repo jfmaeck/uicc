@@ -1,0 +1,15 @@
+.uicc-select {
+  @extend .uicc-input;
+
+  &[size] {
+    padding: 0;
+  }
+
+  &[size="1"] {
+    padding: $uicc-input-padding;
+  }
+
+  &__option {
+    padding: $uicc-input-padding;
+  }
+}

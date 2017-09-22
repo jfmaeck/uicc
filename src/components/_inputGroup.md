@@ -1,25 +1,26 @@
 ## Input Group
 
-### Input Group (with error message)
+### Input Group (with label and error message)
   
     @example
-    <div class="uicc-inputGroup">
-        <input type="text" class="uicc-input uicc-inputGroup__input is-invalid" value="input value">
-        <span class="uicc-inputGroup__subtext uicc-error" tabindex="-1">This is an error!</span>
-    </div>
+    <label class="uicc-inputGroup">
+        <span class="uicc-inputGroup__label">Titel</span>
+        <input type="text" class="uicc-input uicc-input--stateful is-invalid" value="input value">
+        <span class="uicc-inputGroup__subtext uicc-error">This is an error!</div>
+    </label>
 
-### Input Group (with floating labels)
+
+### Input Group (aligned button)
   
     @example
-    <div class="uicc-inputGroup">
-        <input id="inputGroupFloating1" type="text" class="uicc-input uicc-input--floatingLabel uicc-row uicc-row--bigMargin" onchange="if (this.value === '') { this.classList.remove('is-dirty'); } else { this.classList.add('is-dirty'); }">
-        <label for="inputGroupFloating1">
-          <span>Placeholder 1 ...</span>
+    <div class="uicc-grid uicc-grid--gutters">
+      <div class="uicc-grid__cell">
+        <label class="uicc-inputGroup">
+            <span class="uicc-inputGroup__label">Suchwort</span>
+            <input type="text" class="uicc-input">
         </label>
-    </div>
-    <div class="uicc-inputGroup">
-        <input id="inputGroupFloating2" type="text" class="uicc-input uicc-input--floatingLabel uicc-row uicc-row--extraBigMargin" onchange="if (this.value === '') { this.classList.remove('is-dirty'); } else { this.classList.add('is-dirty'); }">
-        <label for="inputGroupFloating2">
-          <span>Placeholder 2 ...</span>
-        </label>
+      </div>
+      <div class="uicc-grid__cell">
+        <button type="button" class="uicc-inputGroup__alignedButton uicc-button uicc-button--primary">Suchen</button>
+      </div>
     </div>

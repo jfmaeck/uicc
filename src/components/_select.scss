@@ -1,15 +1,28 @@
 .uicc-select {
   @extend .uicc-input;
 
+  border-radius: 0;
+
   &[size] {
     padding: 0;
   }
 
-  &[size="1"] {
-    padding: $uicc-input-padding;
+  &:not([size]),
+  &[size="1"]{
+    appearance: none;
+    &::-ms-expand{
+      display:none;
+    }
+
+    padding: $uicc-input-padding 2.5rem $uicc-input-padding $uicc-input-padding;
+    background-image: url('#{$uicc-image-path}/bg_select.svg');
+    background-position: right -55px top -13px;
+    background-repeat: no-repeat;
+    background-size: 6.5rem 3.4rem;
   }
 
   &__option {
+    appearance: none;
     padding: $uicc-input-padding;
   }
 }

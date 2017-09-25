@@ -28,7 +28,7 @@
   }
 
   &__loadingIndicator {
-    display: block;
+    display: none;
     width: 25px;
     height: 25px;
   }
@@ -52,6 +52,7 @@
     }
 
     .uicc-loadingContainer__loadingIndicator {
+      display: block;
       pointer-events: all;
     }
   }

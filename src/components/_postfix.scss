@@ -8,7 +8,7 @@
 
   &--gutters {
     > * + * {
-      margin-left: $uicc-col-margin;
+      margin-left: $uicc-default-margin;
 
     }
   }
@@ -21,7 +21,7 @@
       &.uicc-postfix--gutters {
         > * + * {
           margin-left: 0;
-          margin-top: $uicc-row-margin;
+          margin-top: $uicc-default-margin;
         }
       }
     }
@@ -33,7 +33,7 @@
 
       > * + * {
         margin-left: 0;
-        margin-top: $uicc-row-margin;
+        margin-top: $uicc-default-margin;
       }
     }
   }

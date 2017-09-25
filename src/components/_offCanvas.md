@@ -1,7 +1,7 @@
 ## Off Canvas
 
     @example
-    <div class="uicc-offCanvas uicc-row" id="off-canvas-demo" style="height: 600px;">
+    <div class="uicc-offCanvas uicc-row" id="off-canvas-demo" style="height: 350px;">
         <div class="uicc-offCanvas__inner">
             <div class="uicc-offCanvas__on uicc-region uicc-region--secondary">
                 Main Content

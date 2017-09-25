@@ -58,7 +58,7 @@
   }
 
   &.is-blocking {
-    .uicc-loadingContainer__loader {
+    > .uicc-loadingContainer__loader {
       pointer-events: all;
       background-color: $uicc-color-darken;
     }

@@ -23,6 +23,15 @@ Regions have nice paddings and different background colors depending on their ty
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet <a href="javascript:;">dolore magna aliquam erat volutpat</a>.
     </div>
 
+### Region (focusable)
+
+Highlight the region if an element inside that region is focused
+
+    @example
+    <div class="uicc-region uicc-region--secondary uicc-region--focusable">
+        <input type="text" class="uicc-input" placeholder="Placeholder ...">
+    </div>
+
 ### Region (small)
   
     @example
@@ -54,14 +63,10 @@ Regions have nice paddings and different background colors depending on their ty
                 [LOGO]
             </div>
                 <h2 class="uicc-headline uicc-headline--h3 uicc-headline--text uicc-headline--firstInText ">Sie haben Ihr Passwort vergessen?</h2>
-            <div class="uicc-region uicc-region--big uicc-region--primary">               
-                <p class="uicc-row uicc-row--extraBigMargin">Geben Sie Ihre E-Mail-Adresse an, um Ihr Passwort zurückzusetzen:</p>
-                <div class="uicc-inputGroup">
-                  <input id="region-sample-layout-email" type="email" class="uicc-input uicc-input--big uicc-input--unobtrusive uicc-input--floatingLabel" name="email" required onchange="if (this.value === '') { this.classList.remove('is-dirty'); } else { this.classList.add('is-dirty'); }">
-                  <label for="region-sample-layout-email">
-                    <span>E-Mail-Adresse</span>
-                  </label>
-                </div>
+            <div class="uicc-region uicc-region--big uicc-region--primary uicc-region--focusable">               
+                <label class="uicc-row uicc-row--extraBigMargin">Geben Sie Ihre E-Mail-Adresse an, um Ihr Passwort zurückzusetzen:
+                  <input type="text" class="uicc-input" placeholder="me@mail.com">
+                </label>
             </div>
         </div>
     </div>

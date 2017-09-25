@@ -28,6 +28,10 @@ $uicc-region-secondary-color-background: $uicc-color-gray-light !default;;
     }
   }
 
+  &--focusable:focus-within {
+    box-shadow: $uicc-color-gray 0 0 3px;
+  }
+
   &--big {
     padding: $uicc-region-big-padding;
 

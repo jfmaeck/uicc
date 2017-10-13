@@ -1,0 +1,11 @@
+$uicc-paragraph-margin: $uicc-default-margin !default;
+$uicc-paragraph-lineHeight: 1.75em !default;
+
+.uicc-paragraph {
+  margin-bottom: $uicc-paragraph-margin;
+  line-height: $uicc-paragraph-lineHeight;
+
+  &--noMargin {
+    margin-bottom: 0;
+  }
+}

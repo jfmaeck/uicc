@@ -1,0 +1,35 @@
+.uicc-separator {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 1px;
+
+  background-color: $uicc-color-gray-medium;
+
+  &--fade {
+    background: linear-gradient(to right, transparent, $uicc-color-gray-medium, transparent);
+  }
+
+  &--primary {
+    height: 2px;
+    background-color: $uicc-color-brand-primary;
+
+    &.uicc-separator--fade {
+      background: linear-gradient(to right, transparent, $uicc-color-brand-primary, transparent);
+    }
+  }
+
+  &--secondary {
+    height: 2px;
+    background-color: $uicc-color-brand-secondary;
+
+    &.uicc-separator--fade {
+      background: linear-gradient(to right, transparent, $uicc-color-brand-secondary, transparent);
+    }
+  }
+
+
+  &--big {
+    height: 0.5rem;
+  }
+}

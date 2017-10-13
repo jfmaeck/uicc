@@ -14,7 +14,7 @@
       display:none;
     }
 
-    padding: $uicc-input-padding 2.5rem $uicc-input-padding $uicc-input-padding;
+    padding: $uicc-input-padding;
     background-image: url('#{$uicc-image-path}/bg_select.svg');
     background-position: right -55px top -13px;
     background-repeat: no-repeat;
@@ -24,5 +24,14 @@
   &__option {
     appearance: none;
     padding: $uicc-input-padding;
+  }
+
+  @media only screen and (pointer: coarse) {
+    // we assume a mobile device that does not support expanded select lists but instead
+    // displays a single-line select list and provides the options in a native overlay control when clicked
+    // thus we need to undo some custom styling for expanded select lists
+    &[size] {
+      padding: $uicc-input-padding;
+    }
   }
 }

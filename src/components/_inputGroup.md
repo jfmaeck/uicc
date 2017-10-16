@@ -6,7 +6,7 @@
     <label class="uicc-inputGroup">
         <span class="uicc-inputGroup__label">Titel</span>
         <input type="text" class="uicc-input uicc-input--stateful is-invalid" value="input value">
-        <span class="uicc-inputGroup__subtext uicc-error">This is an error!</div>
+        <div class="uicc-inputGroup__subtext uicc-inputGroup__subtext--error">This is an error!</div>
     </label>
 
 

@@ -1,5 +1,5 @@
 $uicc-inputGroup-error-color: $uicc-color-white !default;
-$uicc-inputGroup-error-background-color: #uicc-color-error !default;
+$uicc-inputGroup-error-background-color: $uicc-color-error !default;
 
 .uicc-inputGroup {
   position: relative;
@@ -24,7 +24,7 @@ $uicc-inputGroup-error-background-color: #uicc-color-error !default;
   &__subtext {
     display: block;
     width: 100%;
-    padding: 3px;
+    padding: 5px 3px 3px 5px;
     font-size: 0.8rem;
 
     &--error {

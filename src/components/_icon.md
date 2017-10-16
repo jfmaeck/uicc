@@ -24,8 +24,8 @@ By default, icons inherit their color from the parent element
 Use arbitrary unicode icon characters.
 
     @example
-    <i class="uicc-icon uicc-icon--char">⟲</i>
-    <i class="uicc-icon uicc-icon--char">⟲</i>
+    <i class="uicc-icon">⟲</i>
+    <i class="uicc-icon">☰</i>
 
 ### Icon (SVG icons)
 

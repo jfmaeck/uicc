@@ -19,6 +19,7 @@ $uicc-icon-font-size-extraBig-screen-tiny: $uicc-icon-font-size-extraBig !defaul
   font-style: normal;
   text-align: center;
   vertical-align: middle;
+  line-height: 1em;
 
   &--tiny {
     font-size: $uicc-icon-font-size-tiny;
@@ -46,22 +47,6 @@ $uicc-icon-font-size-extraBig-screen-tiny: $uicc-icon-font-size-extraBig !defaul
 
   &--hoverPrimary {
     @include uicc-hover($uicc-color-brand-primary);
-  }
-
-  &--char::before {
-    content: attr(data-uicc-icon-char);
-  }
-
-  &--menuBurger::before {
-    content: '☰';
-  }
-
-  &--emptyStar::before {
-    content: '☆';
-  }
-
-  &--filledStar::before {
-    content: '★';
   }
 
   @media #{$uicc-small-up} {

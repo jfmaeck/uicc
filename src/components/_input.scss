@@ -58,7 +58,7 @@ $uicc-input-border-color: $uicc-color-gray-medium;
   &--stateful {
     &.is-invalid,
     &.ng-touched.ng-invalid {
-      border-color: $uicc-color-error-background;
+      border-color: $uicc-color-error;
     }
   }
 

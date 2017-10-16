@@ -5,34 +5,27 @@
 By default, icons inherit their color from the parent element 
 
     @example
-    <i class="uicc-icon uicc-icon--emptyStar"></i>
+    <i class="uicc-icon">★</i>
 
 ### Icon (primary brand color)
   
     @example
-    <i class="uicc-icon uicc-icon--emptyStar uicc-icon--primary"></i>
+    <i class="uicc-icon uicc-icon--primary">★</i>
     <svg class="uicc-icon uicc-icon--primary"><use xlink:href="#check"></use></svg>
 
 ### Icon (light color)
   
     @example
-    <i class="uicc-icon uicc-icon--emptyStar uicc-icon--light"></i>
-    <svg class="uicc-icon uicc-icon--light"><use xlink:href="#check"></use></svg>
+    <i class="uicc-icon uicc-icon--light">☰</i>
+    <svg class="uicc-icon uicc-icon--light"><use xlink:href="#edit"></use></svg>
 
 ### Icon (generic font icons)
 
-Specify arbitrary unicode icon character in the `data-uicc-icon-char` attribute.
+Use arbitrary unicode icon characters.
 
     @example
-    <i class="uicc-icon uicc-icon--char" data-uicc-icon-char="⟲"></i>
-    <i class="uicc-icon uicc-icon--char" data-uicc-icon-char="⟳"></i>
-
-### Icon (predefined font icons)
-  
-    @example
-    <i class="uicc-icon uicc-icon--menuBurger"></i>
-    <i class="uicc-icon uicc-icon--emptyStar"></i>
-    <i class="uicc-icon uicc-icon--filledStar"></i>
+    <i class="uicc-icon uicc-icon--char">⟲</i>
+    <i class="uicc-icon uicc-icon--char">⟲</i>
 
 ### Icon (SVG icons)
 

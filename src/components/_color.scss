@@ -45,4 +45,13 @@
       color: $uicc-color-white !important;
     }
   }
+
+  &--error {
+    color: $uicc-color-error;
+
+    &.uicc-color--force,
+    &.uicc-color--force * {
+      color: $uicc-color-error !important;
+    }
+  }
 }

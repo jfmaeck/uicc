@@ -1,10 +1,12 @@
+$uicc-inputGroup-error-color: $uicc-color-white !default;
+$uicc-inputGroup-error-background-color: #uicc-color-error !default;
+
 .uicc-inputGroup {
   position: relative;
   display: block;
 
   &.has-errors {
     border: 1px solid $uicc-color-error;
-    background-color: $uicc-color-error-background;
   }
 
   & + & {
@@ -21,10 +23,14 @@
 
   &__subtext {
     display: block;
-    font-size: 0.8rem;
-    margin-top: 3px;
-    margin-left: 3px;
     width: 100%;
+    padding: 3px;
+    font-size: 0.8rem;
+
+    &--error {
+      background-color: $uicc-inputGroup-error-background-color;
+      color: $uicc-inputGroup-error-color;
+    }
   }
 
   &__alignedButton {

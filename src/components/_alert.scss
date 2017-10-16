@@ -13,9 +13,9 @@ $uicc-alert-info-color-border: darken($uicc-color-info-background, 10%) !default
 $uicc-alert-warning-color: $uicc-color-warning !default;
 $uicc-alert-warning-color-background: $uicc-color-warning-background !default;
 $uicc-alert-warning-color-border: darken($uicc-color-warning-background, 10%) !default;;
-$uicc-alert-error-color: $uicc-color-error !default;
-$uicc-alert-error-color-background: $uicc-color-error-background !default;
-$uicc-alert-error-color-border: darken($uicc-color-error-background, 10%) !default;
+$uicc-alert-error-color: $uicc-color-white !default;
+$uicc-alert-error-color-background: $uicc-color-error !default;
+$uicc-alert-error-color-border: darken($uicc-color-error, 10%) !default;
 
 .uicc-alert {
   padding: $uicc-alert-padding;

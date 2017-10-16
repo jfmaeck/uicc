@@ -9,22 +9,16 @@ $uicc-icon-font-size-big-screen-tiny: $uicc-icon-font-size-big !default;
 $uicc-icon-font-size-extraBig-screen-tiny: $uicc-icon-font-size-extraBig !default;
 
 .uicc-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
 
   width: 1em;
   height: 1em;
   font-size: $uicc-icon-font-size-screen-tiny;
-  text-align: center;
 
-  &::before {
-    flex: 1 1 auto;
-    text-align: center;
-    text-transform: none;
-    font-style: normal;
-    line-height: 1em;
-  }
+  text-transform: none;
+  font-style: normal;
+  text-align: center;
+  vertical-align: middle;
 
   &--tiny {
     font-size: $uicc-icon-font-size-tiny;

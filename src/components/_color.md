@@ -7,6 +7,7 @@
     <div class="uicc-color uicc-color--secondary">Secondary <a href="javascript:;" class="uicc-link">with link</a></div>
     <div class="uicc-color uicc-color--gray">Gray <a href="javascript:;" class="uicc-link">with link</a></div>
     <div class="uicc-color uicc-color--mediumGray">Medium Gray <a href="javascript:;" class="uicc-link">with link</a></div>
+    <div class="uicc-color uicc-color--error">Error <a href="javascript:;" class="uicc-link">with link</a></div>
     <div class="uicc-color uicc-color--white" style="background-color: pink; padding: 0.3rem;">White <a href="javascript:;" class="uicc-link">with link</a></div>
 
 ### Color (force)

@@ -1,5 +1,6 @@
 $uicc-inputGroup-error-color: $uicc-color-white !default;
 $uicc-inputGroup-error-background-color: $uicc-color-error !default;
+$uicc-inputGroup--constrained-max-width: 600px;
 
 .uicc-inputGroup {
   position: relative;
@@ -11,6 +12,12 @@ $uicc-inputGroup-error-background-color: $uicc-color-error !default;
 
   & + & {
     margin-top: $uicc-default-margin-big;
+  }
+
+  &--constrainedWidth {
+    @media #{$uicc-large-up} {
+      max-width: $uicc-inputGroup--constrained-max-width;
+    }
   }
 
   &__label {

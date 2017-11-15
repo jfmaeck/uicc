@@ -39,7 +39,10 @@ Due to browser security restrictions it is not possible to leverage the full pot
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#arrow-right"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#arrow-up"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#arrow-upward"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#calendar"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#check"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#clear"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#visibility-on"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#visibility-off"></use></svg>

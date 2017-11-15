@@ -10,6 +10,13 @@
     </label>
 
 
+### Input Group (constrained width)
+  
+    @example
+    <label class="uicc-inputGroup uicc-inputGroup--constrainedWidth">
+        <span class="uicc-inputGroup__label">Titel</span>
+        <input type="text" class="uicc-input">
+    </label>
 ### Input Group (aligned button)
   
     @example

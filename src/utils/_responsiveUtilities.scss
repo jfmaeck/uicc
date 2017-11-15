@@ -58,5 +58,13 @@
 }
 
 .uicc-hidden-xlarge-down {
-  @include hidden-xlarge-down;
+  @include uicc-hidden-xlarge-down;
+}
+
+.uicc-hidden-screen {
+  @include uicc-hidden-screen;
+}
+
+.uicc-hidden-print {
+  @include uicc-hidden-print;
 }

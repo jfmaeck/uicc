@@ -3,21 +3,116 @@
 ### Responsive Visibility Classes:
 
     @example
-    <div class="uicc-hidden-tiny">uicc-hidden-tiny</div>
-    <div class="uicc-hidden-tiny-up">uicc-hidden-tiny-up</div>
-    <div class="uicc-hidden-tiny-down">uicc-hidden-tiny-down</div>
-    <div class="uicc-hidden-small">uicc-hidden-small</div>
-    <div class="uicc-hidden-small-up">uicc-hidden-small-up</div>
-    <div class="uicc-hidden-small-down">uicc-hidden-small-down</div>
-    <div class="uicc-hidden-medium">uicc-hidden-medium</div>
-    <div class="uicc-hidden-medium-up">uicc-hidden-medium-up</div>
-    <div class="uicc-hidden-medium-down">uicc-hidden-medium-down</div>
-    <div class="uicc-hidden-large">uicc-hidden-large</div>
-    <div class="uicc-hidden-large-up">uicc-hidden-large-up</div>
-    <div class="uicc-hidden-large-down">uicc-hidden-large-down</div>
-    <div class="uicc-hidden-xlarge">uicc-hidden-xlarge</div>
-    <div class="uicc-hidden-xlarge-up">uicc-hidden-xlarge-up</div>
-    <div class="uicc-hidden-xlarge-down">uicc-hidden-xlarge-down</div>
+    <table class="uicc-table uicc-table--bordered">
+       <thead>
+           <tr class="uicc-table__row">
+               <th class="uicc-table__cell uicc-table__cell--headline"></th>
+               <th class="uicc-table__cell uicc-table__cell--headline">visible</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-tiny</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-tiny uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-tiny-up</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-tiny-up uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-small-down</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-small-down uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-small</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-small uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-small-up</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-small-up uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-medium-down</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-medium-down uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-medium</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-medium uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-medium-up</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-medium-up uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-large-down</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-large-down uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-large</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-large uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-large-up</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-large-up uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-xlarge-down</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-xlarge-down uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-xlarge</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-xlarge uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-xlarge-up</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-xlarge-up uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-screen</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-screen uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+           <tr class="uicc-table__row">
+               <td class="uicc-table__cell uicc-table__cell--headline">uicc-hidden-print</td>
+               <td class="uicc-table__cell">
+                  <svg class="uicc-hidden-print uicc-uicc-icon"><use xlink:href="#visibility-on"></use></svg>
+               </td>
+           </tr>
+       </tbody>
+    </table>
 
 
 ### Scss Media Query Breakpoint variables

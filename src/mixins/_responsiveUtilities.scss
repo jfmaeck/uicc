@@ -7,7 +7,7 @@
 }
 
 @mixin uicc-hidden-tiny-up {
-  @media #{$uicc-tiny-up} {
+  @media #{$uicc-tiny-up}, print {
     display: none !important;
   }
 }
@@ -24,7 +24,7 @@
 }
 
 @mixin uicc-hidden-small-up {
-  @media #{$uicc-small-up} {
+  @media #{$uicc-small-up}, print {
     display: none !important;
   }
 }
@@ -42,7 +42,7 @@
 }
 
 @mixin uicc-hidden-medium-up {
-  @media #{$uicc-medium-up} {
+  @media #{$uicc-medium-up}, print {
     display: none !important;
   }
 }
@@ -54,13 +54,13 @@
 
 
 @mixin uicc-hidden-large {
-  @media #{$uicc-large-only} {
+  @media #{$uicc-large-only}, print {
     display: none !important;
   }
 }
 
 @mixin uicc-hidden-large-up {
-  @media #{$uicc-large-up} {
+  @media #{$uicc-large-up}, print {
     display: none !important;
   }
 }
@@ -83,7 +83,19 @@
   }
 }
 
-@mixin hidden-xlarge-down {
+@mixin uicc-hidden-xlarge-down {
   @include uicc-hidden-xlarge;
   @include uicc-hidden-large-down;
+}
+
+@mixin uicc-hidden-print {
+  @media #{$uicc-print-only} {
+    display: none !important;
+  }
+}
+
+@mixin uicc-hidden-screen {
+  @media #{$uicc-screen-only} {
+    display: none !important;
+  }
 }

@@ -43,13 +43,14 @@ $uicc-button-border-radius: 0 !default;
     @include uicc-hover($_hoverColor, $_hoverBackgroundColor);
   }
 
-  &:not([disabled]):active,
-  &:not([disabled]):focus {
+  &:not([disabled]):not(:hover):active,
+  &:not([disabled]):not(:hover):focus {
     color: $_color;
   }
 }
 
 .uicc-button {
+  transition: background-color 200ms, border-color 200ms, color 200ms;
   display: inline-flex;
   align-items: center;
   text-align: center;

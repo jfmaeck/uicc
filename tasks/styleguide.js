@@ -3,8 +3,6 @@ var config = require('../gulp.config')();
 var styledown = require('gulp-styledown');
 var htmlhint = require('gulp-htmlhint');
 var inject = require('gulp-inject');
-var debug = require('gulp-debug');
-var svgSprite = require('gulp-svg-sprite');
 
 function fileContents (filePath, file) {
     return file.contents.toString();

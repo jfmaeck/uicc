@@ -1,9 +1,0 @@
-$uicc-readingBlock-maxWidth: 30rem !default;
-
-.uicc-readingBlock {
-  @media #{$uicc-medium-up} {
-    max-width: $uicc-readingBlock-maxWidth;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}

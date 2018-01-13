@@ -2829,6 +2829,12 @@
       </section>
       <section class="sg-section sg-section-modal">
         <h2 id="modal" class="sg">Modal</h2>
+        <p class="sg">Added the
+          <code class="sg">is-open</code>class to the
+          <code class="sg">adl-modal</code>component to show the modal; Remove the class to hide the modal.</p>
+        <p class="sg">Additionally you might want to add the
+          <code class="sg">is-adl-modal-open</code>class to the
+          <code class="sg">body</code>element to prevent unintended background scrolling while the modal is open.</p>
         <section class="sg-block sg-section-modal-default-">
           <div class="sg-text">
             <h3 id="modal-default-" class="sg">Modal (default)</h3>
@@ -2844,7 +2850,7 @@
                       </div>
                       <h2 class="uicc-headline uicc-headline--h6 uicc-headline--primary">Subheadline</h2>
                     </div>
-                    <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById(&apos;test-modal-open&apos;).classList.remove(&apos;is-open&apos;);">
+                    <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById(&apos;test-modal-open&apos;).classList.remove(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.remove(&apos;is-adl-modal-open&apos;);">
                       <svg class="uicc-icon">
                         <use xlink:href="#clear">
                       </svg>
@@ -2855,13 +2861,13 @@
                   </div>
                   <div class="uicc-modal__footer">
                     <div class="uicc-modal__footerButtons">
-                      <button type="button" class="uicc-button uicc-button--secondary uicc-button--wide" onclick="document.getElementById(&apos;test-modal-open&apos;).classList.remove(&apos;is-open&apos;);">Close</button>
+                      <button type="button" class="uicc-button uicc-button--secondary uicc-button--wide" onclick="document.getElementById(&apos;test-modal-open&apos;).classList.remove(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.remove(&apos;is-adl-modal-open&apos;);">Close</button>
                       <button type="button" class="uicc-button uicc-button--primary uicc-button--wide">Submit</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <button class="uicc-button uicc-button--primary" onclick="document.getElementById(&apos;test-modal-open&apos;).classList.add(&apos;is-open&apos;);">Open modal</button>
+              <button class="uicc-button uicc-button--primary" onclick="document.getElementById(&apos;test-modal-open&apos;).classList.add(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.add(&apos;is-adl-modal-open&apos;);">Open modal</button>
             </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;test-modal-open&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__dialog&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__header&quot;</span>&gt;</span>
@@ -2871,7 +2877,7 @@
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-headline uicc-headline--h6 uicc-headline--primary&quot;</span>&gt;</span>Subheadline<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__headerClose uicc-clickable uicc-clickable--touchy&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-open&apos;).classList.remove(&apos;is-open&apos;);&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__headerClose uicc-clickable uicc-clickable--touchy&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-open&apos;).classList.remove(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.remove(&apos;is-adl-modal-open&apos;);&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;#clear&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
@@ -2892,13 +2898,13 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__footer&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__footerButtons&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-button uicc-button--secondary uicc-button--wide&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-open&apos;).classList.remove(&apos;is-open&apos;);&quot;</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-button uicc-button--secondary uicc-button--wide&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-open&apos;).classList.remove(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.remove(&apos;is-adl-modal-open&apos;);&quot;</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-button uicc-button--primary uicc-button--wide&quot;</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-button uicc-button--primary&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-open&apos;).classList.add(&apos;is-open&apos;);&quot;</span>&gt;</span>Open modal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-button uicc-button--primary&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-open&apos;).classList.add(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.add(&apos;is-adl-modal-open&apos;);&quot;</span>&gt;</span>Open modal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
           </div>
         </section>
         <section class="sg-block sg-section-modal-fullwidth-">
@@ -2916,7 +2922,7 @@
                       </div>
                       <h2 class="uicc-headline uicc-headline--h6 uicc-headline--primary">Subheadline</h2>
                     </div>
-                    <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById(&apos;test-modal-fullWidth-open&apos;).classList.remove(&apos;is-open&apos;);">
+                    <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById(&apos;test-modal-fullWidth-open&apos;).classList.remove(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.remove(&apos;is-adl-modal-open&apos;);">
                       <svg class="uicc-icon">
                         <use xlink:href="#clear">
                       </svg>
@@ -2927,7 +2933,7 @@
                   </div>
                 </div>
               </div>
-              <button class="uicc-button uicc-button--primary" onclick="document.getElementById(&apos;test-modal-fullWidth-open&apos;).classList.add(&apos;is-open&apos;);">Open modal</button>
+              <button class="uicc-button uicc-button--primary" onclick="document.getElementById(&apos;test-modal-fullWidth-open&apos;).classList.add(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.add(&apos;is-adl-modal-open&apos;);">Open modal</button>
             </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal uicc-modal--fullWidth&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;test-modal-fullWidth-open&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__dialog&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__header&quot;</span>&gt;</span>
@@ -2937,7 +2943,7 @@
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-headline uicc-headline--h6 uicc-headline--primary&quot;</span>&gt;</span>Subheadline<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__headerClose uicc-clickable uicc-clickable--touchy&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-fullWidth-open&apos;).classList.remove(&apos;is-open&apos;);&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__headerClose uicc-clickable uicc-clickable--touchy&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-fullWidth-open&apos;).classList.remove(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.remove(&apos;is-adl-modal-open&apos;);&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;#clear&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
@@ -2948,7 +2954,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-button uicc-button--primary&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-fullWidth-open&apos;).classList.add(&apos;is-open&apos;);&quot;</span>&gt;</span>Open modal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-button uicc-button--primary&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-fullWidth-open&apos;).classList.add(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.add(&apos;is-adl-modal-open&apos;);&quot;</span>&gt;</span>Open modal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
           </div>
         </section>
       </section>
@@ -2958,10 +2964,14 @@
         <p class="sg">do not break lines if the content exceeds the maximum horizontal space.</p>
         <div class="sg-example">
           <div class="sg-canvas">
-            <div class="uicc-noWrap">A very long line with many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many words.</div>
-          </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-noWrap&quot;</span>&gt;</span>A very long line with many many many many many many many many many many many many many many many many many many many many
-  many many many many many many many many many many many many many many many many many many many many many many many many
-  many many many many many many many many words.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+            <div style="max-width: 200px; background-color: red;">
+              <div class="uicc-noWrap">With no wrap: very long line with many words.</div>
+              <div>Without no wrap: very long line with many words.</div>
+            </div>
+          </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;max-width: 200px; background-color: red;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-noWrap&quot;</span>&gt;</span>With no wrap: very long line with many words.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Without no wrap: very long line with many words.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
         </div>
       </section>
 

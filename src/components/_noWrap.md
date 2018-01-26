@@ -3,4 +3,8 @@
 do not break lines if the content exceeds the maximum horizontal space.
 
     @example
-    <div class="uicc-noWrap">A very long line with many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many many words.</div>
+    <div style="max-width: 200px; background-color: red;">
+      <div class="uicc-noWrap">With no wrap: very long line with many words.</div>
+      <div>Without no wrap: very long line with many words.</div>
+    </div>
+      

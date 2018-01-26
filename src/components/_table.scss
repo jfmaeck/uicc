@@ -22,15 +22,15 @@
 
       //background-color: transparent !important; //"unstripe"
 
-      &:first-child {
-        border-top: 2px solid $uicc-color-gray;
+      &:last-child {
+        border-bottom: none;
       }
     }
 
     & .uicc-table__cell {
       /* Behave  like a "row" */
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       border: none;
       border-bottom: 1px solid $uicc-color-gray-medium;
 
@@ -108,7 +108,7 @@
   }
 
   &--hover &__row:hover {
-      background-color: lighten($uicc-color-gray-medium, 10%);
+    background-color: lighten($uicc-color-gray-medium, 10%);
   }
 
   &--bordered &__cell {
@@ -123,6 +123,7 @@
   &__cell {
     text-align: left;
     padding: 0.75rem 0.5rem 0.5rem 0.5rem;
+    vertical-align: top;
 
     &--centered {
       text-align: center;
@@ -175,7 +176,7 @@
     padding: 0.2rem 0.2rem 0.1rem 0.25rem;
   }
 
-    &--responsiveMediumDown {
+  &--responsiveMediumDown {
     @include responsiveTable($uicc-medium-down);
   }
 

@@ -2829,12 +2829,6 @@
       </section>
       <section class="sg-section sg-section-modal">
         <h2 id="modal" class="sg">Modal</h2>
-        <p class="sg">Added the
-          <code class="sg">is-open</code>class to the
-          <code class="sg">adl-modal</code>component to show the modal; Remove the class to hide the modal.</p>
-        <p class="sg">Additionally you might want to add the
-          <code class="sg">is-adl-modal-open</code>class to the
-          <code class="sg">body</code>element to prevent unintended background scrolling while the modal is open.</p>
         <section class="sg-block sg-section-modal-default-">
           <div class="sg-text">
             <h3 id="modal-default-" class="sg">Modal (default)</h3>
@@ -2844,6 +2838,11 @@
               <div class="uicc-modal" id="test-modal-open">
                 <div class="uicc-modal__dialog">
                   <div class="uicc-modal__header">
+                    <span class="uicc-modal__headerAction">
+                      <svg class="uicc-icon uicc-icon--hoverPrimary">
+                        <use xlink:href="#star-border">
+                      </svg>
+                    </span>
                     <div class="uicc-modal__headerContent">
                       <div class="uicc-row uicc-row--extraSmallMargin">
                         <h1 class="uicc-headline uicc-headline--h4 uicc-headline--primary">Modal Headline</h1>
@@ -2871,6 +2870,11 @@
             </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;test-modal-open&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__dialog&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__header&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__headerAction&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon uicc-icon--hoverPrimary&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;#star-border&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__headerContent&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraSmallMargin&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-headline uicc-headline--h4 uicc-headline--primary&quot;</span>&gt;</span>Modal Headline<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
@@ -2955,6 +2959,56 @@
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-button uicc-button--primary&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-fullWidth-open&apos;).classList.add(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.add(&apos;is-adl-modal-open&apos;);&quot;</span>&gt;</span>Open modal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-modal-fullheight-">
+          <div class="sg-text">
+            <h3 id="modal-fullheight-" class="sg">Modal (fullHeight)</h3>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="uicc-modal uicc-modal--fullHeight" id="test-modal-fullHeight-open">
+                <div class="uicc-modal__dialog">
+                  <div class="uicc-modal__header">
+                    <div class="uicc-modal__headerContent">
+                      <div class="uicc-row uicc-row--extraSmallMargin">
+                        <h1 class="uicc-headline uicc-headline--h4 uicc-headline--primary">Modal Headline</h1>
+                      </div>
+                      <h2 class="uicc-headline uicc-headline--h6 uicc-headline--primary">Subheadline</h2>
+                    </div>
+                    <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById(&apos;test-modal-fullHeight-open&apos;).classList.remove(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.remove(&apos;is-adl-modal-open&apos;);">
+                      <svg class="uicc-icon">
+                        <use xlink:href="#clear">
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="uicc-modal__content uicc-region">
+                    Modal Content
+                  </div>
+                </div>
+              </div>
+              <button class="uicc-button uicc-button--primary" onclick="document.getElementById(&apos;test-modal-fullHeight-open&apos;).classList.add(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.add(&apos;is-adl-modal-open&apos;);">Open modal</button>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal uicc-modal--fullHeight&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;test-modal-fullHeight-open&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__dialog&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__header&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__headerContent&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraSmallMargin&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">h1</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-headline uicc-headline--h4 uicc-headline--primary&quot;</span>&gt;</span>Modal Headline<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h2</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-headline uicc-headline--h6 uicc-headline--primary&quot;</span>&gt;</span>Subheadline<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__headerClose uicc-clickable uicc-clickable--touchy&quot;</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">&quot;true&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-fullHeight-open&apos;).classList.remove(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.remove(&apos;is-adl-modal-open&apos;);&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;#clear&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-modal__content uicc-region&quot;</span>&gt;</span>
+      Modal Content
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-button uicc-button--primary&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;test-modal-fullHeight-open&apos;).classList.add(&apos;is-open&apos;);document.querySelector(&apos;html&apos;).classList.add(&apos;is-adl-modal-open&apos;);&quot;</span>&gt;</span>Open modal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></pre>
           </div>
         </section>
       </section>

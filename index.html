@@ -901,6 +901,30 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span></pre>
           </div>
         </section>
+        <section class="sg-block sg-section-checkbox-disabled-">
+          <div class="sg-text">
+            <h3 id="checkbox-disabled-" class="sg">Checkbox (disabled)</h3>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <label class="uicc-checkbox is-disabled">
+                <input type="checkbox" class="uicc-checkbox__control" disabled>
+                <span class="uicc-checkbox__label">Checkbox 1</span>
+              </label>
+              <label class="uicc-checkbox is-disabled">
+                <input type="checkbox" class="uicc-checkbox__control" disabled checked>
+                <span class="uicc-checkbox__label">Checkbox 2</span>
+              </label>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-checkbox is-disabled&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-checkbox__control&quot;</span> <span class="hljs-attribute">disabled</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-checkbox__label&quot;</span>&gt;</span>Checkbox 1<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-checkbox is-disabled&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-checkbox__control&quot;</span> <span class="hljs-attribute">disabled</span> <span class="hljs-attribute">checked</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-checkbox__label&quot;</span>&gt;</span>Checkbox 2<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span></pre>
+          </div>
+        </section>
         <section class="sg-block sg-section-checkbox-small-">
           <div class="sg-text">
             <h3 id="checkbox-small-" class="sg">Checkbox (small)</h3>
@@ -2193,6 +2217,24 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span></pre>
           </div>
         </section>
+        <section class="sg-block sg-section-icon-inverted-color-">
+          <div class="sg-text">
+            <h3 id="icon-inverted-color-" class="sg">Icon (inverted color)</h3>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="uicc-region uicc-region--primary">
+                <svg class="uicc-icon uicc-icon--inverted">
+                  <use xlink:href="#edit">
+                </svg>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-region uicc-region--primary&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon uicc-icon--inverted&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;#edit&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+          </div>
+        </section>
         <section class="sg-block sg-section-icon-generic-font-icons-">
           <div class="sg-text">
             <h3 id="icon-generic-font-icons-" class="sg">Icon (generic font icons)</h3>
@@ -2298,6 +2340,36 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon uicc-icon--hoverPrimary&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;#visibility-off&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span></pre>
+          </div>
+        </section>
+        <section class="sg-block sg-section-icon-with-circle-">
+          <div class="sg-text">
+            <h3 id="icon-with-circle-" class="sg">Icon (with circle)</h3>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <div class="uicc-region uicc-region--default">
+                <svg class="uicc-icon uicc-icon--circle">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </div>
+
+              <div class="uicc-region uicc-region--primary">
+                <svg class="uicc-icon uicc-icon--circle uicc-icon--inverted">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </div>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-region uicc-region--default&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon uicc-icon--circle&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;#arrow-right&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-region uicc-region--primary&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon uicc-icon--circle uicc-icon--inverted&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;#arrow-right&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
           </div>
         </section>
       </section>
@@ -3394,6 +3466,30 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span></pre>
           </div>
         </section>
+        <section class="sg-block sg-section-radio-disabled-">
+          <div class="sg-text">
+            <h3 id="radio-disabled-" class="sg">Radio (disabled)</h3>
+          </div>
+          <div class="sg-example">
+            <div class="sg-canvas">
+              <label class="adl-checkbox is-disabled">
+                <input type="checkbox" class="adl-checkbox__control" disabled>
+                <span class="adl-checkbox__label">Radio 1</span>
+              </label>
+              <label class="adl-checkbox is-disabled">
+                <input type="checkbox" class="adl-checkbox__control" disabled checked>
+                <span class="adl-checkbox__label">Radio 2</span>
+              </label>
+            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;adl-checkbox is-disabled&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;adl-checkbox__control&quot;</span> <span class="hljs-attribute">disabled</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;adl-checkbox__label&quot;</span>&gt;</span>Radio 1<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;adl-checkbox is-disabled&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;checkbox&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;adl-checkbox__control&quot;</span> <span class="hljs-attribute">disabled</span> <span class="hljs-attribute">checked</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;adl-checkbox__label&quot;</span>&gt;</span>Radio 2<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span></pre>
+          </div>
+        </section>
         <section class="sg-block sg-section-radio-button-small-">
           <div class="sg-text">
             <h3 id="radio-button-small-" class="sg">Radio Button (small)</h3>
@@ -3918,26 +4014,11 @@
         </div>
       </section>
 
-      <section class="sg-section sg-section-screen-dimenstion">
-        <h2 id="screen-dimenstion" class="sg">Screen Dimenstion</h2>
-        <section class="sg-block sg-section-screen-dimenstion-width-">
+      <section class="sg-section sg-section-screen-dimension">
+        <h2 id="screen-dimension" class="sg">Screen Dimension</h2>
+        <section class="sg-block sg-section-screen-dimension-height-">
           <div class="sg-text">
-            <h3 id="screen-dimenstion-width-" class="sg">Screen Dimenstion (width)</h3>
-            <p class="sg">Set the width of an element to the width of the screen</p>
-          </div>
-          <div class="sg-example">
-            <div class="sg-canvas">
-              <div class="uicc-screenDimension uicc-screenDimension--allowMore uicc-screenDimension--width" style="background-color: coral; position: absolute; left: 0;">
-                <div style="background: lighblue;">Window-Wide element</div>
-              </div>
-            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-screenDimension uicc-screenDimension--allowMore uicc-screenDimension--width&quot;</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background-color: coral; position: absolute; left: 0;&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">&quot;background: lighblue;&quot;</span>&gt;</span>Window-Wide element<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
-          </div>
-        </section>
-        <section class="sg-block sg-section-screen-dimenstion-height-">
-          <div class="sg-text">
-            <h3 id="screen-dimenstion-height-" class="sg">Screen Dimenstion (height)</h3>
+            <h3 id="screen-dimension-height-" class="sg">Screen Dimension (height)</h3>
             <p class="sg">Set the height of an element to the height of the screen</p>
           </div>
           <div class="sg-example">

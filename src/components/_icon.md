@@ -19,6 +19,14 @@ By default, icons inherit their color from the parent element
     <i class="uicc-icon uicc-icon--light">☰</i>
     <svg class="uicc-icon uicc-icon--light"><use xlink:href="#edit"></use></svg>
 
+### Icon (inverted color)
+  
+    @example
+    <div class="uicc-region uicc-region--primary">
+      <svg class="uicc-icon uicc-icon--inverted"><use xlink:href="#edit"></use></svg>
+    </div>
+
+
 ### Icon (generic font icons)
 
 Use arbitrary unicode icon characters.
@@ -46,3 +54,15 @@ Due to browser security restrictions it is not possible to leverage the full pot
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#visibility-on"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#visibility-off"></use></svg>
+
+
+### Icon (with circle)
+
+    @example
+    <div class="uicc-region uicc-region--default">
+      <svg class="uicc-icon uicc-icon--circle"><use xlink:href="#arrow-right"></use></svg>
+    </div>
+
+    <div class="uicc-region uicc-region--primary">
+      <svg class="uicc-icon uicc-icon--circle uicc-icon--inverted"><use xlink:href="#arrow-right"></use></svg>
+    </div>

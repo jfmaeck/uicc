@@ -45,6 +45,24 @@ $uicc-icon-font-size-extraBig-screen-tiny: $uicc-icon-font-size-extraBig !defaul
     color: $uicc-color-gray;
   }
 
+  &--inverted {
+    color: $uicc-color-white;
+  }
+
+  &--circle {
+    border-radius: 50%;
+    color: $uicc-color-white;
+    background: $uicc-color-black;
+
+    &.uicc-icon--inverted {
+      border-radius: 50%;
+      color: $uicc-color-black;
+      background: $uicc-color-white;
+    }
+  }
+
+
+
   &--hoverPrimary {
     @include uicc-hover($uicc-color-brand-primary);
   }
@@ -70,5 +88,4 @@ $uicc-icon-font-size-extraBig-screen-tiny: $uicc-icon-font-size-extraBig !defaul
     }
   }
 }
-
 

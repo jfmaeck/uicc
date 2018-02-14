@@ -24,6 +24,20 @@
         <span class="uicc-checkbox__label">Checkbox 2</span>
     </label>
 
+
+### Checkbox (disabled)
+
+    @example
+    <label class="uicc-checkbox is-disabled">
+        <input type="checkbox" class="uicc-checkbox__control" disabled>
+        <span class="uicc-checkbox__label">Checkbox 1</span>
+    </label>
+    <label class="uicc-checkbox is-disabled">
+        <input type="checkbox" class="uicc-checkbox__control" disabled checked>
+        <span class="uicc-checkbox__label">Checkbox 2</span>
+    </label>
+
+
 ### Checkbox (small)
   
     @example

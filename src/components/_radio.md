@@ -24,6 +24,18 @@
         <span class="uicc-radio__label">Radio Button 2</span>
     </label>
 
+### Radio (disabled)
+
+    @example
+    <label class="adl-checkbox is-disabled">
+        <input type="checkbox" class="adl-checkbox__control" disabled>
+        <span class="adl-checkbox__label">Radio 1</span>
+    </label>
+    <label class="adl-checkbox is-disabled">
+        <input type="checkbox" class="adl-checkbox__control" disabled checked>
+        <span class="adl-checkbox__label">Radio 2</span>
+    </label>
+
 ### Radio Button (small)
   
     @example

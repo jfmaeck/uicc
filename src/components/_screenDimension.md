@@ -1,15 +1,6 @@
-## Screen Dimenstion
+## Screen Dimension
 
-### Screen Dimenstion (width)
-
-Set the width of an element to the width of the screen
-
-    @example
-    <div class="uicc-screenDimension uicc-screenDimension--allowMore uicc-screenDimension--width" style="background-color: coral; position: absolute; left: 0;">
-        <div style="background: lighblue;">Window-Wide element</div>
-    </div>
-
-### Screen Dimenstion (height)
+### Screen Dimension (height)
 
 Set the height of an element to the height of the screen
 

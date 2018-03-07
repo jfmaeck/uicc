@@ -860,5 +860,21 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
   }
 
 
+  // Disable grid-layour for MS IE and MS Edge ind print view to avoid
+  // printing issues (Bug Report: https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11961322/)
+  @media #{$uicc-print-only} {
+
+    // Edge:
+    @supports (-ms-ime-align:auto) {
+      display: block;
+    }
+
+    // IE 10 and 11:
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      display: block;
+    }
+
+  }
+
 }
 

@@ -7,8 +7,13 @@
     padding: 0;
   }
 
+  &[size] &__option {
+    appearance: none;
+    padding: $uicc-input-padding;
+  }
+
   &:not([size]),
-  &[size="1"]{
+  &[size="1"] {
     appearance: none;
     &::-ms-expand{
       display:none;
@@ -21,10 +26,6 @@
     background-size: 6.5rem 3.4rem;
   }
 
-  &__option {
-    appearance: none;
-    padding: $uicc-input-padding;
-  }
 
   @media only screen and (pointer: coarse) {
     // we assume a mobile device that does not support expanded select lists but instead

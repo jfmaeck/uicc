@@ -86,24 +86,31 @@ $uicc-font-size-text: 0.95rem !default;
 $uicc-font-size-h0: 3.5 * $uicc-font-size-text !default;
 $uicc-font-size-h0-screen-small: 3.3 * $uicc-font-size-text !default;
 $uicc-font-size-h0-screen-tiny: 3.0 * $uicc-font-size-text !default;
-$uicc-font-size-h1: 2.5 * $uicc-font-size-text !default;
-$uicc-font-size-h1-screen-small: 2.3 * $uicc-font-size-text !default;
-$uicc-font-size-h1-screen-tiny: 2.0 * $uicc-font-size-text !default;
-$uicc-font-size-h2: 1.5 * $uicc-font-size-text !default;
-$uicc-font-size-h2-screen-small: 1.3 * $uicc-font-size-text !default;
-$uicc-font-size-h2-screen-tiny: 1.2 * $uicc-font-size-text !default;
-$uicc-font-size-h3: 1.22 * $uicc-font-size-text !default;
-$uicc-font-size-h3-screen-small: 1.12 * $uicc-font-size-text !default;
-$uicc-font-size-h3-screen-tiny: 1.12 * $uicc-font-size-text !default;
-$uicc-font-size-h4: 1.15 * $uicc-font-size-text !default;
-$uicc-font-size-h4-screen-small: 1.05 * $uicc-font-size-text !default;
-$uicc-font-size-h4-screen-tiny: 1.0 * $uicc-font-size-text !default;
+$uicc-text-transform-h0: uppercase !default;
+$uicc-font-size-h1: 2.0 * $uicc-font-size-text !default;
+$uicc-font-size-h1-screen-small: 1.9 * $uicc-font-size-text !default;
+$uicc-font-size-h1-screen-tiny: 1.8 * $uicc-font-size-text !default;
+$uicc-text-transform-h1: uppercase !default;
+$uicc-font-size-h2: 1.55 * $uicc-font-size-text !default;
+$uicc-font-size-h2-screen-small: 1.45 * $uicc-font-size-text !default;
+$uicc-font-size-h2-screen-tiny: 1.35 * $uicc-font-size-text !default;
+$uicc-text-transform-h2: uppercase !default;
+$uicc-font-size-h3: 1.4 * $uicc-font-size-text !default;
+$uicc-font-size-h3-screen-small: 1.3 * $uicc-font-size-text !default;
+$uicc-font-size-h3-screen-tiny: 1.2 * $uicc-font-size-text !default;
+$uicc-text-transform-h3: uppercase !default;
+$uicc-font-size-h4: 1.3 * $uicc-font-size-text !default;
+$uicc-font-size-h4-screen-small: 1.2 * $uicc-font-size-text !default;
+$uicc-font-size-h4-screen-tiny: 1.1 * $uicc-font-size-text !default;
+$uicc-text-transform-h4: none !default;
 $uicc-font-size-h5: 1.0 * $uicc-font-size-text !default;
 $uicc-font-size-h5-screen-small: 0.9 * $uicc-font-size-text !default;
-$uicc-font-size-h5-screen-tiny: 0.8 * $uicc-font-size-text !default;
+$uicc-font-size-h5-screen-tiny: 0.9 * $uicc-font-size-text !default;
+$uicc-text-transform-h5: none !default;
 $uicc-font-size-h6: 0.9 * $uicc-font-size-text !default;
 $uicc-font-size-h6-screen-small: 0.8 * $uicc-font-size-text !default;
-$uicc-font-size-h6-screen-tiny: 0.7 * $uicc-font-size-text !default;
+$uicc-font-size-h6-screen-tiny: 0.8 * $uicc-font-size-text !default;
+$uicc-text-transform-h6: none !default;
 
 //** Unit-less `line-height` for use in components like buttons.
 $uicc-line-height-base: 1.35 !default;
@@ -136,6 +143,7 @@ $uicc-input-padding: 0.5rem 0.35rem 0.25rem 0.35rem !default;
  */
 $uicc-modal-z-index: 1000 !default;
 $uicc-offCanvas-z-index: $uicc-modal-z-index - 1 !default;
+$uicc-loading-container-z-index: 1 !default;
 
 
 

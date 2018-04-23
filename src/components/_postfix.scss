@@ -17,6 +17,7 @@
   &--small-stacked {
     @media #{$uicc-tiny-only} {
       flex-direction: column;
+      align-items: flex-start;
 
       &.uicc-postfix--gutters {
         > * + * {
@@ -30,6 +31,7 @@
   &--small-stacked {
     @media #{$uicc-small-only} {
       flex-direction: column;
+      align-items: flex-start;
 
       > * + * {
         margin-left: 0;

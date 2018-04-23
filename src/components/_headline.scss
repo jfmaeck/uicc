@@ -27,6 +27,7 @@
 
   &--h0 {
     font-size: $uicc-font-size-h0-screen-tiny;
+    text-transform: $uicc-text-transform-h0;
 
     @media #{$uicc-medium-up} {
       font-size: $uicc-font-size-h0-screen-small;
@@ -43,6 +44,7 @@
 
   &--h1 {
     font-size: $uicc-font-size-h1-screen-tiny;
+    text-transform: $uicc-text-transform-h1;
 
     @media #{$uicc-medium-up} {
       font-size: $uicc-font-size-h1-screen-small;
@@ -59,6 +61,7 @@
 
   &--h2 {
     font-size: $uicc-font-size-h2-screen-tiny;
+    text-transform: $uicc-text-transform-h2;
 
     @media #{$uicc-medium-up} {
       font-size: $uicc-font-size-h2-screen-small;
@@ -75,6 +78,7 @@
 
   &--h3 {
     font-size: $uicc-font-size-h3-screen-tiny;
+    text-transform: $uicc-text-transform-h3;
 
     @media #{$uicc-medium-up} {
       font-size: $uicc-font-size-h3-screen-small;
@@ -91,6 +95,7 @@
 
   &--h4 {
     font-size: $uicc-font-size-h4-screen-tiny;
+    text-transform: $uicc-text-transform-h4;
 
     @media #{$uicc-medium-up} {
       font-size: $uicc-font-size-h4-screen-small;
@@ -107,6 +112,7 @@
 
   &--h5 {
     font-size: $uicc-font-size-h5-screen-tiny;
+    text-transform: $uicc-text-transform-h5;
 
     @media #{$uicc-medium-up} {
       font-size: $uicc-font-size-h5-screen-small;
@@ -123,6 +129,7 @@
 
   &--h6 {
     font-size: $uicc-font-size-h6-screen-tiny;
+    text-transform: $uicc-text-transform-h6;
 
     @media #{$uicc-medium-up} {
       font-size: $uicc-font-size-h6-screen-small;
@@ -135,6 +142,14 @@
     .uicc-headline__addendum {
       font-size: 75%;
     }
+  }
+
+  &--label {
+    display: inline-block;
+    padding: 0.3em 0.3em 0.20em 0.3em;
+    background: $uicc-color-black;
+    color: $uicc-color-white;
+    text-transform: uppercase;
   }
 
 }

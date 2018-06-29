@@ -58,4 +58,14 @@ $uicc-region-secondary-color-background: $uicc-color-gray-light !default;;
   &--rounded {
     @include uicc-roundedEdges;
   }
+
+  &--verticalOnly {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--horizontalOnly {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }

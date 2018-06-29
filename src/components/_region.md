@@ -53,6 +53,19 @@ Highlight the region if an element inside that region is focused
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet <a href="javascript:;">dolore magna aliquam erat volutpat</a>.
     </div>
 
+### Region (vertical only)
+  
+    @example
+    <div class="uicc-region uicc-region--secondary uicc-region--verticalOnly">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet <a href="javascript:;">dolore magna aliquam erat volutpat</a>.
+    </div>
+
+### Region (horizontal only)
+  
+    @example
+    <div class="uicc-region uicc-region--secondary uicc-region--horizontalOnly">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet <a href="javascript:;">dolore magna aliquam erat volutpat</a>.
+    </div>
 
 ### Region (example layout):
 

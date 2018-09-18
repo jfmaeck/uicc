@@ -24,11 +24,13 @@ h2.sg, h3.sg, ul.sg, p.sg {
   line-height: 1.55;
 }
 h2.sg {
-  font-size: 2.2em;
+  font-family: $uicc-headings-font-family;
+  font-size: $uicc-font-size-h2;
   font-weight: 100;
   margin-top: 3em;
 }
 h3.sg {
+  font-family: $uicc-headings-font-family;
   font-size: 1.1em;
   font-weight: bold;
 }

@@ -23,10 +23,7 @@ gulp.task('default', gulp.series('serve-dev'));
 
 
 
-function startBrowserSync(done) {
-  console.log(config.browserSync);
+function startBrowserSync() {
   bsIns = bs.create();
   bsIns.init(config.browserSync);
-  bsIns.reload();
-  done();
 }

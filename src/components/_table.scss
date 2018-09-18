@@ -1,3 +1,7 @@
+$uicc-table-color-background: $uicc-color-gray-light !default;
+$uicc-table-font-size: 0.9em !default;
+$uicc-table-font-size-compact: 0.8em !default;
+
 @mixin responsiveTable($mediaQuery)
 {
   @media #{$mediaQuery} {
@@ -6,6 +10,10 @@
     & .uicc-table__cell,
     & tbody {
       display: block;
+    }
+
+    & {
+      border-right: none;
     }
 
     /* Hide table headers (but not display: none;, for accessibility) */
@@ -22,8 +30,8 @@
 
       //background-color: transparent !important; //"unstripe"
 
-      &:last-child {
-        border-bottom: none;
+      &:first-child {
+        border-top: 2px solid $uicc-color-gray;
       }
     }
 
@@ -32,7 +40,7 @@
       display: flex;
       align-items: flex-start;
       border: none;
-      border-bottom: 1px solid $uicc-color-gray-medium;
+      border-bottom: 1px solid $uicc-color-gray-light;
 
       &:last-child {
         border-bottom: none;
@@ -90,99 +98,142 @@
   }
 }
 
+
+
+.uicc-tableWrapper {
+  background-color: $uicc-table-color-background;
+}
+
 .uicc-table {
   border-collapse: collapse;
   border-spacing: 0;
-
-  &--block {
-    width: 100%;
-  }
-
-  &--striped &__row {
-    &:nth-child(even) {
-      background-color: lighten($uicc-color-gray-medium, 10%);
-      &:hover {
-        background-color: lighten($uicc-color-gray-medium, 20%);
-      }
-    }
-  }
-
-  &--hover &__row:hover {
-    background-color: lighten($uicc-color-gray-medium, 10%);
-  }
-
-  &--bordered &__cell {
-    border: 1px solid $uicc-color-gray-medium;
-  }
-
-  &__row {
-    transition: all 300ms;
-    border-bottom: 1px solid $uicc-color-gray-medium;
-  }
-
-  &__cell {
-    text-align: left;
-    padding: 0.75rem 0.5rem 0.5rem 0.5rem;
-    vertical-align: top;
-
-    &--centered {
-      text-align: center;
-    }
-
-    &--headline {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      background-color: $uicc-color-gray-light;
-      color: $uicc-color-gray-dark;
-      font-weight: bold;
-    }
-
-    &--image {
-      padding-top: 0.5rem;
-    }
-
-    &--actions {
-      text-align: right;
-      white-space: nowrap;
-    }
-
-  }
-
-  &__action {
-    color: $uicc-color-gray;
-    font-size: 0.8em;
-
-    &:hover {
-      color: $uicc-color-brand-primary;
-    }
-
-    &:visited {
-      color: $uicc-color-gray;
-    }
-
-    & + .uicc-table__action {
-      margin-left: 0.5em;
-    }
-  }
-
-  &--bordered {
-    .uicc-table__cell--headline {
-      border-top: 1px solid $uicc-color-gray-medium;
-      border-bottom: 1px solid $uicc-color-gray-medium;
-    }
-  }
-
-  &--compact &__cell {
-    padding: 0.2rem 0.2rem 0.1rem 0.25rem;
-  }
-
-  &--responsiveMediumDown {
-    @include responsiveTable($uicc-medium-down);
-  }
-
-  &--responsiveSmallDown {
-    @include responsiveTable($uicc-small-down);
-  }
-
+  font-variant-numeric: lining-nums tabular-nums;
+  border-right: 2px solid $uicc-color-white;
+  background-color: $uicc-table-color-background;
+  font-size: $uicc-table-font-size;
 }
 
+.uicc-table--block {
+  width: 100%;
+}
+
+.uicc-table--striped .uicc-table__row {
+  &:nth-child(even) {
+    background-color: $uicc-color-gray-medium;
+  }
+}
+
+.uicc-table--hover .uicc-table__row:hover {
+  background-color: $uicc-color-gray-medium;
+}
+
+.uicc-table--bordered .uicc-table__cell {
+  border: 1px solid $uicc-color-gray-lighter;
+}
+
+.uicc-table__row {
+  transition: background-color 300ms;
+  border-bottom: 1px solid $uicc-color-gray-lighter;
+
+  &--faded {
+    opacity: 0.25;
+  }
+}
+
+.uicc-table__cell {
+  padding: 0.75rem 0.5rem 0.5rem 0.5rem;
+  vertical-align: top;
+  text-align: left;
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--centeredVertically {
+    vertical-align: center;
+  }
+
+  &--headline {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: $uicc-color-gray-medium;
+    border-bottom: 1px solid #{$uicc-color-white};
+    color: $uicc-color-gray-dark;
+    font-weight: bold;
+  }
+
+  &--numeric {
+    text-align: right;
+  }
+
+  &--headlineRow {
+    text-align: right;
+  }
+
+  &--image {
+    padding-top: 0.5rem;
+  }
+
+  &--actions {
+    text-align: right;
+    white-space: nowrap;
+  }
+}
+
+.uicc-table__action {
+  color: $uicc-color-gray;
+  font-size: 0.8em;
+
+  &:hover {
+    color: $uicc-color-brand-primary;
+  }
+
+  &:visited {
+    color: $uicc-color-gray;
+  }
+
+  & + .uicc-table__action {
+    margin-left: 0.5em;
+  }
+}
+
+.uicc-table--bordered {
+
+  .uicc-table__cell--headline {
+    border-left-color: $uicc-color-white;
+    border-right-color: $uicc-color-white;
+  }
+
+  .uicc-table__cell--headline:first-child {
+    border-left-color: $uicc-color-gray-light;
+  }
+  .uicc-table__cell--headline:last-child {
+    border-right-color: $uicc-color-gray-light;
+  }
+}
+
+.uicc-table--compact {
+  font-size: $uicc-table-font-size-compact;
+  .uicc-table__cell {
+    padding-top: 0.4rem;
+    padding-left: 0.25rem;
+    padding-bottom: 0.3rem;
+    padding-right: 0.2rem;
+  }
+}
+
+@media #{$uicc-print-only} {
+  .uicc-table--bordered {
+    .uicc-table__cell {
+      border-color: $uicc-color-black !important;
+    }
+  }
+}
+
+.uicc-table--responsiveMediumDown {
+  @include responsiveTable($uicc-medium-down);
+}
+
+.uicc-table--responsiveSmallDown {
+  @include responsiveTable($uicc-small-down);
+}

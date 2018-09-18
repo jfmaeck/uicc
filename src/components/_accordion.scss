@@ -1,16 +1,23 @@
 .uicc-accordion {
 
   &__item {
-    border-bottom: 1px solid var(--uicc-color-gray-medium);
+
+    border-bottom: 1px solid $uicc-color-gray-medium;
+
+    &--last,
+    &:last-child {
+      border-bottom: none;
+    }
 
     &Header {
-      @include uicc-hover(var(--uicc-color-brand-primary));
+      @include uicc-hover($uicc-color-brand-primary);
       padding-top: 1rem;
       padding-bottom: 0.8rem;
       cursor: pointer;
 
       .uicc-accordion__item.is-open > & {
-        color: var(--uicc-color-brand-primary);
+        color: $uicc-color-brand-primary;
+        font-weight: bold;
       }
     }
 
@@ -23,7 +30,5 @@
       padding-bottom: 1rem;
     }
   }
-
-
 }
 

@@ -1,29 +1,34 @@
-:root {
-  --uicc-button-primary-color-background: $uicc-color-brand-primary;
-  --uicc-button-primary-color: $uicc-color-brand-primary-inverted;
-  --uicc-button-primary-border-color: var(--uicc-button-primary-color-background);
-  --uicc-button-primary-hover-color-background: darken($uicc-color-brand-primary, 10%);
-  --uicc-button-primary-hover-color: var(--uicc-button-primary-color);
-  --uicc-button-primary-hover-border-color: var(--uicc-button-primary-hover-color-background);
+$uicc-button-primary-color-background: $uicc-color-brand-primary !default;
+$uicc-button-primary-color: $uicc-color-brand-primary-inverted !default;
+$uicc-button-primary-border-color: $uicc-button-primary-color-background !default;
+$uicc-button-primary-hover-color-background: $uicc-color-brand-primary-light !default;
+$uicc-button-primary-hover-color: $uicc-button-primary-color !default;
+$uicc-button-primary-hover-border-color: $uicc-button-primary-hover-color-background !default;
 
-  --uicc-button-secondary-color-background: $uicc-color-gray-dark;
-  --uicc-button-secondary-color: $uicc-color-white;
-  --uicc-button-secondary-border-color: $uicc-color-gray-dark;
-  --uicc-button-secondary-hover-color-background: $uicc-color-gray-darker;
-  --uicc-button-secondary-hover-color: $uicc-color-white;
-  --uicc-button-secondary-hover-border-color: var(--uicc-button-secondary-hover-color-background);
+$uicc-button-secondary-color-background: $uicc-color-gray-dark !default;
+$uicc-button-secondary-color: $uicc-color-white !default;
+$uicc-button-secondary-border-color: $uicc-color-gray-dark !default;
+$uicc-button-secondary-hover-color-background: $uicc-color-gray-darker !default;
+$uicc-button-secondary-hover-color: $uicc-color-white !default;
+$uicc-button-secondary-hover-border-color: $uicc-button-secondary-hover-color-background !default;
 
-  --uicc-button-danger-color-background: $uicc-color-error;
-  --uicc-button-danger-color: $uicc-color-white;
-  --uicc-button-danger-border-color: var(--uicc-button-danger-color-background);
-  --uicc-button-danger-hover-color-background: darken($uicc-color-error, 10%);
-  --uicc-button-danger-hover-color: var(--uicc-button-danger-color);
-  --uicc-button-danger-hover-border-color: var(--uicc-button-danger-hover-color-background);
+$uicc-button-danger-color-background: $uicc-color-error !default;
+$uicc-button-danger-color: $uicc-color-white !default;
+$uicc-button-danger-border-color: $uicc-button-danger-color-background !default;
+$uicc-button-danger-hover-color-background: darken($uicc-color-error, 10%) !default;
+$uicc-button-danger-hover-color: $uicc-button-danger-color !default;
+$uicc-button-danger-hover-border-color: $uicc-button-danger-hover-color-background !default;
 
-  --uicc-button-padding: 0.62rem 0.35rem 0.4rem 0.45rem;
-  --uicc-button-border-radius: 0;
-}
-  
+$uicc-button-padding: 0.85em 0.75em 0.55em 0.75em !default;
+$uicc-button-padding-big: 1.12em 1.0em 0.7em 1.0em !default;
+
+$uicc-button-font-weight: bold;
+$uicc-button-text-transform: uppercase;
+
+$uicc-button-font-size: 0.9em !default;
+$uicc-button-font-size-big: 1.2em !default;
+$uicc-button-border-radius: $uicc-roundedEdge-border-radius !default;
+
 @mixin button-colors(
   $_color,
   $_backgroundColor,
@@ -54,10 +59,13 @@
   display: inline-flex;
   align-items: center;
   text-align: center;
-  padding: var(--uicc-button-padding);
+  padding: $uicc-button-padding;
   border: 1px solid transparent;
-  border-radius: var(--uicc-button-border-radius);
+  border-radius: $uicc-button-border-radius;
 
+  text-transform: $uicc-button-text-transform;
+  font-size: $uicc-button-font-size;
+  font-weight: $uicc-button-font-weight;
   line-height: 1em;
   cursor: pointer;
 }
@@ -74,53 +82,60 @@
 
 .uicc-button--block {
   width: 100%;
+  justify-content: center;
 }
 
 .uicc-button--primary {
   @include button-colors(
-                  var(--uicc-button-primary-color),
-                  var(--uicc-button-primary-color-background),
-                  var(--uicc-button-primary-border-color),
-                  var(--uicc-button-primary-hover-color),
-                  var(--uicc-button-primary-hover-color-background),
-                  var(--uicc-button-primary-hover-border-color)
+                  $uicc-button-primary-color,
+                  $uicc-button-primary-color-background,
+                  $uicc-button-primary-border-color,
+                  $uicc-button-primary-hover-color,
+                  $uicc-button-primary-hover-color-background,
+                  $uicc-button-primary-hover-border-color
   );
 }
 
 .uicc-button--secondary {
   @include button-colors(
-                  var(--uicc-button-secondary-color),
-                  var(--uicc-button-secondary-color-background),
-                  var(--uicc-button-secondary-border-color),
-                  var(--uicc-button-secondary-hover-color),
-                  var(--uicc-button-secondary-hover-color-background),
-                  var(--uicc-button-secondary-hover-border-color)
+                  $uicc-button-secondary-color,
+                  $uicc-button-secondary-color-background,
+                  $uicc-button-secondary-border-color,
+                  $uicc-button-secondary-hover-color,
+                  $uicc-button-secondary-hover-color-background,
+                  $uicc-button-secondary-hover-border-color
   );
 }
 
 .uicc-button--danger {
   @include button-colors(
-                  var(--uicc-button-danger-color),
-                  var(--uicc-button-danger-color-background),
-                  var(--uicc-button-danger-border-color),
-                  var(--uicc-button-danger-hover-color),
-                  var(--uicc-button-danger-hover-color-background),
-                  var(--uicc-button-danger-hover-border-color)
+                  $uicc-button-danger-color,
+                  $uicc-button-danger-color-background,
+                  $uicc-button-danger-border-color,
+                  $uicc-button-danger-hover-color,
+                  $uicc-button-danger-hover-color-background,
+                  $uicc-button-danger-hover-border-color
   );
 }
 
 .uicc-button__icon {
-  margin-bottom: -0.28em;
-  margin-top: -0.35em;
+
+  //margin-top: -0.4em;
+  //margin-bottom: -0.2em;
 
   &--left {
-    margin-right: 0.1em;
-    margin-left: -0.1em;
+    margin-right: 0.3em;
+    margin-left: -0.2em;
   }
 
   &--right {
-    margin-left: 0;
-    margin-right: -0.1em;
+    margin-left: 0.3em;
+    margin-right: -0.2em;
   }
 }
 
+
+.uicc-button--big {
+  padding: $uicc-button-padding-big;
+  font-size: $uicc-button-font-size-big;
+}

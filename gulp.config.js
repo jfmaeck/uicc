@@ -2,8 +2,6 @@ module.exports = function () {
     var src = 'src/';
     var dest = 'dist/';
 
-    var vendorAssets = {};
-
     var browserSync = {
         port: 8000,
         server: {
@@ -24,7 +22,6 @@ module.exports = function () {
     var config = {
         src: src,
         dest: dest,
-        vendorAssets: vendorAssets,
         browserSync: browserSync,
     };
 

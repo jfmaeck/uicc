@@ -11,5 +11,5 @@ gulp.task('assets', function() {
 });
 
 gulp.task('assets-watch', function () {
-    return gulp.watch(srcPatterns, ['assets']);
+    return gulp.watch(srcPatterns, gulp.series('assets'));
 });

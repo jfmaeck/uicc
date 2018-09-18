@@ -12,6 +12,6 @@ gulp.task('sass-lint', function () {
 });
 
 gulp.task('sass-lint-watch', function () {
-    return gulp.watch(config.src + '**/*.scss', ['sass-lint']);
+    return gulp.watch(config.src + '**/*.scss', gulp.series('sass-lint'));
 });
 

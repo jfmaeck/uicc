@@ -1,63 +1,59 @@
-:root {
-  --uicc-col-margin: 14px;
-  --uicc-col-margin-small: 8px;
-  --uicc-col-margin-big: 28px;
-}
+$uicc-col-margin: 14px !default;
+$uicc-col-margin-small: 8px !default;
+$uicc-col-margin-big: 28px !default;
 
 .uicc-col {
   display: inline-flex;
 
-  margin-right: var(--uicc-col-margin);
+  margin-right: $uicc-col-margin;
 
   &--smallMargin {
-    margin-right: var(--uicc-col-margin-small);
+    margin-right: $uicc-col-margin-small;
   }
 
   &--bigMargin {
-    margin-right: var(--uicc-col-margin-big);
+    margin-right: $uicc-col-margin-big;
   }
 
   &--withSeparator {
-    border-right: 1px solid var(--uicc-color-gray-medium);
-    padding-right: calc(var(--uicc-col-margin) / 1.65);
-    margin-right: calc(var(--uicc-col-margin) / 2.5);
+    border-right: 1px solid $uicc-color-gray-medium;
+    padding-right: calc(#{$uicc-col-margin} / 1.65);
+    margin-right: calc(#{$uicc-col-margin} / 2.5);
 
     &.uicc-col--smallMargin {
-      padding-right: calc(var(--uicc-col-margin-small) / 1.4);
-      margin-right: calc(var(--uicc-col-margin-small) / 2.8);
+      padding-right: calc(#{$uicc-col-margin-small} / 1.4);
+      margin-right: calc(#{uicc-col-margin-small} / 2.8);
     }
 
     &.uicc-col--bigMargin {
-      padding-right: calc(var(--uicc-col-margin-big) / 1.75);
-      margin-right: calc(var(--uicc-col-margin-big) / 2.5);
+      padding-right: calc(#{$uicc-col-margin-big} / 1.75);
+      margin-right: calc(#{$uicc-col-margin-big} / 2.5);
     }
   }
 
   &--inverse {
 
     margin-right: 0;
-    margin-left: var(--uicc-col-margin);
+    margin-left: $uicc-col-margin;
 
     &.uicc-col--withSeparator {
       padding-right: 0;
       border-right: none;
 
-      border-left: 1px solid var(--uicc-color-gray-medium);
-      padding-left: calc(var(--uicc-col-margin) / 1.65);
-      margin-left: calc(var(--uicc-col-margin) / 2.5);
+      border-left: 1px solid $uicc-color-gray-medium;
+      padding-left: calc(#{$uicc-col-margin} / 1.65);
+      margin-left: calc(#{$uicc-col-margin} / 2.5);
 
       &.uicc-col--smallMargin {
-        padding-left: calc(var(--uicc-col-margin-small) / 1.4);
-        margin-left: calc(var(--uicc-col-margin-small) / 2.8);
+        padding-left: calc(#{$uicc-col-margin-small} / 1.4);
+        margin-left: calc(#{$uicc-col-margin-small} / 2.8);
       }
 
       &.uicc-col--bigMargin {
-        padding-left: calc(var(--uicc-col-margin-big) / 1.75);
-        margin-left: calc(var(--uicc-col-margin-big) / 2.5);
+        padding-left: calc(#{$uicc-col-margin-big} / 1.75);
+        margin-left: calc(#{$uicc-col-margin-big} / 2.5);
       }
     }
   }
-
-
 
 }

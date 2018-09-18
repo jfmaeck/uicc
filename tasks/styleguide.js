@@ -30,5 +30,5 @@ gulp.task('styleguide-watch', function () {
         config.src + '**/*.md',
         './styleguide-config.md',
         config.dest + 'assets/icons.svg.html'
-    ], ['styleguide']);
+    ], gulp.series('styleguide'));
 });

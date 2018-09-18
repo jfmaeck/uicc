@@ -24,5 +24,5 @@ gulp.task('svg-icon', function () {
 });
 
 gulp.task('svg-icon-watch', function () {
-    return gulp.watch(config.src + 'assets/icons/**/*.svg', ['svg-icon']);
+    return gulp.watch(config.src + 'assets/icons/**/*.svg', gulp.series('svg-icon'));
 });

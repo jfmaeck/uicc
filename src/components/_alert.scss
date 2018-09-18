@@ -1,63 +1,61 @@
-:root {
-  --uicc-alert-border-color: $uicc-color-gray-light;
-  --uicc-alert-border-width: 1px;
-  --uicc-alert-border-style: solid;
-  --uicc-alert-border-radius: 0;
-  --uicc-alert-padding: $uicc-default-margin;
-  --uicc-alert-padding-screen-large: $uicc-default-margin-screen-large;
-  --uicc-alert-success-color: $uicc-color-white;
-  --uicc-alert-success-color-background: $uicc-color-success;
-  --uicc-alert-success-color-border: darken($uicc-color-success, 10%);
-  --uicc-alert-info-color: $uicc-color-black;
-  --uicc-alert-info-color-background: $uicc-color-gray-light;
-  --uicc-alert-info-color-border: $uicc-color-gray-medium;
-  --uicc-alert-warning-color: hsl(37, 57, 54);
-  --uicc-alert-warning-color-background: hsl(37, 40, 95);
-  --uicc-alert-warning-color-border: hsl(37, 48, 85);
-  --uicc-alert-error-color: $uicc-color-white;
-  --uicc-alert-error-color-background: $uicc-color-error;
-  --uicc-alert-error-color-border: darken($uicc-color-error, 20%);
-}
+$uicc-alert-border-color: $uicc-color-gray-light !default;
+$uicc-alert-border-width: 1px !default;
+$uicc-alert-border-style: solid !default;
+$uicc-alert-border-radius: 0 !default;
+$uicc-alert-padding: $uicc-default-margin !default;
+$uicc-alert-padding-screen-large: $uicc-default-margin-screen-large !default;
+$uicc-alert-success-color: $uicc-color-white !default;
+$uicc-alert-success-color-background: $uicc-color-success !default;
+$uicc-alert-success-color-border: darken($uicc-color-success, 10%) !default;
+$uicc-alert-info-color: $uicc-color-black !default;
+$uicc-alert-info-color-background: $uicc-color-gray-light !default;
+$uicc-alert-info-color-border: $uicc-color-gray-medium !default;
+$uicc-alert-warning-color: hsl(37, 57, 54) !default;
+$uicc-alert-warning-color-background: hsl(37, 40, 95) !default;
+$uicc-alert-warning-color-border: hsl(37, 48, 85) !default;
+$uicc-alert-error-color: $uicc-color-white !default;
+$uicc-alert-error-color-background: $uicc-color-error !default;
+$uicc-alert-error-color-border: darken($uicc-color-error, 20%) !default;
 
 .uicc-alert {
-  padding: var(--uicc-alert-padding);
-  border-width: var(--uicc-alert-border-width);
-  border-style: var(--uicc-alert-border-style);
-  border-radius: var(--uicc-alert-border-radius);
+  padding: $uicc-alert-padding;
+  border-width: $uicc-alert-border-width;
+  border-style: $uicc-alert-border-style;
+  border-radius: $uicc-alert-border-radius;
 
-  border-color: var(--uicc-alert-border-color);
+  border-color: $uicc-alert-border-color;
 
   @media #{$uicc-medium-up} {
-    padding: var(--uicc-alert-padding-screen-large);
+    padding: $uicc-alert-padding-screen-large;
   }
 
   &--success {
-    color: var(--uicc-alert-success-color);
-    background-color: var(--uicc-alert-success-color-background);
-    border-color: var(--uicc-alert-success-color-border);
+    color: $uicc-alert-success-color;
+    background-color: $uicc-alert-success-color-background;
+    border-color: $uicc-alert-success-color-border;
 
     .uicc-link {
-      color: var(--uicc-alert-success-color);
+      color: $uicc-alert-success-color;
     }
 
   }
 
   &--info {
-    color: var(--uicc-alert-info-color);
-    background-color: var(--uicc-alert-info-color-background);
-    border-color: var(--uicc-alert-info-color-border);
+    color: $uicc-alert-info-color;
+    background-color: $uicc-alert-info-color-background;
+    border-color: $uicc-alert-info-color-border;
   }
 
   &--warning {
-    color: var(--uicc-alert-warning-color);
-    background-color: var(--uicc-alert-warning-color-background);
-    border-color: var(--uicc-alert-warning-color-border);
+    color: $uicc-alert-warning-color;
+    background-color: $uicc-alert-warning-color-background;
+    border-color: $uicc-alert-warning-color-border;
   }
 
   &--error {
-    color: var(--uicc-alert-error-color);
-    background-color: var(--uicc-alert-error-color-background);
-    border-color: var(--uicc-alert-error-color-border);
+    color: $uicc-alert-error-color;
+    background-color: $uicc-alert-error-color-background;
+    border-color: $uicc-alert-error-color-border;
   }
 
 }

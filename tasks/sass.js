@@ -3,13 +3,11 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
-var customProperties = require("postcss-custom-properties")
 var clean = require("postcss-clean")
 var config = require('../gulp.config')();
 
 var processors = [
   autoprefixer({browsers: ['last 3 versions', '> 3%']}),
-  customProperties({preserve: true}),
   clean
 ];
 

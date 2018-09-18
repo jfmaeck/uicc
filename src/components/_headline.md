@@ -49,7 +49,6 @@ In a text document we add sensible margins to our uicc-headlines to visually str
 ### Headline (Label)
   
     @example
-    <h1 class="uicc-headline uicc-headline--h0 uicc-headline--label">Heading 0</h1>
     <h1 class="uicc-headline uicc-headline--h1 uicc-headline--label">Heading 1</h1>
     <h2 class="uicc-headline uicc-headline--h2 uicc-headline--label">Heading 2</h2>
     <h3 class="uicc-headline uicc-headline--h3 uicc-headline--label">Heading 3</h3>

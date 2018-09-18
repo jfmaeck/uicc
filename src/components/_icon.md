@@ -1,41 +1,6 @@
 ## Icon
 
-### Icon (default):
-
-By default, icons inherit their color from the parent element 
-
-    @example
-    <i class="uicc-icon">★</i>
-
-### Icon (primary brand color)
-  
-    @example
-    <i class="uicc-icon uicc-icon--primary">★</i>
-    <svg class="uicc-icon uicc-icon--primary"><use xlink:href="#check"></use></svg>
-
-### Icon (light color)
-  
-    @example
-    <i class="uicc-icon uicc-icon--light">☰</i>
-    <svg class="uicc-icon uicc-icon--light"><use xlink:href="#edit"></use></svg>
-
-### Icon (inverted color)
-  
-    @example
-    <div class="uicc-region uicc-region--primary">
-      <svg class="uicc-icon uicc-icon--inverted"><use xlink:href="#edit"></use></svg>
-    </div>
-
-
-### Icon (generic font icons)
-
-Use arbitrary unicode icon characters.
-
-    @example
-    <i class="uicc-icon">⟲</i>
-    <i class="uicc-icon">☰</i>
-
-### Icon (SVG icons)
+### Icons (SVG icons)
 
 Due to browser security restrictions it is not possible to leverage the full potential of svg files when they are referenced as external files. Thus, in order to use the svg icons in your own website, you need to include the contents of the generate file `dist/assets/icons.svg.html` directly in your html document.
 
@@ -55,6 +20,29 @@ Due to browser security restrictions it is not possible to leverage the full pot
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#visibility-on"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#visibility-off"></use></svg>
 
+### Icon (default):
+
+By default, icons inherit their color from the parent element 
+
+    @example
+    <svg class="uicc-icon"><use xlink:href="#check"></use></svg>
+
+### Icon (primary brand color)
+  
+    @example
+    <svg class="uicc-icon uicc-icon--primary"><use xlink:href="#check"></use></svg>
+
+### Icon (light color)
+  
+    @example
+    <svg class="uicc-icon uicc-icon--light"><use xlink:href="#edit"></use></svg>
+
+### Icon (inverted color)
+  
+    @example
+    <div class="uicc-region uicc-region--primary">
+      <svg class="uicc-icon uicc-icon--inverted"><use xlink:href="#edit"></use></svg>
+    </div>
 
 ### Icon (with circle)
 

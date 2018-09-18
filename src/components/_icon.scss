@@ -13,13 +13,6 @@ $uicc-icon-font-size-extraBig-screen-tiny: $uicc-icon-font-size-extraBig !defaul
 
   width: 1em;
   height: 1em;
-  font-size: $uicc-icon-font-size-screen-tiny;
-
-  text-transform: none;
-  font-style: normal;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 1em;
 
   &--tiny {
     font-size: $uicc-icon-font-size-tiny;

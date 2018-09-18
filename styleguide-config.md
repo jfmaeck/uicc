@@ -6,7 +6,7 @@
     <script src='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js'></script>
     <link rel='stylesheet' href='styledown.css' />
     <link rel='stylesheet' href='styleguide.css' />
-	<script>document.title = 'UI CC – UI Toolkit to Clone and Customize'</script>
+	  <script>document.title = 'UI CC – UI Toolkit to Clone and Customize'</script>
 
 ### Body
 
@@ -14,8 +14,11 @@
     <!-- endinject -->
     <div class="uicc-pageWrapper">
         <header class="styledown-header">
-            <h1 class="uicc-headline uicc-headline--h1 uicc-headline--text">UI CC</h1>
-            <h2 class="uicc-headline uicc-headline--h2 uicc-headline--text">UI Toolkit to <b class="uicc-bold">C</b>lone and <b class="uicc-bold">C</b>ustomize</h2>
+            <h1 class="uicc-headline uicc-headline--h1 uicc-headline--text uicc-headline--primary">
+              UI CC
+              <span class="uicc-headline__addendum">Styleguide</span>
+            </h1>
+            <p class="uicc-paragraph">UI Toolkit to <b class="uicc-bold">C</b>lone and <b class="uicc-bold">C</b>ustomize</h2>
         </header>
         <div class="sg-container uicc-row" sg-content></div>
         <div class="uicc-region uicc-region--secondary">

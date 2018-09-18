@@ -1,6 +1,6 @@
 ## Col
 
-## Col (default)
+### Col (default)
 
 Cols have a defined right margin
 

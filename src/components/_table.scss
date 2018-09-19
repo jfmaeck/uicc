@@ -2,8 +2,7 @@ $uicc-table-color-background: $uicc-color-gray-light !default;
 $uicc-table-font-size: 0.9em !default;
 $uicc-table-font-size-compact: 0.8em !default;
 
-@mixin responsiveTable($mediaQuery)
-{
+@mixin responsiveTable($mediaQuery) {
   @media #{$mediaQuery} {
     &,
     & .uicc-table__row,
@@ -46,7 +45,7 @@ $uicc-table-font-size-compact: 0.8em !default;
         border-bottom: none;
       }
 
-      &:before {
+      &::before {
         content: attr(data-uicc-th);
         flex-basis: 35%;
         flex-shrink: 0;
@@ -55,7 +54,7 @@ $uicc-table-font-size-compact: 0.8em !default;
         font-weight: bold;
       }
 
-      &--headline:before {
+      &--headline::before {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
       }
@@ -72,7 +71,7 @@ $uicc-table-font-size-compact: 0.8em !default;
           margin-bottom: 1rem;
         }
 
-        &:before {
+        &::before {
           display: none;
         }
       }
@@ -86,7 +85,7 @@ $uicc-table-font-size-compact: 0.8em !default;
           margin-bottom: 1rem;
         }
 
-        &:before {
+        &::before {
           display: none;
         }
       }
@@ -207,6 +206,7 @@ $uicc-table-font-size-compact: 0.8em !default;
   .uicc-table__cell--headline:first-child {
     border-left-color: $uicc-color-gray-light;
   }
+
   .uicc-table__cell--headline:last-child {
     border-right-color: $uicc-color-gray-light;
   }
@@ -214,6 +214,7 @@ $uicc-table-font-size-compact: 0.8em !default;
 
 .uicc-table--compact {
   font-size: $uicc-table-font-size-compact;
+
   .uicc-table__cell {
     padding-top: 0.4rem;
     padding-left: 0.25rem;
@@ -225,7 +226,7 @@ $uicc-table-font-size-compact: 0.8em !default;
 @media #{$uicc-print-only} {
   .uicc-table--bordered {
     .uicc-table__cell {
-      border-color: $uicc-color-black !important;
+      border-color: $uicc-color-black !important; // sass-lint:disable-line no-important
     }
   }
 }

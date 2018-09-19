@@ -1,4 +1,4 @@
-// scss-lint:disable ImportantRule
+// sass-lint:disable no-important
 
 @mixin uicc-hidden-tiny {
   @media #{$uicc-tiny-only} {
@@ -99,3 +99,4 @@
     display: none !important;
   }
 }
+// scss-lint:enable no-important

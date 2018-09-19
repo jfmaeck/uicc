@@ -9,7 +9,7 @@ rules:
   function-name-format:
     - 1
     - allow-leading-underscore: false
-      convention: '[uicc|_].\w+'
+      convention: '[attr|uicc|_].\w+'
   id-name-format:
     - 1
     - convention: '^[uicc|is-].\w+$'
@@ -31,6 +31,7 @@ rules:
       convention: '[uicc|_].\w+'
   zero-unit: 0
   empty-args: 0
+  force-element-nesting: 0
   force-pseudo-nesting: 0
   nesting-depth:
     - 1

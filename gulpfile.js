@@ -6,8 +6,8 @@ const config = require('./gulp.config')();
 
 requireDir('./tasks'); // load externally defined tasks
 
-gulp.task('src-compile', gulp.series('clean', 'svg-icon', gulp.parallel('assets', 'sass'), 'styleguide'));
-gulp.task('src-watch', gulp.parallel('assets-watch', 'svg-icon-watch',  'sass-watch', 'styleguide-watch'));
+gulp.task('src-compile', gulp.series('sass-lint', 'clean', 'svg-icon', gulp.parallel('assets', 'sass'), 'styleguide'));
+gulp.task('src-watch', gulp.parallel('assets-watch', 'svg-icon-watch',  'sass-lint-watch', 'sass-watch', 'styleguide-watch'));
 
 gulp.task('serve-dev', gulp.series('src-compile', gulp.parallel(startBrowserSync, 'src-watch')));
 

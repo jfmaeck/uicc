@@ -1,5 +1,5 @@
 .uicc-select {
-  @extend .uicc-input;
+  @extend .uicc-input; // sass-lint:disable-line placeholder-in-extend
 
   border-radius: 0;
 
@@ -13,10 +13,11 @@
   }
 
   &:not([size]),
-  &[size="1"] {
+  &[size='1'] {
     appearance: none;
-    &::-ms-expand{
-      display:none;
+
+    &::-ms-expand { // sass-lint:disable-line no-vendor-prefixes
+      display: none;
     }
 
     padding: $uicc-input-padding;

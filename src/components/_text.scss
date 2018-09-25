@@ -1,0 +1,48 @@
+.uicc-text {
+  &--centered {
+    text-align: center;
+  }
+
+  &--bold {
+    @include uicc-bold;
+  }
+
+  &--uppercase {
+    @include uicc-uppercase;
+  }
+
+  &--underlined {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  &--noWrap {
+    white-space: nowrap;
+  }
+
+  &--truncated {
+    @include uicc-truncateLine;
+  }
+
+  &--large,
+  &--big {
+    font-size: 1.19em;
+  }
+
+  &--extraLarge,
+  &--extraBig {
+    font-size: 1.5em;
+  }
+
+  &--small {
+    font-size: 0.9em;
+  }
+
+  &--extraSmall {
+    font-size: 0.8em;
+  }
+}

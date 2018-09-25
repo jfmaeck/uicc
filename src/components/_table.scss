@@ -2,8 +2,8 @@ $uicc-table-color-background: $uicc-color-gray-light !default;
 $uicc-table-font-size: 0.9em !default;
 $uicc-table-font-size-compact: 0.8em !default;
 
-@mixin responsiveTable($mediaQuery) {
-  @media #{$mediaQuery} {
+@mixin responsiveTable($_mediaQuery) {
+  @media #{$_mediaQuery} {
     &,
     & .uicc-table__row,
     & .uicc-table__cell,
@@ -96,8 +96,6 @@ $uicc-table-font-size-compact: 0.8em !default;
     }
   }
 }
-
-
 
 .uicc-tableWrapper {
   background-color: $uicc-table-color-background;
@@ -197,7 +195,6 @@ $uicc-table-font-size-compact: 0.8em !default;
 }
 
 .uicc-table--bordered {
-
   .uicc-table__cell--headline {
     border-left-color: $uicc-color-white;
     border-right-color: $uicc-color-white;

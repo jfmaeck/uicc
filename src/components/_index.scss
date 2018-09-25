@@ -7,14 +7,12 @@
 @import 'region';
 @import 'link';
 @import 'centered';
-@import 'centeredText';
+@import 'text';
 @import 'scrollable';
 @import 'button';
 @import 'list';
 @import 'headline';
 @import 'clickable';
-@import 'truncateLine';
-@import 'noWrap';
 @import 'icon';
 @import 'readingBlock';
 @import 'screenDimension';
@@ -29,11 +27,7 @@
 @import 'postfix';
 @import 'tabs';
 @import 'block';
-@import 'underline';
-@import 'bold';
-@import 'uppercase';
 @import 'color';
-@import 'fontSize';
 @import 'hidden';
 @import 'hiddenUninitialized';
 @import 'screenMargin';

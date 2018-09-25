@@ -15,6 +15,8 @@
 
 In a text document we add sensible margins to our uicc-headlines to visually structure the document outline.
 
+Add the `uicc-headline--firstInText` modifier if you do not need a top margin.
+
     @example
     <h1 class="uicc-headline uicc-headline--h0 uicc-headline--text uicc-headline--firstInText">Heading 0</h1>
     <h1 class="uicc-headline uicc-headline--h1 uicc-headline--text uicc-headline--firstInText">Heading 1</h1>

@@ -2,7 +2,7 @@
 
     @example
     <script>
-    function uiccAnimatedDemo(id, effect) {
+    function shpAnimatedDemo(id, effect) {
       var removeAllClassesFromElement = function(element) {
         var classNamesToRemove =  Array.prototype.slice.call(element.classList, 0).filter(function(className) {
           return /^uicc-animated/.test(className);
@@ -24,6 +24,6 @@
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
     </div>
     
-    <button class="uicc-button uicc-button--primary" onclick="uiccAnimatedDemo('uicc-animated-demo', 'fadeIn');">Fade in</button>
-    <button class="uicc-button uicc-button--primary" onclick="uiccAnimatedDemo('uicc-animated-demo', 'zoomIn');">Zoom in</button>
+    <button class="uicc-button uicc-button--primary" onclick="shpAnimatedDemo('uicc-animated-demo', 'fadeIn');">Fade in</button>
+    <button class="uicc-button uicc-button--primary" onclick="shpAnimatedDemo('uicc-animated-demo', 'zoomIn');">Zoom in</button>
     

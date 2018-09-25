@@ -58,7 +58,6 @@ $uicc-row-separator-color: $uicc-color-gray-medium;
   }
 
   &--inverse {
-
     margin-bottom: 0;
     margin-top: $uicc-row-margin;
 
@@ -77,7 +76,6 @@ $uicc-row-separator-color: $uicc-color-gray-medium;
         padding-top: $uicc-row-margin-big;
       }
       // scss-lint:enable NestingDepth
-
     }
   }
 }

@@ -1,12 +1,9 @@
-@import "settings";
+// sass-lint:disable-all
 
-.styledown-header {
-  text-align: center;
-}
+@import 'settings';
 
-
-// scss-lint:disable SelectorFormat
-// scss-lint:disable ColorVariable
+// sass-lint:disable SelectorFormat
+// sass-lint:disable ColorVariable
 
 /**
  * Styledown
@@ -23,17 +20,20 @@ h2.sg, h3.sg, ul.sg, p.sg {
   margin: 20px 0;
   line-height: 1.55;
 }
+
 h2.sg {
   font-family: $uicc-headings-font-family;
   font-size: $uicc-font-size-h2;
   font-weight: 100;
   margin-top: 3em;
 }
+
 h3.sg {
   font-family: $uicc-headings-font-family;
   font-size: 1.1em;
   font-weight: bold;
 }
+
 h3.sg + .sg {
   margin-top: -20px;
 }
@@ -42,9 +42,11 @@ h3.sg + .sg {
 p.sg, ul.sg {
   color: $uicc-color-gray-dark;
 }
+
 h2.sg {
   color: $uicc-color-brand-primary;
 }
+
 h3.sg {
   color: $uicc-color-black;
 }
@@ -58,7 +60,7 @@ code.sg {
   border-radius: 2px;
   font-size: 0.8em;
   font-family: menlo, monospace;
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.01), inset -1px -1px rgba(0,0,0,0.01);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.01), inset -1px -1px rgba(0, 0, 0, 0.01);
 }
 
 code.sg:first-child {
@@ -125,7 +127,6 @@ code.sg:first-child {
 .sg-text > :first-child {
   margin-top: 0;
 }
-
 
 /**
  * An example's canvas.

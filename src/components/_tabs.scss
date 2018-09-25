@@ -1,42 +1,38 @@
+$uicc-tab-header-distance: $uicc-default-margin-big !default;
+$uicc-tab-header-font-weight: 'bold' !default;
+$uicc-tab-header-font-weight-active: 'bold' !default;
+$uicc-tab-header-color: $uicc-color-gray !default;
+$uicc-tab-header-color-active: $uicc-color-brand-primary !default;
+$uicc-tab-header-underline-color: $uicc-color-transparent !default;
+$uicc-tab-header-underline-color-active: $uicc-color-brand-primary !default;
+
 .uicc-tabs {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  &__tabHeaders {
-    display: flex;
-    flex: 0 0 auto;
-  }
-
   &__tabHeader {
     @include uicc-hover($uicc-color-brand-primary);
-
+    display: inline-block;
     position: relative;
-    flex: 1 1 0;
+
     transition: color 200ms, border 200ms;
-    padding: 11px 8px 8px 8px;
-    border-bottom: 2px solid $uicc-color-gray-light;
+    padding: 3px 0 12px 0;
+
+    border-bottom: 2px solid $uicc-tab-header-underline-color;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
+    font-weight: $uicc-tab-header-font-weight;
+    color: $uicc-tab-header-color;
     font-size: 0.87 * $uicc-font-size-base;
 
-    &::after {
-      content: '';
-      position: absolute;
-      right: -1px;
-      top: 6px;
-      bottom: 6px;
-      width: 2px;
-      background-color: $uicc-color-gray-light;
+    & + & {
+      margin-left: $uicc-tab-header-distance;
     }
 
     &.is-active,
     &:focus {
-      font-weight: bold;
+      font-weight: $uicc-tab-header-font-weight-active;
       font-size: $uicc-font-size-base;
-      color: $uicc-color-brand-primary;
-      border-color: $uicc-color-brand-primary;
+      color: $uicc-tab-header-color-active;
+      border-color: $uicc-tab-header-underline-color-active;
     }
 
     &:first-child,
@@ -53,12 +49,10 @@
         display: none;
       }
       // scss-lint:enable NestingDepth
-
     }
   }
 
   &__tabContent {
-    flex: 1 1 auto;
     display: none;
 
     &.is-active {

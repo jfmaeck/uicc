@@ -38,6 +38,11 @@ CSS properties such as display: none or visibility: hidden will not work out. Th
     <input type="text" class="uicc-input is-hidden" value="input value">
     <input type="text" class="uicc-input" value="another visible input (after the hidden one)">
 
+### Input (range / slider)
+  
+    @example
+    <input type="range" class="uicc-input">
+
 ### Input (textarea)
   
     @example

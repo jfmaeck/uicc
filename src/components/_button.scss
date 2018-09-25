@@ -20,22 +20,25 @@ $uicc-button-danger-hover-color: $uicc-button-danger-color !default;
 $uicc-button-danger-hover-border-color: $uicc-button-danger-hover-color-background !default;
 
 $uicc-button-padding: 0.85em 0.75em 0.55em 0.75em !default;
-$uicc-button-padding-big: 1.12em 1.0em 0.7em 1.0em !default;
+$uicc-button-padding-big: 1.12em 1em 0.7em 1em !default;
 
-$uicc-button-font-weight: bold;
-$uicc-button-text-transform: uppercase;
+$uicc-button-font-weight: bold !default;
+$uicc-button-text-transform: uppercase !default;
 
 $uicc-button-font-size: 0.9em !default;
 $uicc-button-font-size-big: 1.2em !default;
 $uicc-button-border-radius: $uicc-roundedEdge-border-radius !default;
+$uicc-button-icon-margin-top: -0.1em;
+$uicc-button-icon-margin-bottom: 0;
 
-@mixin button-colors(
+@mixin uicc-button-colors(
   $_color,
   $_backgroundColor,
   $_borderColor,
   $_hoverColor,
   $_hoverBackgroundColor,
-  $_hoverBorderColor) {
+  $_hoverBorderColor
+) {
   background-color: $_backgroundColor;
   color: $_color;
   border-color: $_borderColor;
@@ -52,13 +55,24 @@ $uicc-button-border-radius: $uicc-roundedEdge-border-radius !default;
   &:not([disabled]):not(:hover):focus {
     color: $_color;
   }
+
+  &.uicc-button--outline {
+    background-color: transparent;
+    color: $_backgroundColor;
+    border-color: $_backgroundColor;
+  }
+
+  &.is-active {
+    background-color: $_hoverBackgroundColor;
+    color: $_hoverColor;
+  }
 }
 
 .uicc-button {
   transition: background-color 200ms, border-color 200ms, color 200ms;
   display: inline-flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   padding: $uicc-button-padding;
   border: 1px solid transparent;
   border-radius: $uicc-button-border-radius;
@@ -68,16 +82,16 @@ $uicc-button-border-radius: $uicc-roundedEdge-border-radius !default;
   font-weight: $uicc-button-font-weight;
   line-height: 1em;
   cursor: pointer;
-}
 
-.uicc-button:focus {
-  outline: none;
-}
+  &:focus {
+    outline: none;
+  }
 
-.uicc-button[disabled],
-.uicc-button.is-disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
+  &[disabled],
+  &.is-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
 }
 
 .uicc-button--block {
@@ -86,42 +100,41 @@ $uicc-button-border-radius: $uicc-roundedEdge-border-radius !default;
 }
 
 .uicc-button--primary {
-  @include button-colors(
-                  $uicc-button-primary-color,
-                  $uicc-button-primary-color-background,
-                  $uicc-button-primary-border-color,
-                  $uicc-button-primary-hover-color,
-                  $uicc-button-primary-hover-color-background,
-                  $uicc-button-primary-hover-border-color
+  @include uicc-button-colors(
+    $uicc-button-primary-color,
+    $uicc-button-primary-color-background,
+    $uicc-button-primary-border-color,
+    $uicc-button-primary-hover-color,
+    $uicc-button-primary-hover-color-background,
+    $uicc-button-primary-hover-border-color
   );
 }
 
 .uicc-button--secondary {
-  @include button-colors(
-                  $uicc-button-secondary-color,
-                  $uicc-button-secondary-color-background,
-                  $uicc-button-secondary-border-color,
-                  $uicc-button-secondary-hover-color,
-                  $uicc-button-secondary-hover-color-background,
-                  $uicc-button-secondary-hover-border-color
+  @include uicc-button-colors(
+    $uicc-button-secondary-color,
+    $uicc-button-secondary-color-background,
+    $uicc-button-secondary-border-color,
+    $uicc-button-secondary-hover-color,
+    $uicc-button-secondary-hover-color-background,
+    $uicc-button-secondary-hover-border-color
   );
 }
 
 .uicc-button--danger {
-  @include button-colors(
-                  $uicc-button-danger-color,
-                  $uicc-button-danger-color-background,
-                  $uicc-button-danger-border-color,
-                  $uicc-button-danger-hover-color,
-                  $uicc-button-danger-hover-color-background,
-                  $uicc-button-danger-hover-border-color
+  @include uicc-button-colors(
+    $uicc-button-danger-color,
+    $uicc-button-danger-color-background,
+    $uicc-button-danger-border-color,
+    $uicc-button-danger-hover-color,
+    $uicc-button-danger-hover-color-background,
+    $uicc-button-danger-hover-border-color
   );
 }
 
 .uicc-button__icon {
-
-  //margin-top: -0.4em;
-  //margin-bottom: -0.2em;
+  margin-top: $uicc-button-icon-margin-top;
+  margin-bottom: $uicc-button-icon-margin-bottom;
 
   &--left {
     margin-right: 0.3em;
@@ -133,7 +146,6 @@ $uicc-button-border-radius: $uicc-roundedEdge-border-radius !default;
     margin-right: -0.2em;
   }
 }
-
 
 .uicc-button--big {
   padding: $uicc-button-padding-big;

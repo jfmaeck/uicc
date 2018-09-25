@@ -1,5 +1,4 @@
 .uicc-postfix {
-
   display: flex;
 
   &--center {
@@ -9,7 +8,6 @@
   &--gutters {
     > * + * {
       margin-left: $uicc-default-margin;
-
     }
   }
 
@@ -47,6 +45,4 @@
   &__fluid {
     flex: 1 1 auto;
   }
-
-
 }

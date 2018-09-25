@@ -7,6 +7,22 @@
     <a class="uicc-button uicc-button--secondary">Secondary</a>
     <a class="uicc-button uicc-button--danger">Danger</a>
 
+### Button (outline)
+  
+    @example
+    <a class="uicc-button uicc-button--outline uicc-button--primary">Primary</a>
+    <a class="uicc-button uicc-button--outline uicc-button--secondary">Secondary</a>
+    <a class="uicc-button uicc-button--outline uicc-button--danger">Danger</a>
+
+### Button (is-active)
+  
+You can force the hover state by adding the `is-active` flag
+  
+    @example
+    <a class="uicc-button uicc-button--primary is-active">Primary</a>
+    <a class="uicc-button uicc-button--secondary  is-active">Secondary</a>
+    <a class="uicc-button uicc-button--danger is-active">Danger</a>
+
 ### Button (disabled)
 
 You can either use the ```disabled``` attribute or the ```is-disabled``` class.

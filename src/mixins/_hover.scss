@@ -1,13 +1,11 @@
 @mixin uicc-hover($_color: null, $_backgroundColor: null) {
-  @media (hover) {
-    &:hover {
-      @if ($_color) {
-        color: $_color;
-      }
+  &:hover {
+    @if ($_color) {
+      color: $_color;
+    }
 
-      @if ($_backgroundColor) {
-        background-color: $_backgroundColor;
-      }
+    @if ($_backgroundColor) {
+      background-color: $_backgroundColor;
     }
   }
 }

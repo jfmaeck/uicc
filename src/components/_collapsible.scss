@@ -1,15 +1,20 @@
 .uicc-collapsible {
 
   @keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 
   display: flex;
   flex-direction: column;
 
   .uicc-collapsible__statefulVisibility--open {
-      display: none;
+    display: none;
   }
 
   .uicc-collapsible__statefulVisibility--collapsed {
@@ -39,6 +44,5 @@
       }
     }
   }
-
 
 }

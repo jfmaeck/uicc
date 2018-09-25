@@ -1,6 +1,5 @@
-// scss-lint:disable ImportantRule
+// sass-lint:disable no-important
 .uicc-hidden {
-
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -28,7 +27,5 @@
     &.uicc-hidden--preserveSpace {
       opacity: 1;
     }
-
   }
-
 }

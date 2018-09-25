@@ -2,23 +2,21 @@
 
 ### Icons (SVG icons)
 
-Due to browser security restrictions it is not possible to leverage the full potential of svg files when they are referenced as external files. Thus, in order to use the svg icons in your own website, you need to include the contents of the generate file `dist/assets/icons.svg.html` directly in your html document.
-
     @example
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#add"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#arrow-down"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#arrow-downward"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#arrow-left"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#arrow-right"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#arrow-up"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#arrow-upward"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#calendar"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#check"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#clear"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#visibility-on"></use></svg>
-    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#visibility-off"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#add"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#arrow-down"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#arrow-downward"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#arrow-left"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#arrow-right"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#arrow-up"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#arrow-upward"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#calendar"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#check"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#clear"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#visibility-on"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#visibility-off"></use></svg>
 
 ### Icon (default):
 

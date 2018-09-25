@@ -1,6 +1,11 @@
-$uicc-input-error-color: $uicc-color-error;
-$uicc-input-valid-color: $uicc-color-success;
-$uicc-input-border-color: $uicc-color-gray-medium;
+$uicc-input-error-color: $uicc-color-error !default;
+$uicc-input-valid-color: $uicc-color-success !default;
+$uicc-input-border-color: $uicc-color-gray-medium !default;
+
+$uicc-input-type-range-thumb-color: $uicc-color-black !default;
+$uicc-input-type-range-thumb-margin: -7px !default;
+$uicc-input-type-range-track-color: $uicc-color-gray-medium !default;
+$uicc-input-type-range-track-width: 2px !default;
 
 .uicc-input {
   flex: 1 1 auto;
@@ -8,7 +13,6 @@ $uicc-input-border-color: $uicc-color-gray-medium;
 
   outline: 0;
   padding: $uicc-input-padding;
-
 
   background-color: $uicc-color-white;
   color: $uicc-color-gray-dark;
@@ -19,14 +23,14 @@ $uicc-input-border-color: $uicc-color-gray-medium;
     border: 1px solid $uicc-color-brand-primary;
   }
 
-  // scss-lint:disable VendorPrefix, PseudoElement
+  // sass-lint:disable no-vendor-prefixes
   &::-webkit-input-placeholder,
   &:-moz-placeholder,
   &-moz-placeholder,
   &-ms-input-placeholder {
     font-size: 0.8em;
   }
-  // scss-lint:enable VendorPrefix, PseudoElement
+  // sass-lint:enable no-vendor-prefixes
 
   &.is-disabled,
   &--stateful[disabled] {
@@ -42,11 +46,12 @@ $uicc-input-border-color: $uicc-color-gray-medium;
   }
 
   &.is-hidden {
-    /* Hide input element while still preserving accessibility features (i.e. tab order) and ensuring that its value gets submitted properly.
-       CSS properties such as display: none or visibility: hidden will not work out. The reasons are:
-        - the input value will not be sent to the server on form submit
-        - the input will be excluded out of tab order.
-    */
+    /* Hide input element while still preserving accessibility features (i.e. tab order) and ensuring that its value
+     * gets submitted properly.
+     * CSS properties such as display: none or visibility: hidden will not work out. The reasons are:
+     * - the input value will not be sent to the server on form submit
+     * - the input will be excluded out of tab order.
+     */
     width: 0.1px; //Setting the property values to zero ends up throwing the element out of tab party in some browsers.
     height: 0.1px; //Setting the property values to zero ends up throwing the element out of tab party in some browsers.
     opacity: 0;
@@ -67,7 +72,90 @@ $uicc-input-border-color: $uicc-color-gray-medium;
   }
 }
 
-
+// sass-lint:disable no-qualifying-elements
 textarea.uicc-input {
   min-height: 7em;
 }
+
+// sass-lint:enable no-qualifying-elements
+
+/********************************************************************************************************************
+ * INPUT TYPE RANGE
+ *
+ * Using mixins is necessary to avoid code repetition as you can't comma-separate the selectors in this case.
+ * Browsers will drop the entire selector if they don't understand a part of it.
+ ********************************************************************************************************************/
+
+@mixin nrc-input-range-thumb {
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  border: none;
+  border-radius: 50%;
+  background: $uicc-input-type-range-thumb-color;
+  cursor: pointer;
+}
+
+@mixin nrc-input-range-track {
+  width: 100%;
+  height: $uicc-input-type-range-track-width;
+  cursor: pointer;
+  background: $uicc-input-type-range-track-color;
+  border: none;
+}
+
+// sass-lint:disable no-vendor-prefixes no-qualifying-elements
+input[type='range'].uicc-input {
+  appearance: none;
+  padding: 0;
+  width: 100%;
+  border: none;
+  background: none;
+
+  &::-webkit-slider-thumb {
+    @include nrc-input-range-thumb;
+    margin-top: $uicc-input-type-range-thumb-margin; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  }
+
+  &::-moz-range-thumb {
+    @include nrc-input-range-thumb;
+    margin-top: $uicc-input-type-range-thumb-margin; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  }
+
+  &::-ms-thumb {
+    @include nrc-input-range-thumb;
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include nrc-input-range-track;
+    margin-bottom: 0.2rem;
+  }
+
+  &::-moz-focus-outer {
+    border: 0;
+  }
+
+  &::-moz-range-track {
+    @include nrc-input-range-track;
+  }
+
+  &::-ms-track {
+    @include nrc-input-range-track;
+  }
+
+  //&::-ms-fill-lower {
+  //    height: $nrc-input-type-range-track-width;
+  //    background-color: $color_bluck-prime;
+  //}
+
+  //&::-moz-range-progress {
+  //    height: $nrc-input-type-range-track-width;
+  //    background-color: $color_bluck-prime;
+  //}
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// sass-lint:enable no-vendor-prefixes no-qualifying-elements

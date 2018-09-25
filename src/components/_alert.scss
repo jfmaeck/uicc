@@ -37,7 +37,6 @@ $uicc-alert-error-color-border: darken($uicc-color-error, 20%) !default;
     .uicc-link {
       color: $uicc-alert-success-color;
     }
-
   }
 
   &--info {
@@ -57,5 +56,4 @@ $uicc-alert-error-color-border: darken($uicc-color-error, 20%) !default;
     background-color: $uicc-alert-error-color-background;
     border-color: $uicc-alert-error-color-border;
   }
-
 }

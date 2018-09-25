@@ -55,14 +55,11 @@ $uicc-icon-font-size-extraBig-screen-tiny: $uicc-icon-font-size-extraBig !defaul
     }
   }
 
-
-
   &--hoverPrimary {
     @include uicc-hover($uicc-color-brand-primary);
   }
 
   @media #{$uicc-small-up} {
-
     font-size: $uicc-icon-font-size;
 
     &--tiny {
@@ -82,4 +79,3 @@ $uicc-icon-font-size-extraBig-screen-tiny: $uicc-icon-font-size-extraBig !defaul
     }
   }
 }
-

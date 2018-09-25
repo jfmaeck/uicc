@@ -3,14 +3,12 @@ $uicc-font-path: '#{$uicc-asset-path}/fonts' !default;
 $uicc-icon-path: '#{$uicc-asset-path}/icons' !default;
 $uicc-image-path: '#{$uicc-asset-path}/images' !default;
 
-
 /**
  * Media Query Breakpoints:
  */
 $uicc-screen-small-min: 360px !default; // iPhone 6, Galaxy S6
 $uicc-screen-medium-min: 576px !default; // Nexus 5, Iphone 5
 $uicc-screen-large-min: 768px !default; // iPad portrait
-$uicc-screen-large-min: 1024px !default; // iPad landscape
 
 // So media queries don't overlap when required, provide a maximum
 $uicc-screen-small-max: ($uicc-screen-medium-min - 1px);
@@ -33,7 +31,6 @@ $uicc-xlarge-up: 'only screen and (min-width: #{$uicc-screen-large-min})';
 $uicc-screen-only: 'only screen';
 $uicc-print-only: 'only print';
 
-
 //== Colors
 $uicc-color-white: #fff !default;
 $uicc-color-black: hsla(186, 15%, 8%, 1) !default;
@@ -48,7 +45,6 @@ $uicc-color-darken: rgba(0, 0, 0, 0.65) !default;
 $uicc-color-darken-heavy: rgba(0, 0, 0, 0.8) !default;
 $uicc-color-transparent: rgba(0, 0, 0, 0) !default;
 
-
 $uicc-color-brand-primary: hsla(186, 71%, 34%, 1) !default;
 $uicc-color-brand-primary-light: lighten($uicc-color-brand-primary, 10%) !default;
 $uicc-color-brand-primary-inverted: $uicc-color-white !default;
@@ -57,7 +53,7 @@ $uicc-color-brand-secondary: $uicc-color-gray-darker !default;
 $uicc-color-brand-secondary-inverted: $uicc-color-white !default;
 
 $uicc-color-success: #00b76b !default;
-$uicc-color-error: #F44336 !default;
+$uicc-color-error: #f44336 !default;
 
 //== Scaffolding
 //
@@ -124,8 +120,6 @@ $uicc-headings-line-height: 1.3 !default;
 $uicc-headings-line-height-screen-tiny: 1.2 !default;
 $uicc-headings-letter-spacing: initial !default;
 
-
-
 /**
  * Margins:
  */
@@ -135,7 +129,6 @@ $uicc-default-margin-small: 8px !default;
 $uicc-default-margin-small-screen-large: 10px !default;
 $uicc-default-margin-big: 20px !default;
 $uicc-default-margin-big-screen-large: 28px !default;
-
 
 $uicc-input-padding: 0.5rem 0.35rem 0.25rem 0.35rem !default;
 

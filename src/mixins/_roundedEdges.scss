@@ -1,4 +1,4 @@
-$uicc-roundedEdge-border-radius: 3px !default;
+$uicc-roundedEdge-border-radius: 2px !default;
 
 @mixin uicc-roundedEdges($_radius: $uicc-roundedEdge-border-radius) {
   border-radius: $_radius;

@@ -3,7 +3,6 @@ $uicc-grid-gutter-height: 0.5rem !default;
 $uicc-grid-gutter-width-halve: $uicc-grid-gutter-width / 2;
 $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
 
-
 .uicc-grid__example {
   color: $uicc-color-brand-primary-inverted;
   background-color: $uicc-color-brand-primary;
@@ -41,7 +40,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
     }
   }
 
-
   &--rowGutters {
     > .uicc-grid__cell {
       padding-top: $uicc-grid-gutter-height-halve;
@@ -70,7 +68,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
         padding-right: $uicc-grid-gutter-width;
       }
     }
-
 
     &.uicc-grid--rowGutters {
       > .uicc-grid__cell {
@@ -101,7 +98,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
     &--center {
       align-self: center;
     }
-
 
     /* cell ordering */
     &--orderFirst {
@@ -204,9 +200,7 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
       width: 100%;
     }
 
-
     @media #{$uicc-tiny-up} {
-
       &--tiny-orderFirst {
         order: -1;
       }
@@ -301,7 +295,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
     }
 
     @media #{$uicc-small-up} {
-
       &--small-orderFirst {
         order: -1;
       }
@@ -396,7 +389,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
     }
 
     @media #{$uicc-medium-up} {
-
       &--medium-orderFirst {
         order: -1;
       }
@@ -493,7 +485,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
     }
 
     @media #{$uicc-large-up} {
-
       &--large-orderFirst {
         order: -1;
       }
@@ -590,7 +581,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
     }
   }
 
-
   /* alignment per row */
 
   &--top {
@@ -654,7 +644,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
   }
 
   @media #{$uicc-tiny-up} {
-
     &--tiny-fit {
       > .uicc-grid__cell {
         flex: 1 1 0%;
@@ -667,8 +656,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
         width: 100%;
       }
     }
-
-
 
     &--tiny-1of2 {
       > .uicc-grid__cell {
@@ -707,7 +694,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
   }
 
   @media #{$uicc-small-up} {
-
     &--small-fit {
       > .uicc-grid__cell {
         flex: 1 1 0%;
@@ -758,7 +744,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
   }
 
   @media #{$uicc-medium-up} {
-
     &--medium-fit {
       > .uicc-grid__cell {
         flex: 1 1 0%;
@@ -809,7 +794,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
   }
 
   @media #{$uicc-large-up} {
-
     &--large-fit {
       > .uicc-grid__cell {
         flex: 1 1 0%;
@@ -859,13 +843,12 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
     }
   }
 
-
-  // Disable grid-layour for MS IE and MS Edge ind print view to avoid
+  // Disable grid-layout for MS IE and MS Edge in print view to avoid
   // printing issues (Bug Report: https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11961322/)
+  // sass-lint:disable no-vendor-prefixes
   @media #{$uicc-print-only} {
-
     // Edge:
-    @supports (-ms-ime-align:auto) {
+    @supports (-ms-ime-align: auto) {
       display: block;
     }
 
@@ -873,8 +856,6 @@ $uicc-grid-gutter-height-halve: $uicc-grid-gutter-height / 2;
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       display: block;
     }
-
   }
-
+  // sass-lint:enable no-vendor-prefixes
 }
-

@@ -1,14 +1,15 @@
+$uicc-checkboxAndRadio-background-color-checked: $uicc-color-brand-primary !default;
+
 .uicc-radio,
 .uicc-checkbox {
   display: block;
 
-  margin-top: .5em;
+  margin-top: 0.5em;
 
   &--inline {
     display: inline-block;
     margin-right: $uicc-default-margin;
   }
-
 
   &__label {
     @include uicc-hover($uicc-color-brand-primary);
@@ -30,10 +31,10 @@
       width: 1.5em;
       height: 1.5em;
       border: 1px solid transparentize($uicc-color-gray-dark, 0.5);
-      padding: .2em;
+      padding: 0.2em;
       color: $uicc-color-white;
-      line-height: .4em;
-      text-indent: -.1em;
+      line-height: 0.4em;
+      text-indent: -0.1em;
     }
   }
 
@@ -60,15 +61,13 @@
   &.is-checked &__label::before,
   &__control:checked + &__label::before {
     background-image: url('#{$uicc-image-path}/check.svg');
-    background-color: $uicc-color-brand-primary;
-    color: $uicc-color-brand-primary-inverted;
+    background-color: $uicc-checkboxAndRadio-background-color-checked;
     background-size: 1em;
     background-repeat: no-repeat;
     background-position: center center;
   }
 
   &--big &__label {
-
     font-size: 1.1em;
     padding-left: 2.3em;
 
@@ -82,13 +81,11 @@
   }
 
   &--big {
-
     margin-right: $uicc-default-margin-big;
 
     & + & {
       margin-top: 1em;
     }
-
   }
 
   &--big.uicc-checkbox--inline,
@@ -106,16 +103,14 @@
     font-size: 0.8em;
   }
 
-
   &.is-disabled &__label {
-    color: $uicc-color-gray-medium !important;
+    color: $uicc-color-gray-medium;
     cursor: not-allowed;
 
     &::before {
       opacity: 0.7;
     }
   }
-
 }
 
 .uicc-radio__label::before {

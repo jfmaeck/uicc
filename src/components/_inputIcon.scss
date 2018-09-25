@@ -5,9 +5,11 @@
   &__input {
     padding-right: 1.5rem;
 
+    // sass-lint:disable no-vendor-prefixes
     &::-ms-clear {
       display: none;
     }
+    // sass-lint:enable no-vendor-prefixes
   }
 
   &__icon {
@@ -37,7 +39,6 @@
     font-size: 0.8rem;
   }
 
-
   &__icon:hover + &__tooltip {
     display: block;
   }
@@ -57,7 +58,7 @@
   &--textarea &__icon {
     top: 0.9em;
     margin-right: 0.7em;
-    background: white;
+    background: $uicc-color-white;
     opacity: 0.7;
 
     &:hover {
@@ -68,13 +69,11 @@
   &--select &__icon {
     top: 0.9em;
     margin-right: 2.2em;
-    background: white;
+    background: $uicc-color-white;
     opacity: 0.7;
 
     &:hover {
       opacity: 1;
     }
   }
-
-
 }

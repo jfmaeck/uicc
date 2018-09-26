@@ -6,10 +6,10 @@
             <div class="uicc-accordion__itemHeader uicc-postfix uicc-postfix--centereuicc-collapsible__statefulVisibility" onclick="this.parentElement.classList.toggle('is-open')">
                 <span class="uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col">Accordion Item 1</span>
                 <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed">
-                   <svg class="uicc-icon"><use xlink:href="#arrow-down"></use></svg>
+                   <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-down"></use></svg>
                 </span>
                 <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open">
-                   <svg class="uicc-icon"><use xlink:href="#arrow-up"></use></svg>
+                   <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-up"></use></svg>
                 </span>
             </div>
             <div class="uicc-accordion__itemContent uicc-collapsible__content">
@@ -20,10 +20,10 @@
             <div class="uicc-accordion__itemHeader uicc-postfix uicc-postfix--centereuicc-collapsible__statefulVisibility" onclick="this.parentElement.classList.toggle('is-open')">
                 <span class="uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col">Accordion Item 2</span>
                 <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed">
-                   <svg class="uicc-icon"><use xlink:href="#arrow-down"></use></svg>
+                   <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-down"></use></svg>
                 </span>
                 <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open">
-                   <svg class="uicc-icon"><use xlink:href="#arrow-up"></use></svg>
+                   <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-up"></use></svg>
                 </span>
             </div>
             <div class="uicc-accordion__itemContent uicc-collapsible__content">
@@ -34,10 +34,10 @@
             <div class="uicc-accordion__itemHeader uicc-postfix uicc-postfix--centereuicc-collapsible__statefulVisibility" onclick="this.parentElement.classList.toggle('is-open')">
                 <span class="uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col">Accordion Item 3</span>
                 <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed">
-                   <svg class="uicc-icon"><use xlink:href="#arrow-down"></use></svg>
+                   <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-down"></use></svg>
                 </span>
                 <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open">
-                   <svg class="uicc-icon"><use xlink:href="#arrow-up"></use></svg>
+                   <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-up"></use></svg>
                 </span>
             </div>
             <div class="uicc-accordion__itemContent uicc-collapsible__content">
@@ -48,10 +48,10 @@
             <div class="uicc-accordion__itemHeader uicc-centered uicc-postfix uicc-postfix--center uicc-collapsible__statefulVisibility" onclick="this.parentElement.classList.toggle('is-open')">
                 <span class="uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col">Accordion Item 4 with long headline text to showcase multi line headlines</span>
                 <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed">
-                   <svg class="uicc-icon"><use xlink:href="#arrow-down"></use></svg>
+                   <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-down"></use></svg>
                 </span>
                 <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open">
-                   <svg class="uicc-icon"><use xlink:href="#arrow-up"></use></svg>
+                   <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-up"></use></svg>
                 </span>
             </div>
             <div class="uicc-accordion__itemContent uicc-collapsible__content">

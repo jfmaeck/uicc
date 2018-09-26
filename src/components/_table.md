@@ -28,10 +28,10 @@ Wrap tables in a (figure) element with the class `uicc-tableWrapper` to add a ni
                  <td class="uicc-table__cell uicc-table__cell--numeric" data-uicc-th="Col C (numeric)">192.565</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -42,10 +42,10 @@ Wrap tables in a (figure) element with the class `uicc-tableWrapper` to add a ni
                  <td class="uicc-table__cell uicc-table__cell--numeric" data-uicc-th="Col C (numeric)">667.01</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -56,10 +56,10 @@ Wrap tables in a (figure) element with the class `uicc-tableWrapper` to add a ni
                  <td class="uicc-table__cell uicc-table__cell--numeric" data-uicc-th="Col C (numeric)">1001.24</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -89,10 +89,10 @@ Wrap tables in a (figure) element with the class `uicc-tableWrapper` to add a ni
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 1 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -103,10 +103,10 @@ Wrap tables in a (figure) element with the class `uicc-tableWrapper` to add a ni
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 2 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -117,10 +117,10 @@ Wrap tables in a (figure) element with the class `uicc-tableWrapper` to add a ni
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 3 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -150,10 +150,10 @@ Wrap tables in a (figure) element with the class `uicc-tableWrapper` to add a ni
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 1 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -164,10 +164,10 @@ Wrap tables in a (figure) element with the class `uicc-tableWrapper` to add a ni
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 2 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -178,10 +178,10 @@ Wrap tables in a (figure) element with the class `uicc-tableWrapper` to add a ni
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 3 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -213,10 +213,10 @@ Add `uicc-table--hover` class to the `table` element to highlight rows on hover.
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 1 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -227,10 +227,10 @@ Add `uicc-table--hover` class to the `table` element to highlight rows on hover.
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 2 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -241,10 +241,10 @@ Add `uicc-table--hover` class to the `table` element to highlight rows on hover.
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 3 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -276,10 +276,10 @@ Add `uicc-table--compact` class to render the table more compact
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 1 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -290,10 +290,10 @@ Add `uicc-table--compact` class to render the table more compact
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 2 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>
@@ -304,10 +304,10 @@ Add `uicc-table--compact` class to render the table more compact
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 3 - c</td>
                  <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#edit"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
                      <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#delete"></use></svg>
+                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
                      </a>
                  </td>
              </tr>

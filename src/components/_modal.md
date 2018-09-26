@@ -7,7 +7,7 @@
        <div class="uicc-modal__dialog">
            <div class="uicc-modal__header">
                <span class="uicc-modal__headerAction">
-                 <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="#star-border"></use></svg>
+                 <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#star-border"></use></svg>
                </span>
                 <div class="uicc-modal__headerContent">
                     <div class="uicc-row uicc-row--extraSmallMargin"><h1 class="uicc-headline uicc-headline--h4 uicc-headline--primary">Modal Headline</h1></div>
@@ -15,7 +15,7 @@
                 </div>
                 <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-adl-modal-open');">
                     <svg class="uicc-icon">
-                       <use xlink:href="#clear"></use>
+                       <use xlink:href="./assets/icons.svg#clear"></use>
                     </svg>
                 </span>
            </div>
@@ -44,7 +44,7 @@
                 </div>
                 <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-fullWidth-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-adl-modal-open');">
                     <svg class="uicc-icon">
-                       <use xlink:href="#clear"></use>
+                       <use xlink:href="./assets/icons.svg#clear"></use>
                     </svg>
                 </span>
            </div>
@@ -68,7 +68,7 @@
                 </div>
                 <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-fullHeight-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-adl-modal-open');">
                     <svg class="uicc-icon">
-                       <use xlink:href="#clear"></use>
+                       <use xlink:href="./assets/icons.svg#clear"></use>
                     </svg>
                 </span>
            </div>

@@ -1,10 +1,14 @@
 $uicc-tab-header-distance: $uicc-default-margin-big !default;
-$uicc-tab-header-font-weight: 'bold' !default;
-$uicc-tab-header-font-weight-active: 'bold' !default;
+$uicc-tab-header-font-weight: bold !default;
+$uicc-tab-header-font-weight-hover: $uicc-tab-header-font-weight !default;
+$uicc-tab-header-font-weight-active: $uicc-tab-header-font-weight-hover !default;
 $uicc-tab-header-color: $uicc-color-gray !default;
-$uicc-tab-header-color-active: $uicc-color-brand-primary !default;
+$uicc-tab-header-color-hover: $uicc-color-brand-primary !default;
+$uicc-tab-header-color-active: $uicc-tab-header-color-hover !default;
 $uicc-tab-header-underline-color: $uicc-color-transparent !default;
-$uicc-tab-header-underline-color-active: $uicc-color-brand-primary !default;
+$uicc-tab-header-underline-color-hover: $uicc-color-brand-primary !default;
+$uicc-tab-header-underline-color-active: $uicc-tab-header-underline-color-hover !default;
+$uicc-tab-underline-height: $uicc-accent-line-height !default;
 
 .uicc-tabs {
   &__tabHeader {
@@ -15,22 +19,28 @@ $uicc-tab-header-underline-color-active: $uicc-color-brand-primary !default;
     transition: color 200ms, border 200ms;
     padding: 3px 0 12px 0;
 
-    border-bottom: 2px solid $uicc-tab-header-underline-color;
+    border-bottom: $uicc-tab-underline-height solid $uicc-tab-header-underline-color;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
     font-weight: $uicc-tab-header-font-weight;
     color: $uicc-tab-header-color;
-    font-size: 0.87 * $uicc-font-size-base;
 
     & + & {
       margin-left: $uicc-tab-header-distance;
     }
 
-    &.is-active,
-    &:focus {
+    &:visited {
+      color: $uicc-tab-header-color;
+    }
+
+    &:hover {
+      font-weight: $uicc-tab-header-font-weight-hover;
+      border-bottom-color: $uicc-tab-header-underline-color-hover;
+    }
+
+    &.is-active {
       font-weight: $uicc-tab-header-font-weight-active;
-      font-size: $uicc-font-size-base;
       color: $uicc-tab-header-color-active;
       border-color: $uicc-tab-header-underline-color-active;
     }

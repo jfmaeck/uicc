@@ -46,7 +46,7 @@ You can either use the ```disabled``` attribute or the ```is-disabled``` class.
 
     @example
     <a class="uicc-button uicc-button--primary">
-        <svg class="uicc-button__icon uicc-button__icon--left uicc-icon"><use xlink:href="#arrow-left"></use></svg>
+        <svg class="uicc-button__icon uicc-button__icon--left uicc-icon"><use xlink:href="./assets/icons.svg#arrow-left"></use></svg>
         Button
     </a>
 
@@ -55,15 +55,15 @@ You can either use the ```disabled``` attribute or the ```is-disabled``` class.
     @example
     <a class="uicc-button uicc-button--primary">
         Button
-        <svg class="uicc-button__icon uicc-button__icon--right uicc-icon"><use xlink:href="#arrow-right"></use></svg>
+        <svg class="uicc-button__icon uicc-button__icon--right uicc-icon"><use xlink:href="./assets/icons.svg#arrow-right"></use></svg>
     </a>
 
 ### Button (icon only)
   
     @example
     <a class="uicc-button uicc-button--primary uicc-button--icon">
-        <svg class="uicc-button__icon uicc-icon"><use xlink:href="#check"></use></svg>
+        <svg class="uicc-button__icon uicc-icon"><use xlink:href="./assets/icons.svg#check"></use></svg>
     </a>
     <a class="uicc-button uicc-button--secondary uicc-button--icon">
-        <svg class="uicc-button__icon uicc-icon"><use xlink:href="#clear"></use></svg>
+        <svg class="uicc-button__icon uicc-icon"><use xlink:href="./assets/icons.svg#clear"></use></svg>
     </a>

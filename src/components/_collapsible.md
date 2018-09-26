@@ -10,10 +10,10 @@ Toggle the class `is-open` open/close the collapsible content
     <div class="uicc-collapsible is-open">
         <div class="uicc-collapsible__statefulVisibility uicc-clickable" onclick="this.parentElement.classList.toggle('is-open')">
            <span class="uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed">
-             <svg class="uicc-icon"><use xlink:href="#arrow-down"></use></svg>
+             <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-down"></use></svg>
            </span>
            <span class="uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open">
-             <svg class="uicc-icon"><use xlink:href="#arrow-up"></use></svg>
+             <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-up"></use></svg>
            </span>
            Collapsible Header
         </div>

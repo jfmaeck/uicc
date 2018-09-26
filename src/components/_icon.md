@@ -23,32 +23,32 @@
 By default, icons inherit their color from the parent element 
 
     @example
-    <svg class="uicc-icon"><use xlink:href="#check"></use></svg>
+    <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#check"></use></svg>
 
 ### Icon (primary brand color)
   
     @example
-    <svg class="uicc-icon uicc-icon--primary"><use xlink:href="#check"></use></svg>
+    <svg class="uicc-icon uicc-icon--primary"><use xlink:href="./assets/icons.svg#check"></use></svg>
 
 ### Icon (light color)
   
     @example
-    <svg class="uicc-icon uicc-icon--light"><use xlink:href="#edit"></use></svg>
+    <svg class="uicc-icon uicc-icon--light"><use xlink:href="./assets/icons.svg#edit"></use></svg>
 
 ### Icon (inverted color)
   
     @example
     <div class="uicc-region uicc-region--primary">
-      <svg class="uicc-icon uicc-icon--inverted"><use xlink:href="#edit"></use></svg>
+      <svg class="uicc-icon uicc-icon--inverted"><use xlink:href="./assets/icons.svg#edit"></use></svg>
     </div>
 
 ### Icon (with circle)
 
     @example
     <div class="uicc-region uicc-region--default">
-      <svg class="uicc-icon uicc-icon--circle"><use xlink:href="#arrow-right"></use></svg>
+      <svg class="uicc-icon uicc-icon--circle"><use xlink:href="./assets/icons.svg#arrow-right"></use></svg>
     </div>
 
     <div class="uicc-region uicc-region--primary">
-      <svg class="uicc-icon uicc-icon--circle uicc-icon--inverted"><use xlink:href="#arrow-right"></use></svg>
+      <svg class="uicc-icon uicc-icon--circle uicc-icon--inverted"><use xlink:href="./assets/icons.svg#arrow-right"></use></svg>
     </div>

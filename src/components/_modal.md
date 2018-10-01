@@ -13,7 +13,7 @@
                     <div class="uicc-row uicc-row--extraSmallMargin"><h1 class="uicc-headline uicc-headline--h4 uicc-headline--primary">Modal Headline</h1></div>
                     <h2 class="uicc-headline uicc-headline--h6 uicc-headline--primary">Subheadline</h2>
                 </div>
-                <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-adl-modal-open');">
+                <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-uicc-modal-open');">
                     <svg class="uicc-icon">
                        <use xlink:href="./assets/icons.svg#clear"></use>
                     </svg>
@@ -24,13 +24,13 @@
            </div>
            <div class="uicc-modal__footer">
                 <div class="uicc-modal__footerButtons">
-                     <button type="button" class="uicc-button uicc-button--secondary uicc-button--wide" onclick="document.getElementById('test-modal-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-adl-modal-open');">Close</button>
+                     <button type="button" class="uicc-button uicc-button--secondary uicc-button--wide" onclick="document.getElementById('test-modal-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-uicc-modal-open');">Close</button>
                      <button type="button" class="uicc-button uicc-button--primary uicc-button--wide">Submit</button>
                 </div>
            </div>
        </div>
     </div>
-    <button class="uicc-button uicc-button--primary" onclick="document.getElementById('test-modal-open').classList.add('is-open');document.querySelector('html').classList.add('is-adl-modal-open');">Open modal</button>
+    <button class="uicc-button uicc-button--primary" onclick="document.getElementById('test-modal-open').classList.add('is-open');document.querySelector('html').classList.add('is-uicc-modal-open');">Open modal</button>
 
 ### Modal (fullWidth)
 
@@ -42,7 +42,7 @@
                     <div class="uicc-row uicc-row--extraSmallMargin"><h1 class="uicc-headline uicc-headline--h4 uicc-headline--primary">Modal Headline</h1></div>
                     <h2 class="uicc-headline uicc-headline--h6 uicc-headline--primary">Subheadline</h2>
                 </div>
-                <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-fullWidth-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-adl-modal-open');">
+                <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-fullWidth-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-uicc-modal-open');">
                     <svg class="uicc-icon">
                        <use xlink:href="./assets/icons.svg#clear"></use>
                     </svg>
@@ -53,7 +53,7 @@
            </div>
        </div>
     </div>
-    <button class="uicc-button uicc-button--primary" onclick="document.getElementById('test-modal-fullWidth-open').classList.add('is-open');document.querySelector('html').classList.add('is-adl-modal-open');">Open modal</button>
+    <button class="uicc-button uicc-button--primary" onclick="document.getElementById('test-modal-fullWidth-open').classList.add('is-open');document.querySelector('html').classList.add('is-uicc-modal-open');">Open modal</button>
 
 
 ### Modal (fullHeight)
@@ -66,7 +66,7 @@
                     <div class="uicc-row uicc-row--extraSmallMargin"><h1 class="uicc-headline uicc-headline--h4 uicc-headline--primary">Modal Headline</h1></div>
                     <h2 class="uicc-headline uicc-headline--h6 uicc-headline--primary">Subheadline</h2>
                 </div>
-                <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-fullHeight-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-adl-modal-open');">
+                <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-fullHeight-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-uicc-modal-open');">
                     <svg class="uicc-icon">
                        <use xlink:href="./assets/icons.svg#clear"></use>
                     </svg>
@@ -77,4 +77,4 @@
            </div>
        </div>
     </div>
-    <button class="uicc-button uicc-button--primary" onclick="document.getElementById('test-modal-fullHeight-open').classList.add('is-open');document.querySelector('html').classList.add('is-adl-modal-open');">Open modal</button>
+    <button class="uicc-button uicc-button--primary" onclick="document.getElementById('test-modal-fullHeight-open').classList.add('is-open');document.querySelector('html').classList.add('is-uicc-modal-open');">Open modal</button>

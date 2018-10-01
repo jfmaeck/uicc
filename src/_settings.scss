@@ -138,5 +138,7 @@ $uicc-tab-underline-height: 2px !default;
  * z-index
  */
 $uicc-modal-z-index: 1000 !default;
+$uicc-tooltip-z-index: $uicc-modal-z-index - 1 !default;
 $uicc-offCanvas-z-index: $uicc-modal-z-index - 1 !default;
 $uicc-loading-container-z-index: 1 !default;
+

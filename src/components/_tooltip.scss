@@ -1,0 +1,89 @@
+$uicc-tooltip-z-index: 9999 !default;
+$uicc-tooltip-background-color: $uicc-color-gray-lighter !default;
+$uicc-tooltip-color: $uicc-color-black !default;
+$uicc-tooltip-box-shadow-color: $uicc-color-darken !default;
+$uicc-tooltip-padding: $uicc-default-margin !default;
+
+.uicc-tooltip {
+  display: inline-block;
+  position: relative;
+  //font-size: 0;
+}
+
+.uicc-tooltip--block {
+  display: block;
+}
+
+.uicc-tooltip__content {
+  position: absolute;
+  z-index: $uicc-tooltip-z-index;
+  display: none;
+  top: 0;
+  left: 50%;
+  max-width: 100vw;
+}
+
+.uicc-tooltip--styled .uicc-tooltip__content {
+  box-shadow: 2px 2px 15px -2px $uicc-tooltip-box-shadow-color;
+  padding: $uicc-tooltip-padding;
+  background-color: $uicc-tooltip-background-color;
+  color: $uicc-tooltip-color;
+  font-weight: normal;
+  white-space: normal;
+}
+
+.uicc-tooltip__trigger--help {
+  cursor: help;
+}
+
+.uicc-tooltip__trigger--icon {
+  font-size: 1.45rem;
+  margin-bottom: -3px;
+}
+
+.uicc-tooltip--styled.uicc-tooltip--left .uicc-tooltip__content {
+  text-align: right;
+}
+
+.uicc-tooltip--styled.uicc-tooltip--right .uicc-tooltip__content {
+  text-align: left;
+}
+
+.uicc-tooltip--top .uicc-tooltip__content {
+  bottom: 100%;
+  top: auto;
+}
+
+.uicc-tooltip--right .uicc-tooltip__content {
+  right: auto;
+  left: 100%;
+}
+
+.uicc-tooltip--bottom .uicc-tooltip__content {
+  bottom: auto;
+  top: 100%;
+}
+
+.uicc-tooltip--left .uicc-tooltip__content {
+  right: 100%;
+  left: auto;
+}
+
+.uicc-tooltip.is-open .uicc-tooltip__content {
+  z-index: $uicc-tooltip-z-index - 1; // hover-opened tooltips should win over force-opened (.is-open) tooltips
+}
+
+// sass-lint:disable no-important
+.uicc-tooltip.is-open .uicc-tooltip__content,
+.uicc-tooltip:not(.uicc-tooltip--noHover) .uicc-tooltip__content:hover,
+.uicc-tooltip:not(.uicc-tooltip--noHover) .uicc-tooltip__trigger:hover + .uicc-tooltip__content {
+  display: block !important;
+}
+
+@media (hover: none) {
+  .uicc-tooltip--onlyIfHover:not(.uicc-tooltip--noHover) .uicc-tooltip__content:hover,
+  .uicc-tooltip--onlyIfHover:not(.uicc-tooltip--noHover) .uicc-tooltip__trigger:hover + .uicc-tooltip__content {
+    display: none !important;
+  }
+}
+// sass-lint:enable no-important

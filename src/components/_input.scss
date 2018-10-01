@@ -4,9 +4,9 @@ $uicc-input-border-color: $uicc-color-gray-medium !default;
 
 $uicc-input-type-range-thumb-color: $uicc-color-black !default;
 $uicc-input-type-range-thumb-margin: -7px !default;
-$uicc-input-type-range-thumb-diameter: 1rem;
+$uicc-input-type-range-thumb-diameter: 16px;
 $uicc-input-type-range-track-color: $uicc-color-gray-medium !default;
-$uicc-input-type-range-track-width: 2px !default;
+$uicc-input-type-range-track-height: 2px !default;
 
 .uicc-input {
   flex: 1 1 auto;
@@ -98,7 +98,7 @@ textarea.uicc-input {
 
 @mixin uicc-input-range-track {
   width: 100%;
-  height: $uicc-input-type-range-track-width;
+  height: $uicc-input-type-range-track-height;
   cursor: pointer;
   background: $uicc-input-type-range-track-color;
   border: none;
@@ -134,15 +134,17 @@ input[type='range'].uicc-input {
   &::-ms-track {
     @include uicc-input-range-track;
     // IE won't let the thumb overflow the track thus we have to hack
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
+    border-top: $uicc-input-type-range-thumb-diameter solid transparent;
+    border-bottom: $uicc-input-type-range-thumb-diameter solid transparent;
+    margin-top: ($uicc-input-type-range-thumb-diameter - $uicc-input-type-range-track-height) * -1;
+    margin-bottom: ($uicc-input-type-range-thumb-diameter - $uicc-input-type-range-track-height) * -1;
     background-color: transparent;
     color: transparent; // remove default tick marks
   }
 
   &::-ms-fill-lower,
   &::-ms-fill-upper {
-    height: $uicc-input-type-range-track-width;
+    height: $uicc-input-type-range-track-height;
     background-color: $uicc-input-type-range-track-color;
   }
 
@@ -164,7 +166,7 @@ input[type='range'].uicc-input {
   }
 
   &::-moz-range-progress {
-    height: $uicc-input-type-range-track-width;
+    height: $uicc-input-type-range-track-height;
     background-color: $uicc-input-type-range-track-color;
   }
 

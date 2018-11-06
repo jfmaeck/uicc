@@ -56,15 +56,21 @@ $uicc-button-icon-margin-bottom: 0;
     color: $_color;
   }
 
+  &.is-active {
+    background-color: $_hoverBackgroundColor;
+    color: $_hoverColor;
+  }
+
   &.uicc-button--outline {
     background-color: transparent;
     color: $_backgroundColor;
     border-color: $_backgroundColor;
-  }
 
-  &.is-active {
-    background-color: $_hoverBackgroundColor;
-    color: $_hoverColor;
+    &:hover,
+    &.is-active {
+      background-color: $_backgroundColor;
+      color: $_color;
+    }
   }
 }
 

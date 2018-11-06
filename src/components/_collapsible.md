@@ -2,22 +2,52 @@
 
 The collapsible component comes with no special styling in order to be used as a foundation for more opinionated components e.g. Accordion.
 
-### Collapsible (collapsed)
+### Collapsible (short content)
 
-Toggle the class `is-open` open/close the collapsible content
+Toggle the class `is-open` to open/close the collapsible content
 
     @example
-    <div class="uicc-collapsible is-open">
-        <div class="uicc-collapsible__statefulVisibility uicc-clickable" onclick="this.parentElement.classList.toggle('is-open')">
-           <span class="uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed">
-             <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-down"></use></svg>
-           </span>
-           <span class="uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open">
-             <svg class="uicc-icon"><use xlink:href="./assets/icons.svg#arrow-up"></use></svg>
-           </span>
-           Collapsible Header
+    <button class="uicc-button uicc-button--secondary uicc-row" onclick="document.getElementById('uicc-collapsible-demo-1').classList.toggle('is-open')">Toggle</button>
+    <div class="uicc-collapsible" id="uicc-collapsible-demo-1">
+        <div class="uicc-collapsible__content">
+           <p class="uicc-row uicc-row--extraBigMargin">Collapsible Content</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
         </div>
-        <div class="uicc-collapsible__content uicc-collapsible__content--fade">
-           Collapsible Content
+    </div>
+
+### Collapsible (large content)
+
+    @example
+    <button class="uicc-button uicc-button--secondary uicc-row" onclick="document.getElementById('uicc-collapsible-demo-2').classList.toggle('is-open')">Toggle</button>
+    <div class="uicc-collapsible" id="uicc-collapsible-demo-2">
+        <div class="uicc-collapsible__content">
+           <p class="uicc-row uicc-row--extraBigMargin">Collapsible Content</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
+           <p class="uicc-row uicc-row--extraBigMargin">&hellip;</p>
         </div>
     </div>

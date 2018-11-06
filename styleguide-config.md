@@ -3,7 +3,7 @@
 ### Head
 
     <meta name='viewport' content='width=device-width, initial-scale=1' />
-    <script src='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js'></script>
+    <script src='styledown.js'></script>
     <link rel='stylesheet' href='styledown.css' />
     <link rel='stylesheet' href='styleguide.css' />
     <script>document.title = 'UI CC – UI Toolkit to Clone and Customize'</script>

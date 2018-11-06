@@ -66,10 +66,10 @@ npm run build
 
 The transpiled code (css, html and images) is stored in the dist directory. 
 
-## Publish
+## Deploy to GitHub Pages
 
 ```
-npm run publish
+npm run deploy
 ```
 
 Builds your UI Patterns demo page and publishes it to GitHub pages. The page will be available at http://username.github.io/repository (you need to replace username and repository)

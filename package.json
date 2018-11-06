@@ -18,11 +18,11 @@
     "build:css": "node-sass src/ -o dist && postcss 'dist/**/*.css' -u autoprefixer -d dist -b dist",
     "watch:sass": "chokidar src/*.scss src/**/*.scss -c 'npm-run-all --parallel lint:sass build:css' --polling",
     "lint:sass": "sass-lint --config ./.sass-lint.yml 'src/**/*.scss' --verbose --no-exit",
-    "build:styleguide": "styledown src/components/*.md ./styleguide-config.md > dist/index.tmp && mv dist/index.tmp dist/index.html",
+    "build:styleguide": "styledown src/components/*.md ./styleguide-config.md > dist/index.tmp && mv dist/index.tmp dist/index.html && copyfiles node_modules/styledown/data/styledown.js -u 3 dist/",
     "watch:styleguide": "chokidar styleguide-config.md src/*.md src/**/*.md -c 'npm-run-all --sequential build:styleguide lint:styleguide' --polling",
     "lint:styleguide": "htmlhint --config ./.htmlhintrc 'dist/**/*.html'",
     "dev-server": "browser-sync start --config ./browser-sync.config.json",
-    "publish": "gulp publish"
+    "deploy": "npm run build && node tasks/deploy.js"
   },
   "dependencies": {},
   "devDependencies": {
@@ -30,6 +30,7 @@
     "browser-sync": "^2.24.7",
     "chokidar-cli": "^1.2.1",
     "copyfiles": "^2.1.0",
+    "gh-pages": "^2.0.1",
     "htmlhint": "^0.10.1",
     "htmlhint-stylish": "^1.0.3",
     "node-sass": "^4.9.3",

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Styledown</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js"></script>
+  <script src="styledown.js"></script>
   <link rel="stylesheet" href="styledown.css">
   <link rel="stylesheet" href="styleguide.css">
   <script>
@@ -28,167 +28,156 @@
       <div class="sg-container uicc-row">
         <section class="sg-section sg-section-accordion">
           <h2 id="accordion" class="sg">Accordion</h2>
+          <p class="sg">Accordions rely on the lower-level
+            <code class="sg">uicc-collapsible</code>component. This is why you have to tooggle the
+            <code class="sg">is-open</code>switch two times: On the
+            <code class="sg">uicc-accorion__item</code>element and on it&apos;s child
+            <code class="sg">uicc-collapsible</code>element.</p>
           <div class="sg-example">
             <div class="sg-canvas">
               <div class="uicc-accordion">
-                <div class="uicc-accordion__item uicc-collapsible">
-                  <div class="uicc-accordion__itemHeader uicc-postfix uicc-postfix--centereuicc-collapsible__statefulVisibility" onclick="this.parentElement.classList.toggle(&apos;is-open&apos;)">
+                <div class="uicc-accordion__item">
+                  <div class="uicc-accordion__itemHeader uicc-postfix uicc-postfix--centere" onclick="this.parentElement.classList.toggle(&apos;is-open&apos;);this.parentElement.querySelector(&apos;.uicc-collapsible&apos;).classList.toggle(&apos;is-open&apos;)">
                     <span class="uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col">Accordion Item 1</span>
-                    <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed">
-                      <svg class="uicc-icon">
-                        <use xlink:href="./assets/icons.svg#arrow-down">
-                      </svg>
-                    </span>
-                    <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open">
-                      <svg class="uicc-icon">
-                        <use xlink:href="./assets/icons.svg#arrow-up">
-                      </svg>
-                    </span>
+                    <svg class="uicc-accordion__itemIcon uicc-icon">
+                      <use xlink:href="./assets/icons.svg#arrow-right">
+                    </svg>
                   </div>
-                  <div class="uicc-accordion__itemContent uicc-collapsible__content">
-                    <p class="uicc-fontSize--medium">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                  <div class="uicc-collapsible">
+                    <div class="uicc-accordion__itemContent uicc-collapsible__content">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    </div>
                   </div>
                 </div>
-                <div class="uicc-accordion__item uicc-collapsible is-open">
-                  <div class="uicc-accordion__itemHeader uicc-postfix uicc-postfix--centereuicc-collapsible__statefulVisibility" onclick="this.parentElement.classList.toggle(&apos;is-open&apos;)">
+                <div class="uicc-accordion__item is-open">
+                  <div class="uicc-accordion__itemHeader uicc-postfix uicc-postfix--centere" onclick="this.parentElement.classList.toggle(&apos;is-open&apos;);this.parentElement.querySelector(&apos;.uicc-collapsible&apos;).classList.toggle(&apos;is-open&apos;)">
                     <span class="uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col">Accordion Item 2</span>
-                    <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed">
-                      <svg class="uicc-icon">
-                        <use xlink:href="./assets/icons.svg#arrow-down">
-                      </svg>
-                    </span>
-                    <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open">
-                      <svg class="uicc-icon">
-                        <use xlink:href="./assets/icons.svg#arrow-up">
-                      </svg>
-                    </span>
+                    <svg class="uicc-accordion__itemIcon uicc-icon">
+                      <use xlink:href="./assets/icons.svg#arrow-right">
+                    </svg>
                   </div>
-                  <div class="uicc-accordion__itemContent uicc-collapsible__content">
-                    <p class="uicc-fontSize--medium">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                  <div class="uicc-collapsible is-open">
+                    <div class="uicc-accordion__itemContent uicc-collapsible__content">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    </div>
                   </div>
                 </div>
-                <div class="uicc-accordion__item uicc-collapsible">
-                  <div class="uicc-accordion__itemHeader uicc-postfix uicc-postfix--centereuicc-collapsible__statefulVisibility" onclick="this.parentElement.classList.toggle(&apos;is-open&apos;)">
-                    <span class="uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col">Accordion Item 3</span>
-                    <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed">
-                      <svg class="uicc-icon">
-                        <use xlink:href="./assets/icons.svg#arrow-down">
-                      </svg>
-                    </span>
-                    <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open">
-                      <svg class="uicc-icon">
-                        <use xlink:href="./assets/icons.svg#arrow-up">
-                      </svg>
-                    </span>
+                <div class="uicc-accordion__item">
+                  <div class="uicc-accordion__itemHeader uicc-postfix uicc-postfix--centere" onclick="this.parentElement.classList.toggle(&apos;is-open&apos;);this.parentElement.querySelector(&apos;.uicc-collapsible&apos;).classList.toggle(&apos;is-open&apos;)">
+                    <span class="uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col">Long Content</span>
+                    <svg class="uicc-accordion__itemIcon uicc-icon">
+                      <use xlink:href="./assets/icons.svg#arrow-right">
+                    </svg>
                   </div>
-                  <div class="uicc-accordion__itemContent uicc-collapsible__content">
-                    <p class="uicc-fontSize--medium">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                  <div class="uicc-collapsible">
+                    <div class="uicc-accordion__itemContent uicc-collapsible__content">
+                      <p class="uicc-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                      <p class="uicc-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                      <p class="uicc-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                      <p class="uicc-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                      <p class="uicc-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                      <p class="uicc-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                      <p class="uicc-row">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                    </div>
                   </div>
                 </div>
-                <div class="uicc-accordion__item uicc-collapsible">
-                  <div class="uicc-accordion__itemHeader uicc-centered uicc-postfix uicc-postfix--center uicc-collapsible__statefulVisibility" onclick="this.parentElement.classList.toggle(&apos;is-open&apos;)">
-                    <span class="uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col">Accordion Item 4 with long headline text to showcase multi line headlines</span>
-                    <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed">
-                      <svg class="uicc-icon">
-                        <use xlink:href="./assets/icons.svg#arrow-down">
-                      </svg>
-                    </span>
-                    <span class="uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open">
-                      <svg class="uicc-icon">
-                        <use xlink:href="./assets/icons.svg#arrow-up">
-                      </svg>
-                    </span>
+                <div class="uicc-accordion__item">
+                  <div class="uicc-accordion__itemHeader uicc-postfix uicc-postfix--centere" onclick="this.parentElement.classList.toggle(&apos;is-open&apos;);this.parentElement.querySelector(&apos;.uicc-collapsible&apos;).classList.toggle(&apos;is-open&apos;)">
+                    <span class="uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col">Long Header item name Lorem ipsum dolor sit amet</span>
+                    <svg class="uicc-accordion__itemIcon uicc-icon">
+                      <use xlink:href="./assets/icons.svg#arrow-right">
+                    </svg>
                   </div>
-                  <div class="uicc-accordion__itemContent uicc-collapsible__content">
-                    <p class="uicc-fontSize--medium">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                  <div class="uicc-collapsible">
+                    <div class="uicc-accordion__itemContent uicc-collapsible__content">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    </div>
                   </div>
                 </div>
               </div>
             </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__item uicc-collapsible&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeader uicc-postfix uicc-postfix--centereuicc-collapsible__statefulVisibility&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;this.parentElement.classList.toggle(&apos;is-open&apos;)&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeader uicc-postfix uicc-postfix--centere&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;this.parentElement.classList.toggle(&apos;is-open&apos;);this.parentElement.querySelector(&apos;.uicc-collapsible&apos;).classList.toggle(&apos;is-open&apos;)&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col&quot;</span>&gt;</span>Accordion Item 1<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-down&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-up&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemIcon uicc-icon&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-right&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemContent uicc-collapsible__content&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-fontSize--medium&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-        nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemContent uicc-collapsible__content&quot;</span>&gt;</span>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+        ut aliquip ex ea commodo consequat.
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__item uicc-collapsible is-open&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeader uicc-postfix uicc-postfix--centereuicc-collapsible__statefulVisibility&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;this.parentElement.classList.toggle(&apos;is-open&apos;)&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__item is-open&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeader uicc-postfix uicc-postfix--centere&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;this.parentElement.classList.toggle(&apos;is-open&apos;);this.parentElement.querySelector(&apos;.uicc-collapsible&apos;).classList.toggle(&apos;is-open&apos;)&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col&quot;</span>&gt;</span>Accordion Item 2<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-down&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-up&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemIcon uicc-icon&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-right&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemContent uicc-collapsible__content&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-fontSize--medium&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-        nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible is-open&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemContent uicc-collapsible__content&quot;</span>&gt;</span>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+        ut aliquip ex ea commodo consequat.
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__item uicc-collapsible&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeader uicc-postfix uicc-postfix--centereuicc-collapsible__statefulVisibility&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;this.parentElement.classList.toggle(&apos;is-open&apos;)&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col&quot;</span>&gt;</span>Accordion Item 3<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-down&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-up&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeader uicc-postfix uicc-postfix--centere&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;this.parentElement.classList.toggle(&apos;is-open&apos;);this.parentElement.querySelector(&apos;.uicc-collapsible&apos;).classList.toggle(&apos;is-open&apos;)&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col&quot;</span>&gt;</span>Long Content<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemIcon uicc-icon&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-right&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemContent uicc-collapsible__content&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-fontSize--medium&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-        nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemContent uicc-collapsible__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+          magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+          nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+          magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+          nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+          magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+          nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+          magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+          nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+          magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+          nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+          magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+          nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+          magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+          nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__item uicc-collapsible&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeader uicc-centered uicc-postfix uicc-postfix--center uicc-collapsible__statefulVisibility&quot;</span>
-    <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;this.parentElement.classList.toggle(&apos;is-open&apos;)&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col&quot;</span>&gt;</span>Accordion Item 4 with long headline text to showcase multi line headlines<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-down&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-col uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-up&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__item&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeader uicc-postfix uicc-postfix--centere&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;this.parentElement.classList.toggle(&apos;is-open&apos;);this.parentElement.querySelector(&apos;.uicc-collapsible&apos;).classList.toggle(&apos;is-open&apos;)&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemHeadline uicc-postfix__fluid uicc-col&quot;</span>&gt;</span>Long Header item name Lorem ipsum dolor sit amet<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemIcon uicc-icon&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-right&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemContent uicc-collapsible__content&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-fontSize--medium&quot;</span>&gt;</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-        nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-accordion__itemContent uicc-collapsible__content&quot;</span>&gt;</span>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+        ut aliquip ex ea commodo consequat.
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
           </div>
         </section>
+
         <section class="sg-section sg-section-alert">
           <h2 id="alert" class="sg">Alert</h2>
           <div class="sg-example">
@@ -914,48 +903,100 @@
         <section class="sg-section sg-section-collapsible">
           <h2 id="collapsible" class="sg">Collapsible</h2>
           <p class="sg">The collapsible component comes with no special styling in order to be used as a foundation for more opinionated components e.g. Accordion.</p>
-          <section class="sg-block sg-section-collapsible-collapsed-">
+          <section class="sg-block sg-section-collapsible-short-content-">
             <div class="sg-text">
-              <h3 id="collapsible-collapsed-" class="sg">Collapsible (collapsed)</h3>
+              <h3 id="collapsible-short-content-" class="sg">Collapsible (short content)</h3>
               <p class="sg">Toggle the class
-                <code class="sg">is-open</code>open/close the collapsible content</p>
+                <code class="sg">is-open</code>to open/close the collapsible content</p>
             </div>
             <div class="sg-example">
               <div class="sg-canvas">
-                <div class="uicc-collapsible is-open">
-                  <div class="uicc-collapsible__statefulVisibility uicc-clickable" onclick="this.parentElement.classList.toggle(&apos;is-open&apos;)">
-                    <span class="uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed">
-                      <svg class="uicc-icon">
-                        <use xlink:href="./assets/icons.svg#arrow-down">
-                      </svg>
-                    </span>
-                    <span class="uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open">
-                      <svg class="uicc-icon">
-                        <use xlink:href="./assets/icons.svg#arrow-up">
-                      </svg>
-                    </span>
-                    Collapsible Header
-                  </div>
-                  <div class="uicc-collapsible__content uicc-collapsible__content--fade">
-                    Collapsible Content
+                <button class="uicc-button uicc-button--secondary uicc-row" onclick="document.getElementById(&apos;uicc-collapsible-demo-1&apos;).classList.toggle(&apos;is-open&apos;)">Toggle</button>
+                <div class="uicc-collapsible" id="uicc-collapsible-demo-1">
+                  <div class="uicc-collapsible__content">
+                    <p class="uicc-row uicc-row--extraBigMargin">Collapsible Content</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
                   </div>
                 </div>
-              </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible is-open&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible__statefulVisibility uicc-clickable&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;this.parentElement.classList.toggle(&apos;is-open&apos;)&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--collapsed&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-down&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible__statefulVisibility uicc-collapsible__statefulVisibility--open&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">svg</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-icon&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">use</span> <span class="hljs-attribute">xlink:href</span>=<span class="hljs-value">&quot;./assets/icons.svg#arrow-up&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">use</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">svg</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-    Collapsible Header
+              </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-button uicc-button--secondary uicc-row&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;uicc-collapsible-demo-1&apos;).classList.toggle(&apos;is-open&apos;)&quot;</span>&gt;</span>Toggle<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;uicc-collapsible-demo-1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible__content&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>Collapsible Content<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible__content uicc-collapsible__content--fade&quot;</span>&gt;</span>
-    Collapsible Content
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
+            </div>
+          </section>
+          <section class="sg-block sg-section-collapsible-large-content-">
+            <div class="sg-text">
+              <h3 id="collapsible-large-content-" class="sg">Collapsible (large content)</h3>
+            </div>
+            <div class="sg-example">
+              <div class="sg-canvas">
+                <button class="uicc-button uicc-button--secondary uicc-row" onclick="document.getElementById(&apos;uicc-collapsible-demo-2&apos;).classList.toggle(&apos;is-open&apos;)">Toggle</button>
+                <div class="uicc-collapsible" id="uicc-collapsible-demo-2">
+                  <div class="uicc-collapsible__content">
+                    <p class="uicc-row uicc-row--extraBigMargin">Collapsible Content</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                    <p class="uicc-row uicc-row--extraBigMargin">&#x2026;</p>
+                  </div>
+                </div>
+              </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-button uicc-button--secondary uicc-row&quot;</span> <span class="hljs-attribute">onclick</span>=<span class="hljs-value">&quot;document.getElementById(&apos;uicc-collapsible-demo-2&apos;).classList.toggle(&apos;is-open&apos;)&quot;</span>&gt;</span>Toggle<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;uicc-collapsible-demo-2&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-collapsible__content&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>Collapsible Content<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-row uicc-row--extraBigMargin&quot;</span>&gt;</span>&amp;hellip;<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></pre>
             </div>
@@ -1139,37 +1180,6 @@
           </section>
         </section>
 
-        <section class="sg-section sg-section-font-size">
-          <h2 id="font-size" class="sg">Font Size</h2>
-          <div class="sg-example">
-            <div class="sg-canvas">
-              <p class="uicc-fontSize uicc-fontSize--extraSmall">Extra Small. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                <a class="uicc-link" href="javascript:;">quis nostrud exerci tation ullamcorper</a>suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-              <p class="uicc-fontSize uicc-fontSize--small">Small. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                <a class="uicc-link" href="javascript:;">quis nostrud exerci tation ullamcorper</a>suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-              <p>Standard. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                <a class="uicc-link" href="javascript:;">quis nostrud exerci tation ullamcorper</a>suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-              <p class="uicc-fontSize uicc-fontSize--large">Large. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                <a class="uicc-link" href="javascript:;">quis nostrud exerci tation ullamcorper</a>suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-              <p class="uicc-fontSize uicc-fontSize--extraLarge">Extra Large. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                <a class="uicc-link" href="javascript:;">quis nostrud exerci tation ullamcorper</a>suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-            </div><pre class="sg-code"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-fontSize uicc-fontSize--extraSmall&quot;</span>&gt;</span>Extra Small. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-  dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-link&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;javascript:;&quot;</span>&gt;</span>quis nostrud exerci tation ullamcorper<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>suscipit lobortis nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-fontSize uicc-fontSize--small&quot;</span>&gt;</span>Small. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-  magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-link&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;javascript:;&quot;</span>&gt;</span>quis nostrud exerci tation ullamcorper<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>suscipit lobortis nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Standard. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-  magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-link&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;javascript:;&quot;</span>&gt;</span>quis nostrud exerci tation ullamcorper<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>suscipit lobortis nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-fontSize uicc-fontSize--large&quot;</span>&gt;</span>Large. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-  magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-link&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;javascript:;&quot;</span>&gt;</span>quis nostrud exerci tation ullamcorper<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>suscipit lobortis nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-fontSize uicc-fontSize--extraLarge&quot;</span>&gt;</span>Extra Large. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-  dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;uicc-link&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;javascript:;&quot;</span>&gt;</span>quis nostrud exerci tation ullamcorper<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>suscipit lobortis nisl ut aliquip ex ea commodo consequat.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></pre>
-          </div>
-        </section>
         <section class="sg-section sg-section-grid">
           <h2 id="grid" class="sg">Grid</h2>
           <section class="sg-block sg-section-grid-equal-columns-">

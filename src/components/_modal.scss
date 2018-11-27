@@ -8,38 +8,6 @@ html.is-uicc-modal-open {
   $uicc-modal-margin: 8px;
   $uicc-modal-marginXlargeUp: 16px;
 
-  @keyframes bounceInDown {
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    }
-
-    0% {
-      opacity: 0;
-      transform: translate3d(0, -3000px, 0);
-    }
-
-    60% {
-      opacity: 1;
-      transform: translate3d(0, 25px, 0);
-    }
-
-    75% {
-      transform: translate3d(0, -10px, 0);
-    }
-
-    90% {
-      transform: translate3d(0, 5px, 0);
-    }
-
-    to {
-      transform: none;
-    }
-  }
-
   will-change: opcity;
   transition: opacity 250ms;
   transform: translate3d(0, 0, 0);
@@ -74,8 +42,9 @@ html.is-uicc-modal-open {
   }
 
   &__dialog {
-    animation-duration: 1s;
+    animation-duration: 750ms;
     animation-fill-mode: both;
+    animation-name: none;
     position: relative;
     z-index: 2;
     display: flex;
@@ -140,8 +109,24 @@ html.is-uicc-modal-open {
     pointer-events: all;
 
     .uicc-modal__dialog {
-      animation-name: bounceInDown;
+      animation-name: uicc-bounceInDown;
     }
+  }
+
+  &--bounceInDown.is-open &__dialog {
+    animation-name: uicc-bounceInDown;
+  }
+
+  &--fadeIn.is-open &__dialog {
+    animation-name: uicc-fadeIn;
+  }
+
+  &--zoomIn.is-open &__dialog {
+    animation-name: uicc-zoomIn;
+  }
+
+  &--slideInUp.is-open &__dialog {
+    animation-name: uicc-slideInUp;
   }
 
   html:not(.csspointerevents) & {

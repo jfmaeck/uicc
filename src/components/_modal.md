@@ -13,11 +13,11 @@
                     <div class="uicc-row uicc-row--extraSmallMargin"><h1 class="uicc-headline uicc-headline--h4 uicc-headline--primary">Modal Headline</h1></div>
                     <h2 class="uicc-headline uicc-headline--h6 uicc-headline--primary">Subheadline</h2>
                 </div>
-                <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-uicc-modal-open');">
+                <button class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-uicc-modal-open');">
                     <svg class="uicc-icon">
                        <use xlink:href="./assets/icons.svg#clear"></use>
                     </svg>
-                </span>
+                </button>
            </div>
            <div class="uicc-modal__content uicc-region">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
@@ -42,11 +42,11 @@
                     <div class="uicc-row uicc-row--extraSmallMargin"><h1 class="uicc-headline uicc-headline--h4 uicc-headline--primary">Modal Headline</h1></div>
                     <h2 class="uicc-headline uicc-headline--h6 uicc-headline--primary">Subheadline</h2>
                 </div>
-                <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-fullWidth-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-uicc-modal-open');">
+                <button class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-fullWidth-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-uicc-modal-open');">
                     <svg class="uicc-icon">
                        <use xlink:href="./assets/icons.svg#clear"></use>
                     </svg>
-                </span>
+                </button>
            </div>
            <div class="uicc-modal__content uicc-region">
                Modal Content
@@ -66,11 +66,11 @@
                     <div class="uicc-row uicc-row--extraSmallMargin"><h1 class="uicc-headline uicc-headline--h4 uicc-headline--primary">Modal Headline</h1></div>
                     <h2 class="uicc-headline uicc-headline--h6 uicc-headline--primary">Subheadline</h2>
                 </div>
-                <span class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-fullHeight-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-uicc-modal-open');">
+                <button class="uicc-modal__headerClose uicc-clickable uicc-clickable--touchy" aria-hidden="true" onclick="document.getElementById('test-modal-fullHeight-open').classList.remove('is-open');document.querySelector('html').classList.remove('is-uicc-modal-open');">
                     <svg class="uicc-icon">
                        <use xlink:href="./assets/icons.svg#clear"></use>
                     </svg>
-                </span>
+                </buttoncd >
            </div>
            <div class="uicc-modal__content uicc-region">
                Modal Content

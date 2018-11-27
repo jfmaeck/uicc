@@ -1,6 +1,14 @@
-$uicc-table-color-background: $uicc-color-gray-light !default;
-$uicc-table-font-size: 0.9em !default;
-$uicc-table-font-size-compact: 0.8em !default;
+$uicc-table-color-background: $uicc-color-white !default;
+$uicc-table-headline-color-background: $uicc-color-gray-lighter !default;
+$uicc-table-headline-color: $uicc-color-black !default;
+$uicc-table-headline-font-weight: normal !default;
+$uicc-table-highlight-color-background: $uicc-color-gray !default;
+$uicc-table-highlight-color: $uicc-color-white !default;
+$uicc-table-border-color: $uicc-color-gray-light;
+$uicc-table-hover-background-color: $uicc-color-gray-light !default;
+$uicc-table-hover-border-color: $uicc-color-gray-lighter !default;
+$uicc-table-font-size: 0.9 * $uicc-font-size-text !default;
+$uicc-table-font-size-compact: 0.8 * $uicc-font-size-text !default;
 
 @mixin responsiveTable($_mediaQuery) {
   @media #{$_mediaQuery} {
@@ -23,8 +31,8 @@ $uicc-table-font-size-compact: 0.8em !default;
     }
 
     & .uicc-table__row {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
       border-bottom: 2px solid $uicc-color-gray;
 
       //background-color: transparent !important; //"unstripe"
@@ -98,6 +106,7 @@ $uicc-table-font-size-compact: 0.8em !default;
 }
 
 .uicc-tableWrapper {
+  position: relative;
   background-color: $uicc-table-color-background;
 }
 
@@ -114,26 +123,35 @@ $uicc-table-font-size-compact: 0.8em !default;
   width: 100%;
 }
 
-.uicc-table--striped .uicc-table__row {
-  &:nth-child(even) {
-    background-color: $uicc-color-gray-medium;
+.uicc-table--hover .uicc-table__row:hover {
+  background-color: $uicc-table-hover-background-color;
+
+
+  .uicc-table__cell--separatorLeft {
+    border-left-color: $uicc-table-hover-border-color;
+  }
+
+  .uicc-table__cell--separatorRight {
+    border-right-color: $uicc-table-hover-border-color;
   }
 }
 
-.uicc-table--hover .uicc-table__row:hover {
-  background-color: $uicc-color-gray-medium;
-}
-
 .uicc-table--bordered .uicc-table__cell {
-  border: 1px solid $uicc-color-gray-lighter;
+  border-bottom: 1px solid $uicc-table-border-color;
 }
 
 .uicc-table__row {
   transition: background-color 300ms;
   border-bottom: 1px solid $uicc-color-gray-lighter;
 
-  &--faded {
-    opacity: 0.25;
+  @for $uicc_i from 35 through 120 {
+    @if ($uicc_i % 5 == 0) {
+      &--#{$uicc_i} {
+        > .uicc-table__cell {
+          height: #{$uicc_i}px;
+        }
+      }
+    }
   }
 }
 
@@ -153,10 +171,14 @@ $uicc-table-font-size-compact: 0.8em !default;
   &--headline {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: $uicc-color-gray-medium;
-    border-bottom: 1px solid #{$uicc-color-white};
-    color: $uicc-color-gray-dark;
-    font-weight: bold;
+    background-color: $uicc-table-headline-color-background;
+    color: $uicc-table-headline-color;
+    font-weight: $uicc-table-headline-font-weight;
+  }
+
+  &--highlight {
+    background-color: $uicc-table-highlight-color-background;
+    color: $uicc-table-highlight-color;
   }
 
   &--numeric {
@@ -175,37 +197,31 @@ $uicc-table-font-size-compact: 0.8em !default;
     text-align: right;
     white-space: nowrap;
   }
+
+  &--separatorLeft {
+    border-left: 1px solid $uicc-table-border-color;
+  }
+
+  &--separatorRight {
+    border-right: 1px solid $uicc-table-border-color;
+  }
+
+
+  @for $uicc_i from 20 through 500 {
+    @if ($uicc_i % 5 == 0) {
+      &--#{$uicc_i} {
+        min-width: #{$uicc_i}px;
+        max-width: #{$uicc_i}px;
+      }
+    }
+  }
 }
 
 .uicc-table__action {
-  color: $uicc-color-gray;
-  font-size: 0.8em;
-
-  &:hover {
-    color: $uicc-color-brand-primary;
-  }
-
-  &:visited {
-    color: $uicc-color-gray;
-  }
+  display: inline-block;
 
   & + .uicc-table__action {
     margin-left: 0.5em;
-  }
-}
-
-.uicc-table--bordered {
-  .uicc-table__cell--headline {
-    border-left-color: $uicc-color-white;
-    border-right-color: $uicc-color-white;
-  }
-
-  .uicc-table__cell--headline:first-child {
-    border-left-color: $uicc-color-gray-light;
-  }
-
-  .uicc-table__cell--headline:last-child {
-    border-right-color: $uicc-color-gray-light;
   }
 }
 

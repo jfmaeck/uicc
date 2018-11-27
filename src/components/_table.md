@@ -63,120 +63,12 @@ Wrap tables in a (figure) element with the class `uicc-tableWrapper` to add a ni
                      </a>
                  </td>
              </tr>
-         </tbody>
-      </table>
-    </figure>
-
-### Table (striped):
-
-    @example
-    <figure class="uicc-tableWrapper">
-      <table class="uicc-table uicc-table--data uicc-table--striped uicc-table--responsiveSmallDown">
-         <thead>
              <tr class="uicc-table__row">
-                 <th class="uicc-table__cell uicc-table__cell--headline uicc-table__cell--contentAsResponsiveHeadline">Headline</th>
-                 <th class="uicc-table__cell uicc-table__cell--headline">Col A</th>
-                 <th class="uicc-table__cell uicc-table__cell--headline">Col B</th>
-                 <th class="uicc-table__cell uicc-table__cell--headline">Col C</th>
-                 <th class="uicc-table__cell uicc-table__cell--headline">Edit</th>
-             </tr>
-         </thead>
-         <tbody>
-             <tr class="uicc-table__row">
-                 <td class="uicc-table__cell uicc-table__cell--contentAsResponsiveHeadline" data-uicc-th="Headline">Headline 1</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col A">Cell 1 - a</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col B">Cell 1 - b</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col C">Cell 1 - c</td>
-                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
-                     <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
-                     </a>
-                     <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
-                     </a>
-                 </td>
-             </tr>
-             <tr class="uicc-table__row">
-                 <td class="uicc-table__cell uicc-table__cell--contentAsResponsiveHeadline" data-uicc-th="Headline">Headline 2</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col A">Cell 2 - a</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col B">Cell 2 - b</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col C">Cell 2 - c</td>
-                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
-                     <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
-                     </a>
-                     <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
-                     </a>
-                 </td>
-             </tr>
-             <tr class="uicc-table__row">
-                 <td class="uicc-table__cell uicc-table__cell--contentAsResponsiveHeadline" data-uicc-th="Headline">Headline 3</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col A">Cell 3 - a</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col B">Cell 3 - b</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col C">Cell 3 - c</td>
-                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
-                     <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
-                     </a>
-                     <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
-                     </a>
-                 </td>
-             </tr>
-         </tbody>
-      </table>
-    </figure>
-
-### Table (bordered and striped):
-
-    @example
-    <figure class="uicc-tableWrapper">
-      <table class="uicc-table uicc-table--data uicc-table--bordered uicc-table--striped uicc-table--responsiveSmallDown">
-         <thead>
-             <tr class="uicc-table__row">
-                 <th class="uicc-table__cell uicc-table__cell--headline uicc-table__cell--contentAsResponsiveHeadline">Headline</th>
-                 <th class="uicc-table__cell uicc-table__cell--headline">Col A</th>
-                 <th class="uicc-table__cell uicc-table__cell--headline">Col B</th>
-                 <th class="uicc-table__cell uicc-table__cell--headline">Col C</th>
-                 <th class="uicc-table__cell uicc-table__cell--headline">Edit</th>
-             </tr>
-         </thead>
-         <tbody>
-             <tr class="uicc-table__row">
-                 <td class="uicc-table__cell uicc-table__cell--contentAsResponsiveHeadline" data-uicc-th="Headline">Headline 1</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col A">Cell 1 - a</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col B">Cell 1 - b</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col C">Cell 1 - c</td>
-                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
-                     <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
-                     </a>
-                     <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
-                     </a>
-                 </td>
-             </tr>
-             <tr class="uicc-table__row">
-                 <td class="uicc-table__cell uicc-table__cell--contentAsResponsiveHeadline" data-uicc-th="Headline">Headline 2</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col A">Cell 2 - a</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col B">Cell 2 - b</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col C">Cell 2 - c</td>
-                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
-                     <a href="javascript:;" class="uicc-table__action" title="edit">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
-                     </a>
-                     <a href="javascript:;" class="uicc-table__action" title="delete">
-                         <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
-                     </a>
-                 </td>
-             </tr>
-             <tr class="uicc-table__row">
-                 <td class="uicc-table__cell uicc-table__cell--contentAsResponsiveHeadline" data-uicc-th="Headline">Headline 3</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col A">Cell 3 - a</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col B">Cell 3 - b</td>
-                 <td class="uicc-table__cell" data-uicc-th="Col C">Cell 3 - c</td>
-                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
+                 <td class="uicc-table__cell uicc-table__cell--highlight uicc-table__cell--contentAsResponsiveHeadline" data-uicc-th="Headline">Headline 3</td>
+                 <td class="uicc-table__cell uicc-table__cell--highlight" data-uicc-th="Col A (text)">Cell 3 - a</td>
+                 <td class="uicc-table__cell uicc-table__cell--highlight uicc-table__cell--numeric" data-uicc-th="Col B (numeric)">980.20</td>
+                 <td class="uicc-table__cell uicc-table__cell--highlight uicc-table__cell--numeric" data-uicc-th="Col C (numeric)">1001.24</td>
+                 <td class="uicc-table__cell uicc-table__cell--highlight uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
                          <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
@@ -202,7 +94,7 @@ Add `uicc-table--hover` class to the `table` element to highlight rows on hover.
                  <th class="uicc-table__cell uicc-table__cell--headline">Col A</th>
                  <th class="uicc-table__cell uicc-table__cell--headline">Col B</th>
                  <th class="uicc-table__cell uicc-table__cell--headline">Col C</th>
-                 <th class="uicc-table__cell uicc-table__cell--headline">Edit</th>
+                 <th class="uicc-table__cell uicc-table__cell--headline uicc-table__cell--separatorLeft">Edit</th>
              </tr>
          </thead>
          <tbody>
@@ -211,7 +103,7 @@ Add `uicc-table--hover` class to the `table` element to highlight rows on hover.
                  <td class="uicc-table__cell" data-uicc-th="Col A">Cell 1 - a</td>
                  <td class="uicc-table__cell" data-uicc-th="Col B">Cell 1 - b</td>
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 1 - c</td>
-                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
+                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline uicc-table__cell--separatorLeft">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
                          <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
@@ -225,7 +117,7 @@ Add `uicc-table--hover` class to the `table` element to highlight rows on hover.
                  <td class="uicc-table__cell" data-uicc-th="Col A">Cell 2 - a</td>
                  <td class="uicc-table__cell" data-uicc-th="Col B">Cell 2 - b</td>
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 2 - c</td>
-                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
+                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline uicc-table__cell--separatorLeft">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
                          <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>
@@ -239,7 +131,7 @@ Add `uicc-table--hover` class to the `table` element to highlight rows on hover.
                  <td class="uicc-table__cell" data-uicc-th="Col A">Cell 3 - a</td>
                  <td class="uicc-table__cell" data-uicc-th="Col B">Cell 3 - b</td>
                  <td class="uicc-table__cell" data-uicc-th="Col C">Cell 3 - c</td>
-                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline">
+                 <td class="uicc-table__cell uicc-table__cell--actions uicc-table__cell--noResponsiveHeadline uicc-table__cell--separatorLeft">
                      <a href="javascript:;" class="uicc-table__action" title="edit">
                          <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
                      </a>

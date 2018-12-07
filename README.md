@@ -44,8 +44,8 @@ http://jfmaeck.github.com/uicc
 ## Install
 
 ```
-git clone https://github.com/jfmaeck/uicc
-cd uicc
+git clone https://github.com/jfmaeck/uicc styleguide
+cd styleguide
 rm -Rf .git
 npm install
 ```

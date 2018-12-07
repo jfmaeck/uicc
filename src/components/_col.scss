@@ -22,7 +22,7 @@ $uicc-col-margin-big: 28px !default;
 
     &.uicc-col--smallMargin {
       padding-right: calc(#{$uicc-col-margin-small} / 1.4);
-      margin-right: calc(#{uicc-col-margin-small} / 2.8);
+      margin-right: calc(#{$uicc-col-margin-small} / 2.8);
     }
 
     &.uicc-col--bigMargin {

@@ -1,14 +1,21 @@
+$uicc-modal-backdrop-backgroundColor: $uicc-color-darken !default;
+$uicc-modal-dialog-backgroundColor: $uicc-color-white !default;
+$uicc-modal-dialog-color: $uicc-color-black !default;
+$uicc-modal-dialog-border-style: solid !important;
+$uicc-modal-dialog-border-width: 2px !important;
+$uicc-modal-dialog-border-color: $uicc-color-transparent !default;
+$uicc-modal-dialog-box-shadow: 0 2px 8px 0 #{$uicc-color-black} !default;
+
+$uicc-modal-margin: 8px !default;
+$uicc-modal-marginXlargeUp: 16px !default;
+
 // sass-lint:disable no-qualifying-elements
 html.is-uicc-modal-open {
   overflow: hidden;
 }
 
 .uicc-modal {
-
-  $uicc-modal-margin: 8px;
-  $uicc-modal-marginXlargeUp: 16px;
-
-  will-change: opcity;
+  will-change: opacity;
   transition: opacity 250ms;
   transform: translate3d(0, 0, 0);
   position: fixed;
@@ -23,7 +30,7 @@ html.is-uicc-modal-open {
   justify-content: space-around;
   align-items: center;
   opacity: 0;
-  background-color: $uicc-color-darken-heavy;
+  background-color: $uicc-modal-backdrop-backgroundColor;
   font-size: $uicc-font-size-text;
 
   &--fullWidth &__dialog {
@@ -56,7 +63,12 @@ html.is-uicc-modal-open {
     max-width: 100vw;
     // sass-lint:enable no-duplicate-properties
     margin: $uicc-modal-margin;
-    background-color: $uicc-color-white;
+    color: $uicc-modal-dialog-color;
+    background-color: $uicc-modal-dialog-backgroundColor;
+    border-style: $uicc-modal-dialog-border-style;
+    border-width: $uicc-modal-dialog-border-width;
+    border-color: $uicc-modal-dialog-border-color;
+    box-shadow: $uicc-modal-dialog-box-shadow;
 
     @media #{$uicc-xlarge-up} {
       margin: $uicc-modal-marginXlargeUp;
@@ -66,21 +78,11 @@ html.is-uicc-modal-open {
   &__header {
     flex: 0 0 auto;
     display: flex;
-    justify-content: center;
-    padding: 12px 15px 10px 15px;
-    border-bottom: 1px solid $uicc-color-gray-medium;
+    width: 100%;
+    justify-content: space-between;
 
     &Content {
-      flex: 1 1 100%;
-      text-align: center;
-    }
-
-    &Action,
-    &Close {
-      position: relative;
-      display: flex;
-      align-items: center;
-      flex: 0 0 auto;
+      padding-right: 10px;
     }
 
     &Close {
@@ -97,19 +99,12 @@ html.is-uicc-modal-open {
     flex: 0 0 auto;
   }
 
-  &__footerButtons {
-    border-top: 1px solid $uicc-color-gray-medium;
-    padding-top: 1.1rem;
-    padding-bottom: 0.9rem;
-    text-align: center;
-  }
-
   &.is-open {
     opacity: 1;
     pointer-events: all;
 
     .uicc-modal__dialog {
-      animation-name: uicc-bounceInDown;
+      animation-name: uicc-zoomIn;
     }
   }
 

@@ -1,6 +1,6 @@
 ## Postfix
 
-Postfixed elements consist of one or more fixed elements plus one fluid element taking up all the remaining space.
+Postfixed elements consist of one or more fixed elements plus one ore more fluid elements taking up all the remaining space.
 
 The modifier `uicc-postfix--gutters` adds some spacing between the postfix contents. Just leave it out, if you don't need spacing.
 
@@ -48,5 +48,31 @@ Vertically centered contents
         <div class="uicc-postfix__fluid">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
         <svg class="uicc-postfix__fixed uicc-icon uicc-icon--primary uicc-icon--big">
           <use xlink:href="./assets/icons.svg#check"></use>
+        </svg>
+    </div>
+
+### Postfix (bottom)
+  
+Vertically bottom aligned contents
+  
+    @example
+    <div class="uicc-postfix uicc-postfix--gutters uicc-postfix--bottom">
+        <div class="uicc-postfix__fluid">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+        <svg class="uicc-postfix__fixed uicc-icon uicc-icon--primary uicc-icon--big">
+          <use xlink:href="./assets/icons.svg#more-horizontal"></use>
+        </svg>
+    </div>
+
+### Postfix (between)
+  
+Use maximum spacing between the elements 
+  
+    @example
+    <div class="uicc-postfix uicc-postfix--between">
+        <svg class="uicc-postfix__fixed uicc-icon uicc-icon--primary uicc-icon--big">
+          <use xlink:href="./assets/icons.svg#arrow-left"></use>
+        </svg>
+        <svg class="uicc-postfix__fixed uicc-icon uicc-icon--primary uicc-icon--big">
+          <use xlink:href="./assets/icons.svg#arrow-right"></use>
         </svg>
     </div>

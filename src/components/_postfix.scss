@@ -5,6 +5,14 @@
     align-items: center;
   }
 
+  &--bottom {
+    align-items: flex-end;
+  }
+
+  &--between {
+    justify-content: space-between;
+  }
+
   &--gutters {
     > * + * {
       margin-left: $uicc-default-margin;

@@ -1,54 +1,20 @@
+$uicc-loading-indicator-color: $uicc-color-brand-primary !default;
+$uicc-loading-indicator-border-color: rgba(0, 0, 0, 0.08) !default;
+$uicc-loading-indicator-border-width: 3px;
+
 .uicc-loadingIndicator {
-  animation: rotate 3.5s linear infinite;
-  transform-origin: center center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border-width: $uicc-loading-indicator-border-width;
+  border-style: solid;
+  border-color: $uicc-loading-indicator-border-color;
+  border-top-color:$uicc-loading-indicator-color;
+  animation: uicc-loading-rotate 1.2s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
-  &__path {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-    stroke-linecap: round;
-  }
-
-  @keyframes rotate {
+  @keyframes uicc-loading-rotate {
     100% {
       transform: rotate(360deg);
-    }
-  }
-
-  @keyframes dash {
-    0% {
-      stroke-dasharray: 1, 200;
-      stroke-dashoffset: 0;
-    }
-
-    50% {
-      stroke-dasharray: 89, 200;
-      stroke-dashoffset: -35px;
-    }
-
-    100% {
-      stroke-dasharray: 89, 200;
-      stroke-dashoffset: -124px;
-    }
-  }
-
-  @keyframes color {
-    100%,
-    0% {
-      stroke: $uicc-color-brand-primary;
-    }
-
-    40% {
-      stroke: $uicc-color-brand-primary;
-    }
-
-    66% {
-      stroke: $uicc-color-gray-light;
-    }
-
-    80%,
-    90% {
-      stroke: $uicc-color-gray-light;
     }
   }
 }

@@ -16,7 +16,7 @@
     "build:svg-icons": "svg-sprite --config ./svg-sprite.config.json --dest=dist src/assets/icons/*.svg",
     "watch:svg-icons": "chokidar src/assets/icons/*.svg -c 'npm run build:svg-icons' --polling --poll-interval 1000",
     "build:sass": "node-sass src/ -o dist && postcss 'dist/**/*.css' -u autoprefixer --map -u cssnano -d dist -b dist",
-    "watch:sass": "chokidar src/*.scss src/**/*.scss -c 'npm-run-all --parallel lint:sass watch:sass' --polling",
+    "watch:sass": "chokidar src/*.scss src/**/*.scss -c 'npm-run-all --parallel lint:sass build:sass' --polling",
     "lint:sass": "sass-lint --config ./.sass-lint.yml 'src/**/*.scss' --verbose --no-exit",
     "build:styleguide": "styledown src/components/*.md ./styleguide-config.md > dist/index.tmp && mv dist/index.tmp dist/index.html && copyfiles node_modules/styledown/data/styledown.js -u 3 dist/",
     "watch:styleguide": "chokidar styleguide-config.md src/*.md src/**/*.md -c 'npm-run-all --sequential build:styleguide lint:styleguide' --polling",

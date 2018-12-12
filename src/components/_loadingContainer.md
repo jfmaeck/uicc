@@ -12,9 +12,7 @@ Add class `is-loading` to show loading indicator
         <p>Lorem ipsum</p>
         <div class="uicc-loadingContainer__loader">
             <div class="uicc-loadingContainer__dialog">
-                <svg class="uicc-loadingContainer__loadingIndicator uicc-loadingIndicator" viewBox="25 25 50 50">
-                  <circle class="uicc-loadingIndicator__path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"/>
-                </svg>
+                <div class="uicc-loadingContainer__loadingIndicator uicc-loadingIndicator"></div>
             </div>
         </div>
     </div>
@@ -32,9 +30,7 @@ Add class `is-blocking` to show blocking loading indicator
         <p>Lorem ipsum</p>
         <div class="uicc-loadingContainer__loader">
             <div class="uicc-loadingContainer__dialog">
-                <svg class="uicc-loadingContainer__loadingIndicator uicc-loadingIndicator" viewBox="25 25 50 50">
-                  <circle class="uicc-loadingIndicator__path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"/>
-                </svg>
+                <div class="uicc-loadingContainer__loadingIndicator uicc-loadingIndicator"></div>
             </div>
         </div>
     </div>
@@ -52,9 +48,7 @@ Add class `is-blocking` to show blocking loading indicator
         <div class="uicc-loadingContainer__loader">
             <div class="uicc-loadingContainer__dialog">
                 <span class="uicc-loadingContainer__loadingMessage">Get plenty of sleep – if you can</span>
-                <svg class="uicc-loadingContainer__loadingIndicator uicc-loadingIndicator" viewBox="25 25 50 50">
-                  <circle class="uicc-loadingIndicator__path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"/>
-                </svg>
+                <div class="uicc-loadingContainer__loadingIndicator uicc-loadingIndicator"></div>
             </div>
         </div>
     </div>

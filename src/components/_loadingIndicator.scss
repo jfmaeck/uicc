@@ -10,7 +10,7 @@ $uicc-loading-indicator-border-width: 3px;
   border-style: solid;
   border-color: $uicc-loading-indicator-border-color;
   border-top-color:$uicc-loading-indicator-color;
-  animation: uicc-loading-rotate 1.2s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation: uicc-loading-rotate 1s infinite cubic-bezier(0.185, 0.335, 0.25, 0.96);
 
   @keyframes uicc-loading-rotate {
     100% {

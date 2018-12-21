@@ -1,3 +1,6 @@
+$uicc-loading-container-dialog-background: $uicc-color-darken-heavy !default;
+$uicc-loading-container-blocking-background: $uicc-color-darken !default;
+
 .uicc-loadingContainer {
   position: relative;
 
@@ -24,7 +27,7 @@
     transform: scale(0);
     padding: $uicc-default-margin $uicc-default-margin $uicc-default-margin * 0.8 $uicc-default-margin;
     pointer-events: none;
-    background-color: $uicc-color-darken-heavy;
+    background-color: $uicc-loading-container-dialog-background;
   }
 
   &__loadingIndicator {
@@ -60,7 +63,7 @@
   &.is-blocking {
     > .uicc-loadingContainer__loader {
       pointer-events: all;
-      background-color: $uicc-color-darken;
+      background-color: $uicc-loading-container-blocking-background;
     }
   }
 }

@@ -1,3 +1,8 @@
+$uicc-pagination-color: $uicc-color-brand-primary !default;
+$uicc-pagination-background-color: $uicc-color-brand-primary-inverted !default;
+$uicc-pagination-active-color: $uicc-color-brand-primary-inverted !default;
+$uicc-pagination-active-background-color: $uicc-color-brand-primary !default;
+
 .uicc-pagination {
   display: flex;
 
@@ -11,14 +16,12 @@
     height: 2em;
     border-radius: 50%;
     font-size: $uicc-font-size-base * 0.8;
-    color: $uicc-color-brand-primary;
-
-    //Because center is apparently not centered enough..
-    padding-top: 3px;
+    color: $uicc-pagination-color;
+    background-color: $uicc-pagination-background-color;
 
     &.is-active {
-      color: $uicc-color-brand-primary-inverted;
-      background-color: $uicc-color-brand-primary;
+      color: $uicc-pagination-active-color;
+      background-color: $uicc-pagination-active-background-color;
     }
   }
 

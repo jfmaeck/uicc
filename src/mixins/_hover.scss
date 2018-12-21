@@ -1,4 +1,4 @@
-@mixin uicc-hover($_color: null, $_backgroundColor: null) {
+@mixin uicc-hover($_color: null, $_backgroundColor: null, $_borderColor: null) {
   &:hover {
     @if ($_color) {
       color: $_color;
@@ -6,6 +6,10 @@
 
     @if ($_backgroundColor) {
       background-color: $_backgroundColor;
+    }
+
+    @if ($_borderColor) {
+      border-color: $_borderColor;
     }
   }
 }

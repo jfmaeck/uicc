@@ -16,6 +16,8 @@
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#delete"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#edit"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#info-circle"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#more-horizontal"></use></svg>
+    <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#more-vertical"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#visibility-on"></use></svg>
     <svg class="uicc-icon uicc-icon--hoverPrimary"><use xlink:href="./assets/icons.svg#visibility-off"></use></svg>
 

@@ -1,28 +1,83 @@
 $uicc-pagination-color: $uicc-color-brand-primary !default;
 $uicc-pagination-background-color: $uicc-color-brand-primary-inverted !default;
+$uicc-pagination-border-color: $uicc-color-transparent !default;
+$uicc-pagination-font-weight: normal !default;
+
+$uicc-pagination-hover-color: $uicc-pagination-color !default;
+$uicc-pagination-hover-background-color: $uicc-pagination-background-color !default;
+$uicc-pagination-hover-border-color: $uicc-color-gray-light !default;
+$uicc-pagination-hover-font-weight: bold !default;
+
 $uicc-pagination-active-color: $uicc-color-brand-primary-inverted !default;
 $uicc-pagination-active-background-color: $uicc-color-brand-primary !default;
+$uicc-pagination-active-border-color: $uicc-color-gray-light !default;
+$uicc-pagination-active-font-weight: bold !default;
+
+$uicc-pagination-focus-color: $uicc-pagination-color !default;
+$uicc-pagination-focus-background-color: $uicc-pagination-background-color !default;
+$uicc-pagination-focus-border-color: $uicc-color-brand-primary !default;
+$uicc-pagination-focus-font-weight: normal !default;
+
+$uicc-pagination-distance: $uicc-default-margin !default;
+$uicc-pagination-border-radius: 50% !default;
+$uicc-pagination-border-style: solid !default;
+$uicc-pagination-border-width: 1px     !default;
+
 
 .uicc-pagination {
   display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &__item {
-    @include uicc-hover($uicc-color-brand-primary-inverted, $uicc-color-brand-primary);
-
+  &__item,
+  &__separator {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    font-size: $uicc-font-size-base * 0.8;
+    width: 2.2em;
+    height: 2.2em;
+    border-style: $uicc-pagination-border-style;
+    border-width: $uicc-pagination-border-width;
+    border-color: $uicc-pagination-border-color;
+    border-radius: $uicc-pagination-border-radius;
+
+    font-size: $uicc-font-size-base * 0.9;
     color: $uicc-pagination-color;
     background-color: $uicc-pagination-background-color;
+
+    font-weight: $uicc-pagination-font-weight;
+
+    & + & {
+      margin-left: $uicc-pagination-distance;
+    }
+  }
+
+  &__item {
+    @include uicc-hover(
+        $uicc-pagination-hover-color,
+        $uicc-pagination-hover-background-color,
+        $uicc-pagination-hover-border-color
+    );
 
     &.is-active {
       color: $uicc-pagination-active-color;
       background-color: $uicc-pagination-active-background-color;
+      border-color: $uicc-pagination-active-border-color;
+
+      font-weight: $uicc-pagination-active-font-weight;
+    }
+
+    &:focus-within,
+    &:focus {
+      color: $uicc-pagination-focus-color;
+      background-color: $uicc-pagination-focus-background-color;
+      border-color: $uicc-pagination-focus-border-color;
+      font-weight: $uicc-pagination-focus-font-weight;
+      outline: none;
+    }
+
+    &:hover {
+      font-weight: $uicc-pagination-hover-font-weight;
     }
   }
-
 }

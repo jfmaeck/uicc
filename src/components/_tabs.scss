@@ -1,23 +1,34 @@
 $uicc-tab-header-distance: $uicc-default-margin-big !default;
-$uicc-tab-header-font-weight: bold !default;
+$uicc-tab-header-padding-top: $uicc-default-margin-small !default;
+$uicc-tab-header-sides: 0 !default;
+$uicc-tab-header-padding-bottom: $uicc-default-margin-small !default;
+$uicc-tab-header-font-weight: normal !default;
 $uicc-tab-header-font-weight-hover: $uicc-tab-header-font-weight !default;
 $uicc-tab-header-font-weight-active: $uicc-tab-header-font-weight-hover !default;
 $uicc-tab-header-color: $uicc-color-gray !default;
-$uicc-tab-header-color-hover: $uicc-color-brand-primary !default;
-$uicc-tab-header-color-active: $uicc-tab-header-color-hover !default;
-$uicc-tab-header-underline-color: $uicc-color-transparent !default;
-$uicc-tab-header-underline-color-hover: $uicc-color-brand-primary !default;
-$uicc-tab-header-underline-color-active: $uicc-tab-header-underline-color-hover !default;
-$uicc-tab-underline-height: $uicc-accent-line-height !default;
+$uicc-tab-header-color-hover: $uicc-color-gray-dark !default;
+$uicc-tab-header-color-active: $uicc-color-gray-dark !default;
+$uicc-tab-header-underline-color: $uicc-color-gray-medium !default;
+$uicc-tab-header-underline-color-hover: $uicc-tab-header-underline-color !default;
+$uicc-tab-header-underline-color-active: $uicc-color-gray !default;
+$uicc-tab-underline-height: 1px !default;
+$uicc-tab-underline-height-active: $uicc-accent-line-height !default;
 
 .uicc-tabs {
-  &__tabHeader {
-    @include uicc-hover($uicc-color-brand-primary);
-    display: inline-block;
-    position: relative;
+  &__headers {
+    display: inline-flex;
+    border-bottom: $uicc-tab-underline-height solid $uicc-tab-header-underline-color;
+  }
+
+  &__tab {
+    @include uicc-hover($uicc-tab-header-color-hover);
 
     transition: color 200ms, border 200ms;
-    padding: 3px 0 12px 0;
+    padding-top: $uicc-tab-header-padding-top;
+    padding-bottom: $uicc-tab-header-padding-bottom;
+    padding-left: $uicc-tab-header-sides;
+    padding-right: $uicc-tab-header-sides;
+    margin-bottom: -$uicc-tab-underline-height;
 
     border-bottom: $uicc-tab-underline-height solid $uicc-tab-header-underline-color;
     white-space: nowrap;
@@ -43,6 +54,7 @@ $uicc-tab-underline-height: $uicc-accent-line-height !default;
       font-weight: $uicc-tab-header-font-weight-active;
       color: $uicc-tab-header-color-active;
       border-color: $uicc-tab-header-underline-color-active;
+      border-bottom-width: $uicc-tab-underline-height-active;
     }
 
     &:first-child,
@@ -62,7 +74,7 @@ $uicc-tab-underline-height: $uicc-accent-line-height !default;
     }
   }
 
-  &__tabContent {
+  &__content {
     display: none;
 
     &.is-active {

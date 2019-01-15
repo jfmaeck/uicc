@@ -10,39 +10,39 @@ $uicc-badge-background-color-error: $uicc-color-error;
 $uicc-badge-color-error: $uicc-color-error-inverted;
 
 .uicc-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0.3em;
-    min-width: 1.6em;
-    height: 1.6em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.3em;
+  min-width: 1.6em;
+  height: 1.6em;
 
-    border-radius: 0.8em;
-    font-size: 12px;
-    font-weight: bold;
+  border-radius: 0.8em;
+  font-size: 12px;
+  font-weight: bold;
 
-    color: $uicc-badge-color-default;
-    background: $uicc-badge-background-color-default;
+  color: $uicc-badge-color-default;
+  background: $uicc-badge-background-color-default;
 
-    transition: color 300ms, background-color 300ms;
+  transition: color 300ms, background-color 300ms;
 
-    &--info {
-        color: $uicc-badge-color-info;
-        background: $uicc-badge-background-color-info;
-    }
+  &--info {
+    color: $uicc-badge-color-info;
+    background: $uicc-badge-background-color-info;
+  }
 
-    &--warning {
-        color: $uicc-badge-color-warning;
-        background: $uicc-badge-background-color-warning;
-    }
+  &--warning {
+    color: $uicc-badge-color-warning;
+    background: $uicc-badge-background-color-warning;
+  }
 
-    &--error {
-        color: $uicc-badge-color-error;
-        background: $uicc-badge-background-color-error;
-    }
+  &--error {
+    color: $uicc-badge-color-error;
+    background: $uicc-badge-background-color-error;
+  }
 
-    &--success {
-        color: $uicc-badge-color-success;
-        background: $uicc-badge-background-color-success;
-    }
+  &--success {
+    color: $uicc-badge-color-success;
+    background: $uicc-badge-background-color-success;
+  }
 }

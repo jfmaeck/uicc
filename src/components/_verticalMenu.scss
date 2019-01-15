@@ -3,7 +3,6 @@ $uicc-verticalMenu-color-active: $uicc-color-black !default;
 $uicc-verticalMenu-border-color-active: $uicc-color-gray !default;
 
 @mixin uiccVerticalMenuInline() {
-
   .uicc-verticalMenu__item {
     border-top: none;
     border-bottom: none;
@@ -29,7 +28,6 @@ $uicc-verticalMenu-border-color-active: $uicc-color-gray !default;
 }
 
 .uicc-verticalMenu {
-
   &--inline {
     @include uiccVerticalMenuInline;
   }
@@ -39,7 +37,6 @@ $uicc-verticalMenu-border-color-active: $uicc-color-gray !default;
       @include uiccVerticalMenuInline;
     }
   }
-
 
   &--inlineLargeUp {
     @media #{$uicc-large-up} {
@@ -66,5 +63,4 @@ $uicc-verticalMenu-border-color-active: $uicc-color-gray !default;
       border-bottom-width: $uicc-accent-line-height;
     }
   }
-
 }

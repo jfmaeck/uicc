@@ -75,7 +75,6 @@ $uicc-offCanvas-header-border-color: #303e47;
     }
 
     &__off {
-
       &--left {
         left: -$uicc-offCanvas-width-screen-medium;
         width: $uicc-offCanvas-width-screen-medium;
@@ -107,7 +106,6 @@ $uicc-offCanvas-header-border-color: #303e47;
     }
 
     &__off {
-
       &--left {
         left: -$uicc-offCanvas-width-screen-large;
         width: $uicc-offCanvas-width-screen-large;
@@ -124,6 +122,4 @@ $uicc-offCanvas-header-border-color: #303e47;
       }
     }
   }
-
 }
-

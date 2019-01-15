@@ -3,7 +3,6 @@ $uicc-font-path: '#{$uicc-asset-path}/fonts' !default;
 $uicc-icon-path: '#{$uicc-asset-path}/icons' !default;
 $uicc-image-path: '#{$uicc-asset-path}/images' !default;
 
-
 /**
  * Media Query Breakpoints:
  */
@@ -31,7 +30,6 @@ $uicc-xlarge-only: 'only screen and (min-width: #{$uicc-screen-large-min})';
 $uicc-xlarge-up: 'only screen and (min-width: #{$uicc-screen-large-min})';
 $uicc-screen-only: 'only screen';
 $uicc-print-only: 'only print';
-
 
 //== Colors
 $uicc-color-white: #fff !default;
@@ -88,9 +86,9 @@ $uicc-font-size-text: 0.95rem !default;
 
 $uicc-font-size-h0: 3.5 * $uicc-font-size-text !default;
 $uicc-font-size-h0-screen-small: 3.3 * $uicc-font-size-text !default;
-$uicc-font-size-h0-screen-tiny: 3.0 * $uicc-font-size-text !default;
+$uicc-font-size-h0-screen-tiny: 3 * $uicc-font-size-text !default;
 $uicc-text-transform-h0: none !default;
-$uicc-font-size-h1: 2.0 * $uicc-font-size-text !default;
+$uicc-font-size-h1: 2 * $uicc-font-size-text !default;
 $uicc-font-size-h1-screen-small: 1.9 * $uicc-font-size-text !default;
 $uicc-font-size-h1-screen-tiny: 1.8 * $uicc-font-size-text !default;
 $uicc-text-transform-h1: none !default;
@@ -106,7 +104,7 @@ $uicc-font-size-h4: 1.3 * $uicc-font-size-text !default;
 $uicc-font-size-h4-screen-small: 1.2 * $uicc-font-size-text !default;
 $uicc-font-size-h4-screen-tiny: 1.1 * $uicc-font-size-text !default;
 $uicc-text-transform-h4: none !default;
-$uicc-font-size-h5: 1.0 * $uicc-font-size-text !default;
+$uicc-font-size-h5: 1 * $uicc-font-size-text !default;
 $uicc-font-size-h5-screen-small: 0.9 * $uicc-font-size-text !default;
 $uicc-font-size-h5-screen-tiny: 0.9 * $uicc-font-size-text !default;
 $uicc-text-transform-h5: none !default;
@@ -147,4 +145,3 @@ $uicc-modal-z-index: 1000 !default;
 $uicc-tooltip-z-index: $uicc-modal-z-index - 1 !default;
 $uicc-offCanvas-z-index: $uicc-modal-z-index - 1 !default;
 $uicc-loading-container-z-index: 1 !default;
-

@@ -126,7 +126,6 @@ $uicc-table-font-size-compact: 0.8 * $uicc-font-size-text !default;
 .uicc-table--hover .uicc-table__row:hover {
   background-color: $uicc-table-hover-background-color;
 
-
   .uicc-table__cell--separatorLeft {
     border-left-color: $uicc-table-hover-border-color;
   }
@@ -205,7 +204,6 @@ $uicc-table-font-size-compact: 0.8 * $uicc-font-size-text !default;
   &--separatorRight {
     border-right: 1px solid $uicc-table-border-color;
   }
-
 
   @for $uicc_i from 20 through 500 {
     @if ($uicc_i % 5 == 0) {

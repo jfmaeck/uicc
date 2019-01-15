@@ -13,7 +13,10 @@
  * Basic normalize
  */
 
-h2.sg, h3.sg, ul.sg, p.sg {
+h2.sg,
+h3.sg,
+ul.sg,
+p.sg {
   margin: 20px 0;
   line-height: 1.55;
 }
@@ -36,7 +39,8 @@ h3.sg + .sg {
 }
 
 /* Colors */
-p.sg, ul.sg {
+p.sg,
+ul.sg {
   color: $uicc-color-gray-dark;
 }
 
@@ -66,7 +70,10 @@ code.sg:first-child {
   color: #357;
 }
 
-.sg-block, .sg-code, .sg-canvas, .sg-text {
+.sg-block,
+.sg-code,
+.sg-canvas,
+.sg-text {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -230,7 +237,6 @@ code.sg:first-child {
   background: $uicc-color-gray-light;
   border-radius: 3px;
   color: $uicc-color-gray;
-
 }
 
 .sg-expando:hover:before,

@@ -1,107 +1,99 @@
 @mixin uiccStickyColumn($uicc-stickyColumn-width, $uicc-stickyLastColumn-width) {
-    &--stickyColumnWidth-#{$uicc-stickyColumn-width} {
-        .uicc-stickyTable__scroller {
-            width: calc(100% - #{$uicc-stickyColumn-width}px);
-            margin-left: #{$uicc-stickyColumn-width}px;
-        }
-
-        .uicc-stickyTable__cell:first-child {
-            width: #{$uicc-stickyColumn-width}px;
-        }
-
-        &.uicc-stickyTable--stickyLastColumnWidth-#{$uicc-stickyLastColumn-width} {
-            .uicc-stickyTable__scroller {
-                width: calc(100% - #{$uicc-stickyColumn-width}px - #{$uicc-stickyLastColumn-width}px);
-                margin-right: #{$uicc-stickyLastColumn-width}px;
-            }
-
-            .uicc-stickyTable__cell:last-child {
-                width: #{$uicc-stickyLastColumn-width}px;
-            }
-        }
+  &--stickyColumnWidth-#{$uicc-stickyColumn-width} {
+    .uicc-stickyTable__scroller {
+      width: calc(100% - #{$uicc-stickyColumn-width}px);
+      margin-left: #{$uicc-stickyColumn-width}px;
     }
+
+    .uicc-stickyTable__cell:first-child {
+      width: #{$uicc-stickyColumn-width}px;
+    }
+
+    &.uicc-stickyTable--stickyLastColumnWidth-#{$uicc-stickyLastColumn-width} {
+      .uicc-stickyTable__scroller {
+        width: calc(100% - #{$uicc-stickyColumn-width}px - #{$uicc-stickyLastColumn-width}px);
+        margin-right: #{$uicc-stickyLastColumn-width}px;
+      }
+
+      .uicc-stickyTable__cell:last-child {
+        width: #{$uicc-stickyLastColumn-width}px;
+      }
+    }
+  }
 }
 
 @mixin uiccStickyHeader($uicc-stickyHeader-height) {
-    &--stickyHeaderHeight-#{$uicc-stickyHeader-height} {
-        padding-top: #{$uicc-stickyHeader-height}px;
+  &--stickyHeaderHeight-#{$uicc-stickyHeader-height} {
+    padding-top: #{$uicc-stickyHeader-height}px;
 
-        .uicc-stickyTable__scroller {
-            height: calc(100% - #{$uicc-stickyHeader-height}px);
-        }
-
-        .uicc-stickyTable__header {
-            height: #{$uicc-stickyHeader-height}px;
-        }
+    .uicc-stickyTable__scroller {
+      height: calc(100% - #{$uicc-stickyHeader-height}px);
     }
+
+    .uicc-stickyTable__header {
+      height: #{$uicc-stickyHeader-height}px;
+    }
+  }
 }
 
 .uicc-stickyTable {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 
-    &__header {
-        position: absolute;
-        top: 0;
-        width: 100%;
+  &__header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__cell {
+    @include uicc-truncateLine;
+  }
+
+  &--header &__scroller {
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &--column &__scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  &--column &__cell:first-child {
+    position: absolute;
+    left: 0;
+  }
+
+  &--lastColumn &__scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  &--lastColumn &__cell:last-child {
+    position: absolute;
+    right: 2px;
+  }
+
+  &__subTable {
+    border-collapse: separate;
+    margin-top: -1px;
+  }
+
+  @for $uicc-i from 20 through 200 {
+    @if ($uicc-i % 5 == 0) {
+      @include uiccStickyHeader($uicc-i);
     }
+  }
 
-    &__cell {
-        @include uicc-truncateLine;
-    }
-
-    &--header &__scroller {
-        display: inline-block;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-
-    &--column &__scroller {
-        overflow-x: auto;
-        overflow-y: hidden;
-    }
-
-    &--column &__cell:first-child {
-        position: absolute;
-        left: 0;
-    }
-
-    &--lastColumn &__scroller {
-        overflow-x: auto;
-        overflow-y: hidden;
-    }
-
-    &--lastColumn &__cell:last-child {
-        position: absolute;
-        right: 2px;
-    }
-
-    &__subTable {
-        border-collapse: separate;
-        margin-top: -1px;
-    }
-
-    @for $uicc-i from 20 through 200 {
-        @if ($uicc-i % 5 == 0) {
-            @include uiccStickyHeader($uicc-i);
+  @for $uicc-firstColWidth from 0 through 700 {
+    @if ($uicc-firstColWidth == 0 or ($uicc-firstColWidth >= 100 and $uicc-firstColWidth <= 100 and $uicc-firstColWidth % 10 == 0) or $uicc-firstColWidth % 50 == 0) {
+      @for $uicc-lastColWidth from 50 through 100 {
+        @if ($uicc-lastColWidth % 10 == 0) {
+          @include uiccStickyColumn($uicc-firstColWidth, $uicc-lastColWidth);
         }
+      }
     }
-
-    @for $uicc-firstColWidth from 0 through 700 {
-        @if (
-            $uicc-firstColWidth ==
-                0 or
-                ($uicc-firstColWidth >= 100 and $uicc-firstColWidth <= 100 and $uicc-firstColWidth % 10 == 0) or
-                $uicc-firstColWidth
-                %
-                50 ==
-                0
-        ) {
-            @for $uicc-lastColWidth from 50 through 100 {
-                @if ($uicc-lastColWidth % 10 == 0) {
-                    @include uiccStickyColumn($uicc-firstColWidth, $uicc-lastColWidth);
-                }
-            }
-        }
-    }
+  }
 }

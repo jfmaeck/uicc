@@ -1,7 +1,5 @@
 .uicc-accordion {
-
   &__item {
-
     border-bottom: 1px solid $uicc-color-gray-medium;
 
     &--last,
@@ -32,7 +30,6 @@
       padding-bottom: 1rem;
     }
 
-
     &.is-open {
       > .uicc-accordion__itemHeader {
         color: $uicc-color-brand-primary;
@@ -44,6 +41,4 @@
       }
     }
   }
-
 }
-

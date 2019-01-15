@@ -31,14 +31,7 @@ $uicc-button-border-radius: $uicc-roundedEdge-border-radius !default;
 $uicc-button-icon-margin-top: -0.1em;
 $uicc-button-icon-margin-bottom: 0;
 
-@mixin uicc-button-colors(
-  $_color,
-  $_backgroundColor,
-  $_borderColor,
-  $_hoverColor,
-  $_hoverBackgroundColor,
-  $_hoverBorderColor
-) {
+@mixin uicc-button-colors($_color, $_backgroundColor, $_borderColor, $_hoverColor, $_hoverBackgroundColor, $_hoverBorderColor) {
   background-color: $_backgroundColor;
   color: $_color;
   border-color: $_borderColor;
@@ -106,36 +99,15 @@ $uicc-button-icon-margin-bottom: 0;
 }
 
 .uicc-button--primary {
-  @include uicc-button-colors(
-    $uicc-button-primary-color,
-    $uicc-button-primary-color-background,
-    $uicc-button-primary-border-color,
-    $uicc-button-primary-hover-color,
-    $uicc-button-primary-hover-color-background,
-    $uicc-button-primary-hover-border-color
-  );
+  @include uicc-button-colors($uicc-button-primary-color, $uicc-button-primary-color-background, $uicc-button-primary-border-color, $uicc-button-primary-hover-color, $uicc-button-primary-hover-color-background, $uicc-button-primary-hover-border-color);
 }
 
 .uicc-button--secondary {
-  @include uicc-button-colors(
-    $uicc-button-secondary-color,
-    $uicc-button-secondary-color-background,
-    $uicc-button-secondary-border-color,
-    $uicc-button-secondary-hover-color,
-    $uicc-button-secondary-hover-color-background,
-    $uicc-button-secondary-hover-border-color
-  );
+  @include uicc-button-colors($uicc-button-secondary-color, $uicc-button-secondary-color-background, $uicc-button-secondary-border-color, $uicc-button-secondary-hover-color, $uicc-button-secondary-hover-color-background, $uicc-button-secondary-hover-border-color);
 }
 
 .uicc-button--danger {
-  @include uicc-button-colors(
-    $uicc-button-danger-color,
-    $uicc-button-danger-color-background,
-    $uicc-button-danger-border-color,
-    $uicc-button-danger-hover-color,
-    $uicc-button-danger-hover-color-background,
-    $uicc-button-danger-hover-border-color
-  );
+  @include uicc-button-colors($uicc-button-danger-color, $uicc-button-danger-color-background, $uicc-button-danger-border-color, $uicc-button-danger-hover-color, $uicc-button-danger-hover-color-background, $uicc-button-danger-hover-border-color);
 }
 
 .uicc-button__icon {

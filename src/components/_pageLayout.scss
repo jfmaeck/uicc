@@ -2,52 +2,52 @@ $uicc-pageLayout-background-color: $uicc-color-gray-lighter;
 $uicc-pageLayout-content-background-color: $uicc-color-white;
 $uicc-pageLayout-content-border-color: $uicc-color-gray-medium;
 
-
 .uicc-pageLayout {
+  display: flex;
+  flex-direction: column;
+  background-color: $uicc-pageLayout-background-color;
+  min-height: 100vh;
+
+  &__header {
+    flex: 0 0 auto;
+    margin-bottom: $uicc-default-margin-big;
+  }
+
+  &__main {
+    flex: 1 1 auto;
     display: flex;
-    flex-direction: column;
-    background-color: $uicc-pageLayout-background-color;
-    min-height: 100vh;
+    width: $uicc-page-max-width;
 
-    &__header {
-        flex: 0 0 auto;
-        margin-bottom: $uicc-default-margin-big;
+    // sass-lint:disable no-duplicate-properties
+    max-width: 100%;
+    max-width: calc(100% - #{$uicc-default-margin} * 2);
+    // sass-lint:enable no-duplicate-properties
+    margin-left: $uicc-default-margin;
+    margin-right: $uicc-default-margin;
+
+    @media #{$uicc-large-up} {
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    &__main {
-        flex: 1 1 auto;
-        display: flex;
-        width: $uicc-page-max-width;
+    &Sidebar {
+      flex: 0 1 160px;
 
-        max-width: 100%;
-        max-width: calc(100% - #{$uicc-default-margin} * 2);
-        margin-left: $uicc-default-margin;
-        margin-right: $uicc-default-margin;
+      &:first-child {
+        margin-right: $uicc-default-margin-big;
+      }
 
-        @media #{$uicc-large-up} {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        &Sidebar {
-            flex: 0 1 160px;
-
-            &:first-child {
-                margin-right: $uicc-default-margin-big;
-            }
-
-            &:last-child {
-                margin-left: $uicc-default-margin-big;
-            }
-        }
-
-        &Content {
-            flex: 1 1 100%;
-        }
+      &:last-child {
+        margin-left: $uicc-default-margin-big;
+      }
     }
 
-    &__footer {
-        flex: 0 0 auto;
+    &Content {
+      flex: 1 1 100%;
     }
+  }
 
+  &__footer {
+    flex: 0 0 auto;
+  }
 }

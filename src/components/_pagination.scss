@@ -52,11 +52,7 @@ $uicc-pagination-border-width: 1px !default;
   }
 
   &__item {
-    @include uicc-hover(
-        $uicc-pagination-hover-color,
-        $uicc-pagination-hover-background-color,
-        $uicc-pagination-hover-border-color
-    );
+    @include uicc-hover($uicc-pagination-hover-color, $uicc-pagination-hover-background-color, $uicc-pagination-hover-border-color);
 
     &.is-active {
       color: $uicc-pagination-active-color;

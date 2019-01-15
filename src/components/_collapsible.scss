@@ -1,7 +1,7 @@
 .uicc-collapsible {
   overflow: hidden;
 
-  &:after {
+  &::after {
     content: '';
     height: 50px;
     transition: height 0.3s linear, max-height 0s 0.3s linear;
@@ -14,7 +14,7 @@
     max-height: 1000000px;
   }
 
-  &:not(.is-open):after {
+  &:not(.is-open)::after {
     height: 0;
     transition: height 0.3s linear;
     max-height: 50px;
@@ -26,5 +26,4 @@
     visibility: hidden;
     max-height: 0;
   }
-
 }

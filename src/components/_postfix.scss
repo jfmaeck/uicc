@@ -1,3 +1,22 @@
+@mixin uiccPostfixStacked() {
+  flex-direction: column;
+  align-items: stretch;
+
+  &.uicc-postfix--gutters {
+    > * + * {
+      margin-left: 0;
+      margin-top: $uicc-default-margin;
+    }
+  }
+
+  &.uicc-postfix--bigGutters {
+    > * + * {
+      margin-left: 0;
+      margin-top: $uicc-default-margin-big;
+    }
+  }
+}
+
 .uicc-postfix {
   display: flex;
 
@@ -19,30 +38,30 @@
     }
   }
 
-  &--tiny-stacked,
-  &--small-stacked {
-    @media #{$uicc-tiny-only} {
-      flex-direction: column;
-      align-items: flex-start;
-
-      &.uicc-postfix--gutters {
-        > * + * {
-          margin-left: 0;
-          margin-top: $uicc-default-margin;
-        }
-      }
+  &--bigGutters {
+    > * + * {
+      margin-left: $uicc-default-margin-big;
     }
   }
 
-  &--small-stacked {
-    @media #{$uicc-small-only} {
-      flex-direction: column;
-      align-items: flex-start;
+  &--tiny-stacked,
+  &--small-stacked,
+  &--medium-stacked {
+    @media #{$uicc-tiny-only} {
+      @include uiccPostfixStacked();
+    }
+  }
 
-      > * + * {
-        margin-left: 0;
-        margin-top: $uicc-default-margin;
-      }
+  &--small-stacked,
+  &--medium-stacked {
+    @media #{$uicc-small-only} {
+      @include uiccPostfixStacked();
+    }
+  }
+
+  &--medium-stacked {
+    @media #{$uicc-medium-only} {
+      @include uiccPostfixStacked();
     }
   }
 

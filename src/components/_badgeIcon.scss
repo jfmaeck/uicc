@@ -1,0 +1,27 @@
+.uicc-badgeIcon {
+    display: inline-flex;
+    position: relative;
+
+    &__badge {
+        position: absolute;
+        left: 56%;
+        top: 50%;
+    }
+
+    &--info &__icon{
+        color: $uicc-badge-color-info;
+    }
+
+    &--success &__icon{
+        color: $uicc-color-success;
+    }
+
+    &--warning &__icon{
+        color: $uicc-color-warning;
+    }
+
+    &--error &__icon{
+        color: $uicc-color-error;
+    }
+
+}

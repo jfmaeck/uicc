@@ -17,7 +17,8 @@
               UI CC
               <span class="uicc-headline__addendum">Styleguide</span>
             </h1>
-            <p class="uicc-paragraph">UI Toolkit to <b class="uicc-bold">C</b>lone and <b class="uicc-bold">C</b>ustomize</p>
+            <p class="uicc-paragraph">UI Toolkit to <b class="uicc-bold">C</b>lone and <b class="uicc-bold">C</b>ustomize.</p>
+            <p class="uicc-paragraph">Visit <a href="/layout.html" class="uicc-link">/layout.html</a> to see a demo layout built with these components.</p>
         </header>
         <div class="sg-container uicc-row" sg-content></div>
       </div>

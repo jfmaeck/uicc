@@ -13,5 +13,7 @@ you can add multiple elements with the class `uicc-tabs__content` and only the o
             <a class="uicc-tabs__tab" href="javascript:;">Third Tab</a>
             <a class="uicc-tabs__tab" href="javascript:;">Another One!</a>
         </div>
-        <div class="uicc-tabs__content is-active">Tab Content</div>
+        <div class="uicc-tabs__content is-active">
+            Tab Content
+        </div>
     </div>

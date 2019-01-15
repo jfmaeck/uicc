@@ -1,0 +1,39 @@
+$uicc-menuToggle-size: 1.25em;
+
+.uicc-menuToggle {
+  display: block;
+  width: $uicc-menuToggle-size;
+  height: $uicc-menuToggle-size;
+  position: relative;
+  cursor: pointer;
+
+
+  &__line {
+    height: calc(#{$uicc-menuToggle-size} / 12);
+    background: currentColor;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: transform;
+    transition-duration: .5s, .25s;
+
+    &:nth-child(2) {
+      top: calc(#{$uicc-menuToggle-size} / 5 * 2);
+    }
+
+    &:nth-child(3) {
+      top: calc(#{$uicc-menuToggle-size} / 5 * 4);
+    }
+  }
+
+  &.is-open &__line:nth-child(1) {
+    transform: translateY(calc(#{$uicc-menuToggle-size} / 5 * 2)) rotate(45deg);
+  }
+  &.is-open &__line:nth-child(2) {
+    opacity: 0;
+  }
+  &.is-open &__line:nth-child(3) {
+    transform: translateY(calc(#{$uicc-menuToggle-size} / 5 * -2)) rotate(-45deg);
+  }
+}
+

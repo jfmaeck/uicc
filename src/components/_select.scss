@@ -16,6 +16,7 @@
   &[size='1'] {
     appearance: none;
     padding: $uicc-input-padding;
+    padding-right: 2.3rem;
     background-image: url('#{$uicc-image-path}/bg_select.svg');
     background-position: right -55px top -13px;
     background-repeat: no-repeat;

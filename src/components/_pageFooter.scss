@@ -1,0 +1,12 @@
+.uicc-pageFooter {
+    min-height: 200px;
+    padding-top: $uicc-default-margin-big;
+    background-color: $uicc-color-brand-primary;
+    color: $uicc-color-brand-primary-inverted;
+
+    &__inner {
+        max-width: $uicc-page-max-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

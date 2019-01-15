@@ -1,4 +1,9 @@
 $uicc-checkboxAndRadio-background-color-checked: $uicc-color-brand-primary !default;
+$uicc-checkboxAndRadio-checkmarkIcon-variant: 'light' !default;
+$uicc-checkboxAndRadio-inline-margin: $uicc-default-margin-big !default;
+$uicc-checkboxAndRadio-size: 1.75em !default;
+$uicc-checkboxAndRadio-label-color: $uicc-color-black !default;
+$uicc-checkboxAndRadio-label-color-checked: $uicc-checkboxAndRadio-background-color-checked !default;
 
 .uicc-radio,
 .uicc-checkbox {
@@ -8,11 +13,11 @@ $uicc-checkboxAndRadio-background-color-checked: $uicc-color-brand-primary !defa
 
   &--inline {
     display: inline-block;
-    margin-right: $uicc-default-margin;
+    margin-right: $uicc-checkboxAndRadio-inline-margin;
   }
 
   &__label {
-    @include uicc-hover($uicc-color-brand-primary);
+    color: $uicc-checkboxAndRadio-label-color;
 
     display: inline-block;
     position: relative;
@@ -26,11 +31,11 @@ $uicc-checkboxAndRadio-background-color-checked: $uicc-color-brand-primary !defa
       content: '';
       transition: background-color 300ms;
       position: absolute;
-      margin-top: -0.175em;
+      margin-top: -0.17em;
       left: 0;
-      width: 1.5em;
-      height: 1.5em;
-      border: 1px solid transparentize($uicc-color-gray-dark, 0.5);
+      width: $uicc-checkboxAndRadio-size;
+      height: $uicc-checkboxAndRadio-size;
+      border: 1px solid $uicc-color-gray-dark;
       padding: 0.2em;
       color: $uicc-color-white;
       line-height: 0.4em;
@@ -55,14 +60,14 @@ $uicc-checkboxAndRadio-background-color-checked: $uicc-color-brand-primary !defa
 
   &.is-checked &__label,
   &__control:checked + &__label {
-    color: $uicc-color-brand-primary;
+    color: $uicc-checkboxAndRadio-label-color-checked;
   }
 
   &.is-checked &__label::before,
   &__control:checked + &__label::before {
-    background-image: url('#{$uicc-image-path}/check.svg');
+    background-image: url('#{$uicc-image-path}/check_#{$uicc-checkboxAndRadio-checkmarkIcon-variant}.svg');
     background-color: $uicc-checkboxAndRadio-background-color-checked;
-    background-size: 1em;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center center;
   }

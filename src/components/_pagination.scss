@@ -1,28 +1,27 @@
-$uicc-pagination-color: $uicc-color-brand-primary !default;
-$uicc-pagination-background-color: $uicc-color-brand-primary-inverted !default;
+$uicc-pagination-color: $uicc-color-gray-medium !default;
+$uicc-pagination-background-color: $uicc-color-white !default;
 $uicc-pagination-border-color: $uicc-color-transparent !default;
 $uicc-pagination-font-weight: normal !default;
 
 $uicc-pagination-hover-color: $uicc-pagination-color !default;
 $uicc-pagination-hover-background-color: $uicc-pagination-background-color !default;
-$uicc-pagination-hover-border-color: $uicc-color-gray-light !default;
+$uicc-pagination-hover-border-color: $uicc-pagination-border-color !default;
 $uicc-pagination-hover-font-weight: bold !default;
 
-$uicc-pagination-active-color: $uicc-color-brand-primary-inverted !default;
-$uicc-pagination-active-background-color: $uicc-color-brand-primary !default;
+$uicc-pagination-active-color: $uicc-pagination-color !default;
+$uicc-pagination-active-background-color: $uicc-pagination-background-color !default;
 $uicc-pagination-active-border-color: $uicc-color-gray-light !default;
 $uicc-pagination-active-font-weight: bold !default;
 
 $uicc-pagination-focus-color: $uicc-pagination-color !default;
 $uicc-pagination-focus-background-color: $uicc-pagination-background-color !default;
-$uicc-pagination-focus-border-color: $uicc-color-brand-primary !default;
+$uicc-pagination-focus-border-color: $uicc-color-black !default;
 $uicc-pagination-focus-font-weight: normal !default;
 
 $uicc-pagination-distance: $uicc-default-margin !default;
-$uicc-pagination-border-radius: 50% !default;
+$uicc-pagination-border-radius: 0 !default;
 $uicc-pagination-border-style: solid !default;
-$uicc-pagination-border-width: 1px     !default;
-
+$uicc-pagination-border-width: 1px !default;
 
 .uicc-pagination {
   display: flex;

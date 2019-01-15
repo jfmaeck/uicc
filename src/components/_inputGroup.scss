@@ -1,6 +1,8 @@
+$uicc-inputGroup-label-color: $uicc-color-gray !default;
 $uicc-inputGroup-error-color: $uicc-color-white !default;
 $uicc-inputGroup-error-background-color: $uicc-color-error !default;
 $uicc-inputGroup--constrained-max-width: 600px;
+$uicc-inputGroup-label-font-weight: normal;
 
 .uicc-inputGroup {
   position: relative;
@@ -21,11 +23,12 @@ $uicc-inputGroup--constrained-max-width: 600px;
   }
 
   &__label {
+    display: block;
     margin-left: 0.1em;
     margin-bottom: 0.3em;
     font-size: 1em;
-    font-weight: bold;
-    color: $uicc-color-gray;
+    font-weight: $uicc-inputGroup-label-font-weight;
+    color: $uicc-inputGroup-label-color;
   }
 
   &__subtext {

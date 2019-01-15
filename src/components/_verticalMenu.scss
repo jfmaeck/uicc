@@ -1,0 +1,70 @@
+$uicc-verticalMenu-color: $uicc-color-gray !default;
+$uicc-verticalMenu-color-active: $uicc-color-black !default;
+$uicc-verticalMenu-border-color-active: $uicc-color-gray !default;
+
+@mixin uiccVerticalMenuInline() {
+
+  .uicc-verticalMenu__item {
+    border-top: none;
+    border-bottom: none;
+    border-left: $uicc-accent-line-height solid $uicc-color-transparent;
+    border-right: $uicc-accent-line-height solid $uicc-color-transparent;
+  }
+
+  &.uicc-verticalMenu--right .uicc-verticalMenu__item {
+    padding-left: $uicc-default-margin-small;
+
+    &.is-active {
+      border-left-color: $uicc-verticalMenu-border-color-active;
+    }
+  }
+
+  &.uicc-verticalMenu--left .uicc-verticalMenu__item {
+    padding-right: $uicc-default-margin-small;
+
+    &.is-active {
+      border-right-color: $uicc-verticalMenu-border-color-active;
+    }
+  }
+}
+
+.uicc-verticalMenu {
+
+  &--inline {
+    @include uiccVerticalMenuInline;
+  }
+
+  &--inlineMediumUp {
+    @media #{$uicc-medium-up} {
+      @include uiccVerticalMenuInline;
+    }
+  }
+
+
+  &--inlineLargeUp {
+    @media #{$uicc-large-up} {
+      @include uiccVerticalMenuInline;
+    }
+  }
+
+  &__item {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid $uicc-color-gray-light;
+
+    color: $uicc-verticalMenu-color;
+
+    &:hover,
+    &.is-active {
+      color: $uicc-verticalMenu-color-active;
+    }
+
+    &.is-active {
+      border-bottom-color: $uicc-verticalMenu-border-color-active;
+      border-bottom-width: $uicc-accent-line-height;
+    }
+  }
+
+}

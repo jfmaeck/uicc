@@ -1,4 +1,7 @@
+@import 'pageLayout';
 @import 'pageWrapper';
+@import 'pageHeader';
+@import 'pageFooter';
 @import 'row';
 @import 'col';
 @import 'paragraph';
@@ -42,3 +45,7 @@
 @import 'stickyTable';
 @import 'animated';
 @import 'tooltip';
+@import 'badge';
+@import 'badgeIcon';
+@import 'menuToggle';
+@import 'verticalMenu';

@@ -1,0 +1,40 @@
+$uicc-pageHeader-background-color: $uicc-color-brand-primary !default;
+$uicc-pageHeader-input-background-color: $uicc-color-brand-primary-light !default;
+$uicc-pageHeader-color: $uicc-color-brand-primary-inverted !default;
+$uicc-pageHeader-color-active: $uicc-color-white !default;
+$uicc-pageHeader-border-color: $uicc-color-transparent !default;
+
+
+.uicc-pageHeader {
+  border-bottom: 1px solid $uicc-pageHeader-border-color;
+  background-color: $uicc-pageHeader-background-color;
+  color: $uicc-pageHeader-color;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: $uicc-page-max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: $uicc-default-margin-small;
+
+    &--icon {
+      padding: $uicc-default-margin-small;
+    }
+
+    &:hover,
+    &.is-active {
+      color: $uicc-pageHeader-color-active;
+    }
+  }
+}
